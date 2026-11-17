@@ -1,0 +1,449 @@
+{
+ "series_ko": "AI 감각·생성 · 듣고·보고·되묻기",
+ "title_ko": "겸손한 로봇 연구실 · 잘 못 알아들으면 되묻는 로봇",
+ "site_title": "잘 못 알아들으면 되묻는 로봇 — 겸손한 로봇 연구실 (목차)",
+ "site_url": "https://adminmrobo.github.io/humble_robot_lab/",
+ "ontology": {
+  "pages": [
+   {
+    "path": "index.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "ch1_why.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "ch2_text.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "ch3_image.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "ch4_camera.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "ch5_voice.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "ch6_rl.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "ch7_sim2real.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "ch8_appendix.html",
+    "kg": true,
+    "export": true
+   }
+  ],
+  "files": [
+   "kg/index/kg.json",
+   "kg/ch1_why/kg.json",
+   "kg/ch2_text/kg.json",
+   "kg/ch3_image/kg.json",
+   "kg/ch4_camera/kg.json",
+   "kg/ch5_voice/kg.json",
+   "kg/ch6_rl/kg.json",
+   "kg/ch7_sim2real/kg.json",
+   "kg/ch8_appendix/kg.json"
+  ]
+ },
+ "i18n": {
+  "langs": [
+   "ko"
+  ],
+  "pages": {
+   "ko": 9
+  },
+  "readme_langs": [
+   "ko"
+  ]
+ },
+ "languages": [
+  "ko"
+ ],
+ "items": [
+  {
+   "id": "cover_00",
+   "role": "cover",
+   "path": "img/cover_00.webp",
+   "size": [
+    1600,
+    900
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "see docs/COVER_PROMPTS_humble_robot.md#cover_00",
+   "source_of": null,
+   "status": "redraw",
+   "alt_ko": "네 캐릭터가 장난감 도로 앞에 멈춰 선 작은 로봇 자동차와 그 위의 빈 말풍선을 바라보는 낮의 연구실"
+  },
+  {
+   "id": "thumb_00",
+   "role": "thumb",
+   "path": "img/thumb_00.webp",
+   "size": [
+    600,
+    400
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_00",
+   "status": "redraw"
+  },
+  {
+   "id": "cover_01",
+   "role": "cover",
+   "path": "img/cover_01.webp",
+   "size": [
+    1600,
+    900
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "see docs/COVER_PROMPTS_humble_robot.md#cover_01",
+   "source_of": null,
+   "status": "redraw",
+   "alt_ko": "두 갈래 장난감 도로에서 한 차는 벽으로 돌진하고 다른 차는 멈춰 되묻는 장면"
+  },
+  {
+   "id": "thumb_01",
+   "role": "thumb",
+   "path": "img/thumb_01.webp",
+   "size": [
+    600,
+    400
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_01",
+   "status": "redraw"
+  },
+  {
+   "id": "cover_02",
+   "role": "cover",
+   "path": "img/cover_02.webp",
+   "size": [
+    1600,
+    900
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "see docs/COVER_PROMPTS_humble_robot.md#cover_02",
+   "source_of": null,
+   "status": "redraw",
+   "alt_ko": "글자 없는 쪽지 카드를 초록·빨간 바구니로 나누는 네 캐릭터와 사전·돋보기"
+  },
+  {
+   "id": "thumb_02",
+   "role": "thumb",
+   "path": "img/thumb_02.webp",
+   "size": [
+    600,
+    400
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_02",
+   "status": "redraw"
+  },
+  {
+   "id": "cover_03",
+   "role": "cover",
+   "path": "img/cover_03.webp",
+   "size": [
+    1600,
+    900
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "see docs/COVER_PROMPTS_humble_robot.md#cover_03",
+   "source_of": null,
+   "status": "redraw",
+   "alt_ko": "서로 다른 획의 검은 타일 벽과 그중 하나를 픽셀 격자로 확대한 돋보기"
+  },
+  {
+   "id": "thumb_03",
+   "role": "thumb",
+   "path": "img/thumb_03.webp",
+   "size": [
+    600,
+    400
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_03",
+   "status": "redraw"
+  },
+  {
+   "id": "cover_04",
+   "role": "cover",
+   "path": "img/cover_04.webp",
+   "size": [
+    1600,
+    900
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "see docs/COVER_PROMPTS_humble_robot.md#cover_04",
+   "source_of": null,
+   "status": "redraw",
+   "alt_ko": "김 서린 카메라 렌즈와 세 구간 계기판 앞의 네 캐릭터"
+  },
+  {
+   "id": "thumb_04",
+   "role": "thumb",
+   "path": "img/thumb_04.webp",
+   "size": [
+    600,
+    400
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_04",
+   "status": "redraw"
+  },
+  {
+   "id": "cover_05",
+   "role": "cover",
+   "path": "img/cover_05.webp",
+   "size": [
+    1600,
+    900
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "see docs/COVER_PROMPTS_humble_robot.md#cover_05",
+   "source_of": null,
+   "status": "redraw",
+   "alt_ko": "마이크에서 나온 소리 물결이 화면의 빛나는 줄무늬 그림으로 바뀌는 녹음 코너"
+  },
+  {
+   "id": "thumb_05",
+   "role": "thumb",
+   "path": "img/thumb_05.webp",
+   "size": [
+    600,
+    400
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_05",
+   "status": "redraw"
+  },
+  {
+   "id": "cover_06",
+   "role": "cover",
+   "path": "img/cover_06.webp",
+   "size": [
+    1600,
+    900
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "see docs/COVER_PROMPTS_humble_robot.md#cover_06",
+   "source_of": null,
+   "status": "redraw",
+   "alt_ko": "넘어진 흔적을 뒤로하고 달리는 작은 시험용 로봇과 색 막대 점수판이 있는 훈련장"
+  },
+  {
+   "id": "thumb_06",
+   "role": "thumb",
+   "path": "img/thumb_06.webp",
+   "size": [
+    600,
+    400
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_06",
+   "status": "redraw"
+  },
+  {
+   "id": "cover_07",
+   "role": "cover",
+   "path": "img/cover_07.webp",
+   "size": [
+    1600,
+    900
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "see docs/COVER_PROMPTS_humble_robot.md#cover_07",
+   "source_of": null,
+   "status": "redraw",
+   "alt_ko": "모니터 속 가상 자동차와 탁자 위 실물 자동차가 빛줄기로 이어진 디지털 트윈 장면"
+  },
+  {
+   "id": "thumb_07",
+   "role": "thumb",
+   "path": "img/thumb_07.webp",
+   "size": [
+    600,
+    400
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_07",
+   "status": "redraw"
+  },
+  {
+   "id": "cover_08",
+   "role": "cover",
+   "path": "img/cover_08.webp",
+   "size": [
+    1600,
+    900
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "see docs/COVER_PROMPTS_humble_robot.md#cover_08",
+   "source_of": null,
+   "status": "redraw",
+   "alt_ko": "여덟 칸 일정표와 부록 두루마리 네 개를 정리하는 마지막 장면"
+  },
+  {
+   "id": "thumb_08",
+   "role": "thumb",
+   "path": "img/thumb_08.webp",
+   "size": [
+    600,
+    400
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_08",
+   "status": "redraw"
+  },
+  {
+   "id": "sc_06_runner",
+   "role": "scene",
+   "embedded_in": "ch6_rl.html",
+   "key": "#cv61",
+   "size": [
+    1200,
+    320
+   ],
+   "characters": [],
+   "robot": "none",
+   "prompt_en": "see docs/IMG_humble_robot.md section 3 (optional)",
+   "source_of": null,
+   "status": "ok"
+  }
+ ],
+ "updated": "2026-11-18"
+}

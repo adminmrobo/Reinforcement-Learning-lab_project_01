@@ -1,0 +1,554 @@
+{
+ "version": "1.0",
+ "page": "ch7_sim2real",
+ "nodes": [
+  {
+   "id": "lab:concept/four-intelligence-grades",
+   "type": "Concept",
+   "label": {
+    "ko": "지능 4대 등급",
+    "en": "Four intelligence grades"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "네 등급: 명사수·우등생·탐정·외국인"
+   }
+  },
+  {
+   "id": "lab:concept/confidence-personas",
+   "type": "Concept",
+   "label": {
+    "ko": "신뢰도 인격화",
+    "en": "Confidence personas"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "네 등급: 명사수·우등생·탐정·외국인"
+   }
+  },
+  {
+   "id": "lab:concept/pygame-simulator",
+   "type": "Simulation",
+   "label": {
+    "ko": "PyGame 시뮬레이터",
+    "en": "PyGame simulator"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "PyGame 시뮬레이터와 판단 대시보드"
+   }
+  },
+  {
+   "id": "lab:concept/decision-dashboard",
+   "type": "Concept",
+   "label": {
+    "ko": "판단 근거 대시보드",
+    "en": "Decision-basis dashboard"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "PyGame 시뮬레이터와 판단 대시보드"
+   }
+  },
+  {
+   "id": "lab:concept/sim-to-real",
+   "type": "Method",
+   "label": {
+    "ko": "Sim-to-Real",
+    "en": "Sim-to-real transfer"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "Pi Car X 실전 테스트"
+   }
+  },
+  {
+   "id": "lab:concept/digital-twin",
+   "type": "Concept",
+   "label": {
+    "ko": "디지털 트윈",
+    "en": "Digital twin"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "Pi Car X 실전 테스트"
+   }
+  },
+  {
+   "id": "lab:concept/feedback-loop",
+   "type": "Method",
+   "label": {
+    "ko": "피드백 루프",
+    "en": "Feedback loop"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "Pi Car X 실전 테스트"
+   }
+  },
+  {
+   "id": "lab:concept/three-layer-architecture",
+   "type": "Concept",
+   "label": {
+    "ko": "3계층 구조",
+    "en": "Three-layer architecture"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "데이터 흐름과 무결성 검증"
+   }
+  },
+  {
+   "id": "lab:concept/integrity-pipeline",
+   "type": "Method",
+   "label": {
+    "ko": "무결성 검증 파이프라인",
+    "en": "Data integrity pipeline"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "데이터 흐름과 무결성 검증"
+   }
+  },
+  {
+   "id": "lab:sim/ch7_sim2real-p71",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · 근거와 신뢰도를 넣으면 등급과 행동이 나옵니다 경계값 일부는 이 페이지가 이어 붙임",
+    "en": "Interactive panel p71"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#p71",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch7_sim2real-p72",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · 기록 속 명령을 다시 넣어 보는 미니 시뮬레이터 영상 기록을 재현",
+    "en": "Interactive panel p72"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#p72",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch7_sim2real-p73",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · Sim-to-Real 피드백 루프 돌려 보기 설명용 모형",
+    "en": "Interactive panel p73"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#p73",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch7_sim2real-p74",
+   "type": "Simulation",
+   "label": {
+    "ko": "그림 · 센서부터 모터까지 (발표 36쪽 구조)",
+    "en": "Interactive panel p74"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#p74",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch7_sim2real-q71",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 7-1",
+    "en": "Check quiz q71"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch7_sim2real-q72",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 7-2",
+    "en": "Check quiz q72"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch7_sim2real-q73",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 7-3",
+    "en": "Check quiz q73"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch7_sim2real-q74",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 7-4",
+    "en": "Check quiz q74"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:work/ahn2026langcon",
+   "type": "Work",
+   "label": {
+    "ko": "안상선 (2026) Langcon 2026 발표",
+    "en": "Ahn (2026) Langcon 2026 talk"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:claim/replan-0-1s",
+   "type": "Claim",
+   "label": {
+    "ko": "시뮬레이터는 0.1초 단위로 상황을 재판단한다",
+    "en": "Simulator re-evaluates every 0.1 s"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/detective-754",
+   "type": "Claim",
+   "label": {
+    "ko": "\"앞으로 가가가가각\"은 AI 신뢰도 75.4%로 실행되었다",
+    "en": "\"앞으로 가가가가각\" executed at 75.4% AI confidence"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/confidence-personas",
+   "p": "lab:partOf",
+   "o": "lab:concept/four-intelligence-grades",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/decision-dashboard",
+   "p": "lab:partOf",
+   "o": "lab:concept/pygame-simulator",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sim-to-real",
+   "p": "lab:broader",
+   "o": "lab:topic/transfer-learning",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/digital-twin",
+   "p": "lab:partOf",
+   "o": "lab:concept/sim-to-real",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/feedback-loop",
+   "p": "lab:partOf",
+   "o": "lab:concept/sim-to-real",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/integrity-pipeline",
+   "p": "lab:partOf",
+   "o": "lab:concept/three-layer-architecture",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/four-intelligence-grades",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/pygame-simulator",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/pygame-simulator",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sim-to-real",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sim-to-real",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/three-layer-architecture",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/four-intelligence-grades",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch7_sim2real-p71",
+   "anchor": "#p71",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/pygame-simulator",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch7_sim2real-p72",
+   "anchor": "#p72",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sim-to-real",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch7_sim2real-p73",
+   "anchor": "#p73",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/three-layer-architecture",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch7_sim2real-p74",
+   "anchor": "#p74",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch7_sim2real-q71",
+   "p": "lab:assesses",
+   "o": "lab:concept/four-intelligence-grades",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch7_sim2real-q72",
+   "p": "lab:assesses",
+   "o": "lab:concept/pygame-simulator",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch7_sim2real-q73",
+   "p": "lab:assesses",
+   "o": "lab:concept/sim-to-real",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch7_sim2real-q74",
+   "p": "lab:assesses",
+   "o": "lab:concept/three-layer-architecture",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/replan-0-1s",
+   "p": "lab:supports",
+   "o": "lab:concept/pygame-simulator",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/replan-0-1s",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/detective-754",
+   "p": "lab:supports",
+   "o": "lab:concept/four-intelligence-grades",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/detective-754",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s2",
+   "confidence": "high"
+  }
+ ]
+}

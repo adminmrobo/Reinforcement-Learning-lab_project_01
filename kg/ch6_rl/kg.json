@@ -1,0 +1,996 @@
+{
+ "version": "1.0",
+ "page": "ch6_rl",
+ "nodes": [
+  {
+   "id": "lab:concept/reinforcement-learning",
+   "type": "Method",
+   "label": {
+    "ko": "강화학습",
+    "en": "Reinforcement learning"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "강화학습의 기본"
+   }
+  },
+  {
+   "id": "lab:concept/reward",
+   "type": "Concept",
+   "label": {
+    "ko": "보상",
+    "en": "Reward"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "강화학습의 기본"
+   }
+  },
+  {
+   "id": "lab:concept/policy",
+   "type": "Concept",
+   "label": {
+    "ko": "정책",
+    "en": "Policy"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "강화학습의 기본"
+   }
+  },
+  {
+   "id": "lab:concept/discounted-return",
+   "type": "Concept",
+   "label": {
+    "ko": "할인된 보상 합",
+    "en": "Discounted return"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "강화학습의 기본"
+   }
+  },
+  {
+   "id": "lab:concept/concept-reward-table",
+   "type": "Concept",
+   "label": {
+    "ko": "개념 보상표",
+    "en": "Concept reward table (+50/-100/-5)"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "보상표 두 벌"
+   }
+  },
+  {
+   "id": "lab:concept/strict-trainer-reward",
+   "type": "Method",
+   "label": {
+    "ko": "엄격한 훈련관 보상식",
+    "en": "Strict-trainer reward (+1.5/-2.0/-5.0)"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "보상표 두 벌"
+   }
+  },
+  {
+   "id": "lab:concept/re-questioning",
+   "type": "Concept",
+   "label": {
+    "ko": "재질문",
+    "en": "Re-questioning"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "보상표 두 벌"
+   }
+  },
+  {
+   "id": "lab:concept/average-reward-model-selection",
+   "type": "Method",
+   "label": {
+    "ko": "평균 보상 모델 선발",
+    "en": "Average-reward model selection"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "천하제일 지능대회"
+   }
+  },
+  {
+   "id": "lab:concept/intent-confusion-rate",
+   "type": "Metric",
+   "label": {
+    "ko": "착각률",
+    "en": "Intent confusion rate"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "천하제일 지능대회"
+   }
+  },
+  {
+   "id": "lab:concept/xgboost",
+   "type": "Method",
+   "label": {
+    "ko": "XGBoost",
+    "en": "XGBoost"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "천하제일 지능대회"
+   }
+  },
+  {
+   "id": "lab:concept/logistic-regression",
+   "type": "Method",
+   "label": {
+    "ko": "로지스틱 회귀",
+    "en": "Logistic regression"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "천하제일 지능대회"
+   }
+  },
+  {
+   "id": "lab:concept/threshold-optimization",
+   "type": "Method",
+   "label": {
+    "ko": "임계값 최적화",
+    "en": "Threshold optimization"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "임계값과 3D 산점도"
+   }
+  },
+  {
+   "id": "lab:concept/unstable-model-detection",
+   "type": "Method",
+   "label": {
+    "ko": "불안정 지능 감지",
+    "en": "Unstable model detection"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "임계값과 3D 산점도"
+   }
+  },
+  {
+   "id": "lab:concept/label-flip-test",
+   "type": "Method",
+   "label": {
+    "ko": "라벨 반전 시험",
+    "en": "Label-flip test"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "역발상 검증과 라벨 오류"
+   }
+  },
+  {
+   "id": "lab:concept/multi-label",
+   "type": "Method",
+   "label": {
+    "ko": "다중 라벨",
+    "en": "Multi-label / soft target"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "역발상 검증과 라벨 오류"
+   }
+  },
+  {
+   "id": "lab:concept/intent-hierarchy",
+   "type": "Method",
+   "label": {
+    "ko": "의도 기반 계층 구조",
+    "en": "Intent-based label hierarchy"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "역발상 검증과 라벨 오류"
+   }
+  },
+  {
+   "id": "lab:sim/ch6_rl-p61",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · 넘어지며 달리기를 배우는 로봇 해설용 재현 · 숫자는 예시",
+    "en": "Interactive panel p61"
+   },
+   "page": "ch6_rl",
+   "anchor": "#p61",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch6_rl-p62a",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · 확신에 따라 \"실행\"과 \"재질문\"의 기대 점수 비교 점수는 발표 값 · 확신은 직접 조절",
+    "en": "Interactive panel p62a"
+   },
+   "page": "ch6_rl",
+   "anchor": "#p62a",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch6_rl-p62b",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · 엄격한 훈련관 점수 계산기 점수식은 발표 부록 코드 ➃",
+    "en": "Interactive panel p62b"
+   },
+   "page": "ch6_rl",
+   "anchor": "#p62b",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch6_rl-p63",
+   "type": "Simulation",
+   "label": {
+    "ko": "성적표 · 대회 결과 발표 자료 값",
+    "en": "Interactive panel p63"
+   },
+   "page": "ch6_rl",
+   "anchor": "#p63",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch6_rl-p64",
+   "type": "Simulation",
+   "label": {
+    "ko": "3D 산점도 · 임계값 × 정확도 × 착각률 발표 최종평가 표 12개 조합",
+    "en": "Interactive panel p64"
+   },
+   "page": "ch6_rl",
+   "anchor": "#p64",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch6_rl-p65",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · 라벨 뒤집기 시험 정상 학습 줄은 발표 값",
+    "en": "Interactive panel p65"
+   },
+   "page": "ch6_rl",
+   "anchor": "#p65",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch6_rl-q61",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 6-1",
+    "en": "Check quiz q61"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch6_rl-q62",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 6-2",
+    "en": "Check quiz q62"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch6_rl-q63",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 6-3",
+    "en": "Check quiz q63"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch6_rl-q64",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 6-4",
+    "en": "Check quiz q64"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch6_rl-q65",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 6-5",
+    "en": "Check quiz q65"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:work/ahn2026langcon",
+   "type": "Work",
+   "label": {
+    "ko": "안상선 (2026) Langcon 2026 발표",
+    "en": "Ahn (2026) Langcon 2026 talk"
+   },
+   "page": "ch6_rl",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:claim/logistic-top-reward",
+   "type": "Claim",
+   "label": {
+    "ko": "텍스트 대회 평균 보상 1위는 Logistic(임계값 0.4) 0.5788이다",
+    "en": "Top average reward: Logistic (0.4) 0.5788"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/rf-top-accuracy",
+   "type": "Claim",
+   "label": {
+    "ko": "정확도 1위 RandomForest(0.5)는 착각률 17.22%로 평균 보상 0.5158이다",
+    "en": "RandomForest (0.5): accuracy 96.50%, confusion 17.22%, reward 0.5158"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/xgb-camera",
+   "type": "Claim",
+   "label": {
+    "ko": "카메라 대회(데이터 확대 후) XGBoost Balanced의 최종 정확도는 0.987이다",
+    "en": "Camera contest: XGBoost Balanced final accuracy 0.987"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/flip-test",
+   "type": "Claim",
+   "label": {
+    "ko": "RandomForest 0.45는 라벨 반전 시 정답률이 92.33%에서 7.67%로 떨어졌다",
+    "en": "Label flip: 92.33% -> 7.67% (RandomForest 0.45)"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:question/multi-label-design",
+   "type": "Question",
+   "label": {
+    "ko": "명령이 늘어날 때 중복 라벨 문제를 다중 라벨·계층 구조로 풀 수 있을까?",
+    "en": "Can multi-label or hierarchy fix duplicate labels as commands grow?"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/reinforcement-learning",
+   "p": "lab:broader",
+   "o": "lab:area/rl",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/reward",
+   "p": "lab:broader",
+   "o": "lab:topic/reward",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/policy",
+   "p": "lab:broader",
+   "o": "lab:area/rl",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/discounted-return",
+   "p": "lab:broader",
+   "o": "lab:topic/reward",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/reward",
+   "p": "lab:partOf",
+   "o": "lab:concept/reinforcement-learning",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/policy",
+   "p": "lab:partOf",
+   "o": "lab:concept/reinforcement-learning",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/discounted-return",
+   "p": "lab:partOf",
+   "o": "lab:concept/reinforcement-learning",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/concept-reward-table",
+   "p": "lab:broader",
+   "o": "lab:topic/reward",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/strict-trainer-reward",
+   "p": "lab:broader",
+   "o": "lab:topic/reward",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/strict-trainer-reward",
+   "p": "lab:partOf",
+   "o": "lab:concept/concept-reward-table",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/re-questioning",
+   "p": "lab:partOf",
+   "o": "lab:concept/concept-reward-table",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/average-reward-model-selection",
+   "p": "lab:broader",
+   "o": "lab:area/evaluation",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/intent-confusion-rate",
+   "p": "lab:broader",
+   "o": "lab:topic/accuracy-metrics",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/xgboost",
+   "p": "lab:broader",
+   "o": "lab:topic/boosting",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/logistic-regression",
+   "p": "lab:broader",
+   "o": "lab:topic/logistic-regression",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/intent-confusion-rate",
+   "p": "lab:partOf",
+   "o": "lab:concept/average-reward-model-selection",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/xgboost",
+   "p": "lab:partOf",
+   "o": "lab:concept/average-reward-model-selection",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/logistic-regression",
+   "p": "lab:partOf",
+   "o": "lab:concept/average-reward-model-selection",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/unstable-model-detection",
+   "p": "lab:partOf",
+   "o": "lab:concept/threshold-optimization",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/label-flip-test",
+   "p": "lab:broader",
+   "o": "lab:area/evaluation",
+   "anchor": "#s5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/multi-label",
+   "p": "lab:partOf",
+   "o": "lab:concept/label-flip-test",
+   "anchor": "#s5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/intent-hierarchy",
+   "p": "lab:partOf",
+   "o": "lab:concept/label-flip-test",
+   "anchor": "#s5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/reinforcement-learning",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/concept-reward-table",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/concept-reward-table",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/average-reward-model-selection",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/average-reward-model-selection",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/threshold-optimization",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/threshold-optimization",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/label-flip-test",
+   "anchor": "#s5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/reinforcement-learning",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch6_rl-p61",
+   "anchor": "#p61",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/concept-reward-table",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch6_rl-p62a",
+   "anchor": "#p62a",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/concept-reward-table",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch6_rl-p62b",
+   "anchor": "#p62b",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/average-reward-model-selection",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch6_rl-p63",
+   "anchor": "#p63",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/threshold-optimization",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch6_rl-p64",
+   "anchor": "#p64",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/label-flip-test",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch6_rl-p65",
+   "anchor": "#p65",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch6_rl-q61",
+   "p": "lab:assesses",
+   "o": "lab:concept/reinforcement-learning",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch6_rl-q62",
+   "p": "lab:assesses",
+   "o": "lab:concept/concept-reward-table",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch6_rl-q63",
+   "p": "lab:assesses",
+   "o": "lab:concept/average-reward-model-selection",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch6_rl-q64",
+   "p": "lab:assesses",
+   "o": "lab:concept/threshold-optimization",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch6_rl-q65",
+   "p": "lab:assesses",
+   "o": "lab:concept/label-flip-test",
+   "anchor": "#s5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/logistic-top-reward",
+   "p": "lab:supports",
+   "o": "lab:concept/average-reward-model-selection",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/logistic-top-reward",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/rf-top-accuracy",
+   "p": "lab:supports",
+   "o": "lab:concept/intent-confusion-rate",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/rf-top-accuracy",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/xgb-camera",
+   "p": "lab:supports",
+   "o": "lab:concept/xgboost",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/xgb-camera",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/flip-test",
+   "p": "lab:supports",
+   "o": "lab:concept/label-flip-test",
+   "anchor": "#s5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/flip-test",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/multi-label",
+   "p": "lab:raises",
+   "o": "lab:question/multi-label-design",
+   "anchor": "#s5",
+   "confidence": "high"
+  }
+ ]
+}

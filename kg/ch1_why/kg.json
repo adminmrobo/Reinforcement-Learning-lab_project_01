@@ -1,0 +1,589 @@
+{
+ "version": "1.0",
+ "page": "ch1_why",
+ "nodes": [
+  {
+   "id": "lab:concept/blind-execution",
+   "type": "Limitation",
+   "label": {
+    "ko": "맹목적 실행",
+    "en": "Blind execution"
+   },
+   "page": "ch1_why",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "기존 로봇의 위험 세 가지"
+   }
+  },
+  {
+   "id": "lab:concept/perception-uncertainty",
+   "type": "Limitation",
+   "label": {
+    "ko": "인식의 불확실성",
+    "en": "Perception uncertainty"
+   },
+   "page": "ch1_why",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "기존 로봇의 위험 세 가지"
+   }
+  },
+  {
+   "id": "lab:concept/no-reconfirmation",
+   "type": "Limitation",
+   "label": {
+    "ko": "재확인의 부재",
+    "en": "Absence of re-confirmation"
+   },
+   "page": "ch1_why",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "기존 로봇의 위험 세 가지"
+   }
+  },
+  {
+   "id": "lab:concept/intelligent-input-handling",
+   "type": "Method",
+   "label": {
+    "ko": "지능적 입력 처리",
+    "en": "Intelligent input handling"
+   },
+   "page": "ch1_why",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "하이브리드 지능 전략"
+   }
+  },
+  {
+   "id": "lab:concept/overcoming-physical-limits",
+   "type": "Method",
+   "label": {
+    "ko": "물리적 제약 극복",
+    "en": "Overcoming physical limits"
+   },
+   "page": "ch1_why",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "하이브리드 지능 전략"
+   }
+  },
+  {
+   "id": "lab:concept/safety-first-strategy",
+   "type": "Method",
+   "label": {
+    "ko": "안전 우선 전략",
+    "en": "Safety-first strategy"
+   },
+   "page": "ch1_why",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "하이브리드 지능 전략"
+   }
+  },
+  {
+   "id": "lab:concept/pi-car-x",
+   "type": "Concept",
+   "label": {
+    "ko": "Pi Car X",
+    "en": "Pi Car X robot"
+   },
+   "page": "ch1_why",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "Pi Car X와 소프트웨어 구조"
+   }
+  },
+  {
+   "id": "lab:concept/ocr",
+   "type": "Method",
+   "label": {
+    "ko": "OCR",
+    "en": "Optical character recognition"
+   },
+   "page": "ch1_why",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "Pi Car X와 소프트웨어 구조"
+   }
+  },
+  {
+   "id": "lab:concept/sbert",
+   "type": "Method",
+   "label": {
+    "ko": "SBERT",
+    "en": "Sentence-BERT"
+   },
+   "page": "ch1_why",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "Pi Car X와 소프트웨어 구조"
+   }
+  },
+  {
+   "id": "lab:concept/bayesian-network",
+   "type": "Method",
+   "label": {
+    "ko": "베이지안 네트워크",
+    "en": "Bayesian network"
+   },
+   "page": "ch1_why",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "Pi Car X와 소프트웨어 구조"
+   }
+  },
+  {
+   "id": "lab:concept/input-analysis-action-pipeline",
+   "type": "Concept",
+   "label": {
+    "ko": "입력·분석·실행 파이프라인",
+    "en": "Input-analysis-action pipeline"
+   },
+   "page": "ch1_why",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "3단계 처리 파이프라인"
+   }
+  },
+  {
+   "id": "lab:concept/re-questioning",
+   "type": "Concept",
+   "label": {
+    "ko": "재질문",
+    "en": "Re-questioning"
+   },
+   "page": "ch1_why",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "3단계 처리 파이프라인"
+   }
+  },
+  {
+   "id": "lab:sim/ch1_why-p11",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · 무조건 실행하는 로봇 vs 되묻는 로봇 설명용 모형",
+    "en": "Interactive panel p11"
+   },
+   "page": "ch1_why",
+   "anchor": "#p11",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch1_why-p13",
+   "type": "Simulation",
+   "label": {
+    "ko": "그림 · 데이터가 흐르는 길 (발표 자료 4쪽 구조)",
+    "en": "Interactive panel p13"
+   },
+   "page": "ch1_why",
+   "anchor": "#p13",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch1_why-p14",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · 명령 하나를 세 단계로 흘려 보기 설명용 모형",
+    "en": "Interactive panel p14"
+   },
+   "page": "ch1_why",
+   "anchor": "#p14",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch1_why-q11",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 1-1",
+    "en": "Check quiz q11"
+   },
+   "page": "ch1_why",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch1_why-q12",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 1-2",
+    "en": "Check quiz q12"
+   },
+   "page": "ch1_why",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch1_why-q13",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 1-3",
+    "en": "Check quiz q13"
+   },
+   "page": "ch1_why",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch1_why-q14",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 1-4",
+    "en": "Check quiz q14"
+   },
+   "page": "ch1_why",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:work/ahn2026langcon",
+   "type": "Work",
+   "label": {
+    "ko": "안상선 (2026) Langcon 2026 발표",
+    "en": "Ahn (2026) Langcon 2026 talk"
+   },
+   "page": "ch1_why",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:claim/pi-car-speed",
+   "type": "Claim",
+   "label": {
+    "ko": "Pi Car X는 초속 2cm로 정속 주행한다",
+    "en": "Pi Car X drives at a constant 2 cm/s"
+   },
+   "page": "ch1_why",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/perception-uncertainty",
+   "p": "lab:partOf",
+   "o": "lab:concept/blind-execution",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/no-reconfirmation",
+   "p": "lab:partOf",
+   "o": "lab:concept/blind-execution",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/overcoming-physical-limits",
+   "p": "lab:partOf",
+   "o": "lab:concept/intelligent-input-handling",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/safety-first-strategy",
+   "p": "lab:partOf",
+   "o": "lab:concept/intelligent-input-handling",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/ocr",
+   "p": "lab:broader",
+   "o": "lab:area/vision",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sbert",
+   "p": "lab:broader",
+   "o": "lab:topic/embedding-space",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/bayesian-network",
+   "p": "lab:broader",
+   "o": "lab:topic/probability-statistics",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/ocr",
+   "p": "lab:partOf",
+   "o": "lab:concept/pi-car-x",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sbert",
+   "p": "lab:partOf",
+   "o": "lab:concept/pi-car-x",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/bayesian-network",
+   "p": "lab:partOf",
+   "o": "lab:concept/pi-car-x",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/re-questioning",
+   "p": "lab:partOf",
+   "o": "lab:concept/input-analysis-action-pipeline",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/blind-execution",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/intelligent-input-handling",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/intelligent-input-handling",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/pi-car-x",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/pi-car-x",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/input-analysis-action-pipeline",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/blind-execution",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch1_why-p11",
+   "anchor": "#p11",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/pi-car-x",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch1_why-p13",
+   "anchor": "#p13",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/input-analysis-action-pipeline",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch1_why-p14",
+   "anchor": "#p14",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch1_why-q11",
+   "p": "lab:assesses",
+   "o": "lab:concept/blind-execution",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch1_why-q12",
+   "p": "lab:assesses",
+   "o": "lab:concept/intelligent-input-handling",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch1_why-q13",
+   "p": "lab:assesses",
+   "o": "lab:concept/pi-car-x",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch1_why-q14",
+   "p": "lab:assesses",
+   "o": "lab:concept/input-analysis-action-pipeline",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/pi-car-speed",
+   "p": "lab:supports",
+   "o": "lab:concept/pi-car-x",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/pi-car-speed",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s3",
+   "confidence": "high"
+  }
+ ]
+}

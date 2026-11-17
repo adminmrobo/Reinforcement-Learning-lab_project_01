@@ -1,0 +1,525 @@
+{
+ "version": "1.0",
+ "page": "ch8_appendix",
+ "nodes": [
+  {
+   "id": "lab:concept/inclusive-language-support",
+   "type": "Concept",
+   "label": {
+    "ko": "언어 약자 포용",
+    "en": "Inclusive support for language-vulnerable users"
+   },
+   "page": "ch8_appendix",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "사회적 의미와 8주 로드맵"
+   }
+  },
+  {
+   "id": "lab:concept/industrial-safety",
+   "type": "Concept",
+   "label": {
+    "ko": "산업 현장 안전",
+    "en": "Industrial site safety"
+   },
+   "page": "ch8_appendix",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "사회적 의미와 8주 로드맵"
+   }
+  },
+  {
+   "id": "lab:concept/development-roadmap",
+   "type": "Concept",
+   "label": {
+    "ko": "개발 로드맵",
+    "en": "Development roadmap"
+   },
+   "page": "ch8_appendix",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "사회적 의미와 8주 로드맵"
+   }
+  },
+  {
+   "id": "lab:concept/code-text-hybrid",
+   "type": "Concept",
+   "label": {
+    "ko": "하이브리드 엔진 코드",
+    "en": "text_hybrid_engine.py"
+   },
+   "page": "ch8_appendix",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "부록 코드 네 개"
+   }
+  },
+  {
+   "id": "lab:concept/code-vision-spoil",
+   "type": "Concept",
+   "label": {
+    "ko": "오염 합성 코드",
+    "en": "vision_spoil_engine.py"
+   },
+   "page": "ch8_appendix",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "부록 코드 네 개"
+   }
+  },
+  {
+   "id": "lab:concept/code-audio-waveform",
+   "type": "Concept",
+   "label": {
+    "ko": "파형 변환 코드",
+    "en": "audio_waveform_processor.py"
+   },
+   "page": "ch8_appendix",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "부록 코드 네 개"
+   }
+  },
+  {
+   "id": "lab:concept/code-simulation-rl",
+   "type": "Concept",
+   "label": {
+    "ko": "시뮬레이션 보상 코드",
+    "en": "simulation_rl.py"
+   },
+   "page": "ch8_appendix",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "부록 코드 네 개"
+   }
+  },
+  {
+   "id": "lab:concept/sbert",
+   "type": "Method",
+   "label": {
+    "ko": "SBERT",
+    "en": "Sentence-BERT"
+   },
+   "page": "ch8_appendix",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "오픈소스 스택과 재현성"
+   }
+  },
+  {
+   "id": "lab:concept/tensorflow-keras",
+   "type": "Concept",
+   "label": {
+    "ko": "TensorFlow/Keras",
+    "en": "TensorFlow / Keras"
+   },
+   "page": "ch8_appendix",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "오픈소스 스택과 재현성"
+   }
+  },
+  {
+   "id": "lab:concept/pygame",
+   "type": "Concept",
+   "label": {
+    "ko": "PyGame",
+    "en": "PyGame"
+   },
+   "page": "ch8_appendix",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "오픈소스 스택과 재현성"
+   }
+  },
+  {
+   "id": "lab:concept/google-cloud-vision",
+   "type": "Concept",
+   "label": {
+    "ko": "Google Cloud Vision",
+    "en": "Google Cloud Vision API"
+   },
+   "page": "ch8_appendix",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "오픈소스 스택과 재현성"
+   }
+  },
+  {
+   "id": "lab:concept/reproducibility-notice",
+   "type": "Concept",
+   "label": {
+    "ko": "재현성 고지",
+    "en": "Reproducibility notice"
+   },
+   "page": "ch8_appendix",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "오픈소스 스택과 재현성"
+   }
+  },
+  {
+   "id": "lab:sim/ch8_appendix-p81",
+   "type": "Simulation",
+   "label": {
+    "ko": "로드맵 · 8주 개발 과정 발표 28쪽",
+    "en": "Interactive panel p81"
+   },
+   "page": "ch8_appendix",
+   "anchor": "#p81",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch8_appendix-p83",
+   "type": "Simulation",
+   "label": {
+    "ko": "체크리스트 · 내 프로젝트에도 적용해 보기 설명용",
+    "en": "Interactive panel p83"
+   },
+   "page": "ch8_appendix",
+   "anchor": "#p83",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch8_appendix-q81",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 8-1",
+    "en": "Check quiz q81"
+   },
+   "page": "ch8_appendix",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch8_appendix-q82",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 8-2",
+    "en": "Check quiz q82"
+   },
+   "page": "ch8_appendix",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch8_appendix-q83",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 8-3",
+    "en": "Check quiz q83"
+   },
+   "page": "ch8_appendix",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:work/ahn2026langcon",
+   "type": "Work",
+   "label": {
+    "ko": "안상선 (2026) Langcon 2026 발표",
+    "en": "Ahn (2026) Langcon 2026 talk"
+   },
+   "page": "ch8_appendix",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:claim/roadmap-8w",
+   "type": "Claim",
+   "label": {
+    "ko": "개발은 8주(기반 2 · 강화학습 3 · 통합 2 · 시연 1)로 진행했다",
+    "en": "8-week development roadmap"
+   },
+   "page": "ch8_appendix",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/industrial-safety",
+   "p": "lab:partOf",
+   "o": "lab:concept/inclusive-language-support",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/development-roadmap",
+   "p": "lab:partOf",
+   "o": "lab:concept/inclusive-language-support",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/code-vision-spoil",
+   "p": "lab:partOf",
+   "o": "lab:concept/code-text-hybrid",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/code-audio-waveform",
+   "p": "lab:partOf",
+   "o": "lab:concept/code-text-hybrid",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/code-simulation-rl",
+   "p": "lab:partOf",
+   "o": "lab:concept/code-text-hybrid",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sbert",
+   "p": "lab:broader",
+   "o": "lab:topic/embedding-space",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/tensorflow-keras",
+   "p": "lab:partOf",
+   "o": "lab:concept/sbert",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/pygame",
+   "p": "lab:partOf",
+   "o": "lab:concept/sbert",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/google-cloud-vision",
+   "p": "lab:partOf",
+   "o": "lab:concept/sbert",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/reproducibility-notice",
+   "p": "lab:partOf",
+   "o": "lab:concept/sbert",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/inclusive-language-support",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/code-text-hybrid",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/code-text-hybrid",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sbert",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/inclusive-language-support",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch8_appendix-p81",
+   "anchor": "#p81",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sbert",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch8_appendix-p83",
+   "anchor": "#p83",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch8_appendix-q81",
+   "p": "lab:assesses",
+   "o": "lab:concept/inclusive-language-support",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch8_appendix-q82",
+   "p": "lab:assesses",
+   "o": "lab:concept/code-text-hybrid",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch8_appendix-q83",
+   "p": "lab:assesses",
+   "o": "lab:concept/sbert",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/roadmap-8w",
+   "p": "lab:supports",
+   "o": "lab:concept/development-roadmap",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/roadmap-8w",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s1",
+   "confidence": "high"
+  }
+ ]
+}

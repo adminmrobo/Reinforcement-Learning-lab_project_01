@@ -1,0 +1,173 @@
+{
+ "version": "1.0",
+ "page": "index",
+ "nodes": [
+  {
+   "id": "lab:concept/humble-robot",
+   "type": "Concept",
+   "label": {
+    "ko": "겸손한 로봇",
+    "en": "Humble robot"
+   },
+   "page": "index",
+   "anchor": "#toc",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "시리즈 목차"
+   }
+  },
+  {
+   "id": "lab:concept/incomplete-command",
+   "type": "Concept",
+   "label": {
+    "ko": "불완전한 명령",
+    "en": "Incomplete command"
+   },
+   "page": "index",
+   "anchor": "#toc",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "시리즈 목차"
+   }
+  },
+  {
+   "id": "lab:concept/re-questioning",
+   "type": "Concept",
+   "label": {
+    "ko": "재질문",
+    "en": "Re-questioning"
+   },
+   "page": "index",
+   "anchor": "#toc",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "시리즈 목차"
+   }
+  },
+  {
+   "id": "lab:concept/multimodal",
+   "type": "Concept",
+   "label": {
+    "ko": "멀티 모달",
+    "en": "Multimodal"
+   },
+   "page": "index",
+   "anchor": "#toc",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "시리즈 목차"
+   }
+  },
+  {
+   "id": "lab:concept/rl-reward",
+   "type": "Concept",
+   "label": {
+    "ko": "강화학습 보상",
+    "en": "RL reward"
+   },
+   "page": "index",
+   "anchor": "#toc",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "시리즈 목차"
+   }
+  },
+  {
+   "id": "lab:work/ahn2026langcon",
+   "type": "Work",
+   "label": {
+    "ko": "안상선 (2026) Langcon 2026 발표",
+    "en": "Ahn (2026) Langcon 2026 talk"
+   },
+   "page": "index",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/rl-reward",
+   "p": "lab:broader",
+   "o": "lab:topic/reward",
+   "anchor": "#toc",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/incomplete-command",
+   "p": "lab:partOf",
+   "o": "lab:concept/humble-robot",
+   "anchor": "#toc",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/re-questioning",
+   "p": "lab:partOf",
+   "o": "lab:concept/humble-robot",
+   "anchor": "#toc",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/multimodal",
+   "p": "lab:partOf",
+   "o": "lab:concept/humble-robot",
+   "anchor": "#toc",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/rl-reward",
+   "p": "lab:partOf",
+   "o": "lab:concept/humble-robot",
+   "anchor": "#toc",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/humble-robot",
+   "p": "lab:explainedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#toc",
+   "confidence": "high"
+  }
+ ]
+}

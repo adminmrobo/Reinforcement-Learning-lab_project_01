@@ -1,0 +1,40 @@
+{
+ "title": "제4장 · 과정 03 카메라 지능",
+ "number": "4",
+ "series": "겸손한 로봇 연구실 (잘 못 알아들으면 되묻는 로봇)",
+ "about": [
+  "lab:concept/sensor-contamination-simulation",
+  "lab:concept/mixed-training",
+  "lab:concept/bayesian-inference"
+ ],
+ "basedOn": [
+  "ahn2026langcon"
+ ],
+ "educationalLevel": "입문",
+ "creator": [
+  {
+   "name": "안상선",
+   "role": "author"
+  }
+ ],
+ "contributor": [
+  {
+   "name": "AI 보조 제작",
+   "role": "assistant"
+  }
+ ],
+ "date": "2026-11-18",
+ "version": "1.0",
+ "language": [
+  "ko"
+ ],
+ "license": "",
+ "url": "https://adminmrobo.github.io/humble_robot_lab/ch4_camera.html",
+ "registry": "KG_00_registry 0.2",
+ "learningResourceType": "interactive explainer",
+ "seeAlso": "",
+ "domain": [
+  "ai"
+ ],
+ "suggestedCitation": "안상선 (2026). 과정 03 · 카메라 지능. 겸손한 로봇 연구실 (잘 못 알아들으면 되묻는 로봇) 4, v1.0."
+}

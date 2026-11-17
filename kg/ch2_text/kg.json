@@ -1,0 +1,781 @@
+{
+ "version": "1.0",
+ "page": "ch2_text",
+ "nodes": [
+  {
+   "id": "lab:concept/binary-label",
+   "type": "Concept",
+   "label": {
+    "ko": "라벨 0·1",
+    "en": "Binary label 0/1"
+   },
+   "page": "ch2_text",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "정답·유의어·오타·혼동 데이터 만들기"
+   }
+  },
+  {
+   "id": "lab:concept/synonym-typo-data",
+   "type": "Dataset",
+   "label": {
+    "ko": "유의어·오타 데이터",
+    "en": "Synonym and typo data"
+   },
+   "page": "ch2_text",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "정답·유의어·오타·혼동 데이터 만들기"
+   }
+  },
+  {
+   "id": "lab:concept/confusable-data",
+   "type": "Dataset",
+   "label": {
+    "ko": "혼동(함정) 데이터",
+    "en": "Confusable (trap) data"
+   },
+   "page": "ch2_text",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "정답·유의어·오타·혼동 데이터 만들기"
+   }
+  },
+  {
+   "id": "lab:concept/human-in-the-loop-relabeling",
+   "type": "Method",
+   "label": {
+    "ko": "Human-in-the-loop 라벨 교정",
+    "en": "Human-in-the-loop relabeling"
+   },
+   "page": "ch2_text",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "정답·유의어·오타·혼동 데이터 만들기"
+   }
+  },
+  {
+   "id": "lab:concept/few-shot-data-generation",
+   "type": "Method",
+   "label": {
+    "ko": "퓨샷 데이터 생성",
+    "en": "Few-shot data generation"
+   },
+   "page": "ch2_text",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "정답·유의어·오타·혼동 데이터 만들기"
+   }
+  },
+  {
+   "id": "lab:concept/sbert",
+   "type": "Method",
+   "label": {
+    "ko": "SBERT",
+    "en": "Sentence-BERT"
+   },
+   "page": "ch2_text",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "SBERT 의미 거리와 임계값"
+   }
+  },
+  {
+   "id": "lab:concept/cosine-similarity",
+   "type": "Concept",
+   "label": {
+    "ko": "코사인 유사도",
+    "en": "Cosine similarity"
+   },
+   "page": "ch2_text",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "SBERT 의미 거리와 임계값"
+   }
+  },
+  {
+   "id": "lab:concept/threshold-040",
+   "type": "Concept",
+   "label": {
+    "ko": "임계값 0.40",
+    "en": "Decision threshold 0.40"
+   },
+   "page": "ch2_text",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "SBERT 의미 거리와 임계값"
+   }
+  },
+  {
+   "id": "lab:concept/full-dictionary",
+   "type": "Method",
+   "label": {
+    "ko": "단어 사전",
+    "en": "Full dictionary lookup"
+   },
+   "page": "ch2_text",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "사전과 AI의 하이브리드 판정"
+   }
+  },
+  {
+   "id": "lab:concept/logistic-regression",
+   "type": "Method",
+   "label": {
+    "ko": "로지스틱 회귀",
+    "en": "Logistic regression"
+   },
+   "page": "ch2_text",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "사전과 AI의 하이브리드 판정"
+   }
+  },
+  {
+   "id": "lab:concept/hybrid-decision",
+   "type": "Method",
+   "label": {
+    "ko": "하이브리드 판정",
+    "en": "Hybrid dictionary + AI decision"
+   },
+   "page": "ch2_text",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "사전과 AI의 하이브리드 판정"
+   }
+  },
+  {
+   "id": "lab:concept/imbalanced-data",
+   "type": "Limitation",
+   "label": {
+    "ko": "불균형 데이터",
+    "en": "Imbalanced data"
+   },
+   "page": "ch2_text",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "정확도 99%의 허상과 배신도"
+   }
+  },
+  {
+   "id": "lab:concept/balanced-accuracy",
+   "type": "Metric",
+   "label": {
+    "ko": "균형 정확도",
+    "en": "Balanced accuracy"
+   },
+   "page": "ch2_text",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "정확도 99%의 허상과 배신도"
+   }
+  },
+  {
+   "id": "lab:concept/betrayal-gap",
+   "type": "Metric",
+   "label": {
+    "ko": "배신도",
+    "en": "Betrayal gap (accuracy minus balanced accuracy)"
+   },
+   "page": "ch2_text",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "정확도 99%의 허상과 배신도"
+   }
+  },
+  {
+   "id": "lab:sim/ch2_text-p21",
+   "type": "Simulation",
+   "label": {
+    "ko": "데이터 카드 분류해 보기 발표 자료의 예시 문장",
+    "en": "Interactive panel p21"
+   },
+   "page": "ch2_text",
+   "anchor": "#p21",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch2_text-p22",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · 임계값을 바꾸면 \"실행\"과 \"불확실\"의 경계가 움직입니다 설명용 모형",
+    "en": "Interactive panel p22"
+   },
+   "page": "ch2_text",
+   "anchor": "#p22",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch2_text-p23",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · 하이브리드 판정기에 직접 명령 넣어 보기 설명용 모형",
+    "en": "Interactive panel p23"
+   },
+   "page": "ch2_text",
+   "anchor": "#p23",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch2_text-p24",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · 정답 비율을 바꾸면 배신도가 어떻게 변할까 기준점은 발표 자료 값",
+    "en": "Interactive panel p24"
+   },
+   "page": "ch2_text",
+   "anchor": "#p24",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch2_text-q21",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 2-1",
+    "en": "Check quiz q21"
+   },
+   "page": "ch2_text",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch2_text-q22",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 2-2",
+    "en": "Check quiz q22"
+   },
+   "page": "ch2_text",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch2_text-q23",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 2-3",
+    "en": "Check quiz q23"
+   },
+   "page": "ch2_text",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch2_text-q24",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 2-4",
+    "en": "Check quiz q24"
+   },
+   "page": "ch2_text",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:work/ahn2026langcon",
+   "type": "Work",
+   "label": {
+    "ko": "안상선 (2026) Langcon 2026 발표",
+    "en": "Ahn (2026) Langcon 2026 talk"
+   },
+   "page": "ch2_text",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:claim/forward-imbalance",
+   "type": "Claim",
+   "label": {
+    "ko": "\"앞으로 가\" 데이터 1,725건 중 정답 비율은 4.6%, 배신도는 45.4p다",
+    "en": "\"Go forward\" data: 4.6% positive of 1,725; betrayal gap 45.4p"
+   },
+   "page": "ch2_text",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/stop-gap",
+   "type": "Claim",
+   "label": {
+    "ko": "\"멈춰\" 데이터 1,598건 중 정답 비율은 44.3%, 배신도는 5.7p다",
+    "en": "\"Stop\" data: 44.3% positive of 1,598; gap 5.7p"
+   },
+   "page": "ch2_text",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/threshold-chosen",
+   "type": "Claim",
+   "label": {
+    "ko": "AI 추론 확률 0.40 이상일 때만 실행한다",
+    "en": "Execute only when AI probability >= 0.40"
+   },
+   "page": "ch2_text",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/synonym-typo-data",
+   "p": "lab:broader",
+   "o": "lab:topic/data-augmentation",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/few-shot-data-generation",
+   "p": "lab:broader",
+   "o": "lab:topic/data-augmentation",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/synonym-typo-data",
+   "p": "lab:partOf",
+   "o": "lab:concept/binary-label",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/confusable-data",
+   "p": "lab:partOf",
+   "o": "lab:concept/binary-label",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/human-in-the-loop-relabeling",
+   "p": "lab:partOf",
+   "o": "lab:concept/binary-label",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/few-shot-data-generation",
+   "p": "lab:partOf",
+   "o": "lab:concept/binary-label",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sbert",
+   "p": "lab:broader",
+   "o": "lab:topic/embedding-space",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/cosine-similarity",
+   "p": "lab:broader",
+   "o": "lab:topic/embedding-space",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/cosine-similarity",
+   "p": "lab:partOf",
+   "o": "lab:concept/sbert",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/threshold-040",
+   "p": "lab:partOf",
+   "o": "lab:concept/sbert",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/logistic-regression",
+   "p": "lab:broader",
+   "o": "lab:topic/logistic-regression",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/logistic-regression",
+   "p": "lab:partOf",
+   "o": "lab:concept/full-dictionary",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/hybrid-decision",
+   "p": "lab:partOf",
+   "o": "lab:concept/full-dictionary",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/imbalanced-data",
+   "p": "lab:broader",
+   "o": "lab:area/evaluation",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/balanced-accuracy",
+   "p": "lab:broader",
+   "o": "lab:topic/accuracy-metrics",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/betrayal-gap",
+   "p": "lab:broader",
+   "o": "lab:topic/accuracy-metrics",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/balanced-accuracy",
+   "p": "lab:partOf",
+   "o": "lab:concept/imbalanced-data",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/betrayal-gap",
+   "p": "lab:partOf",
+   "o": "lab:concept/imbalanced-data",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/binary-label",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/sbert",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sbert",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/full-dictionary",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/full-dictionary",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/imbalanced-data",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/binary-label",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch2_text-p21",
+   "anchor": "#p21",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sbert",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch2_text-p22",
+   "anchor": "#p22",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/full-dictionary",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch2_text-p23",
+   "anchor": "#p23",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/imbalanced-data",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch2_text-p24",
+   "anchor": "#p24",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch2_text-q21",
+   "p": "lab:assesses",
+   "o": "lab:concept/binary-label",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch2_text-q22",
+   "p": "lab:assesses",
+   "o": "lab:concept/sbert",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch2_text-q23",
+   "p": "lab:assesses",
+   "o": "lab:concept/full-dictionary",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch2_text-q24",
+   "p": "lab:assesses",
+   "o": "lab:concept/imbalanced-data",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/forward-imbalance",
+   "p": "lab:supports",
+   "o": "lab:concept/betrayal-gap",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/forward-imbalance",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/stop-gap",
+   "p": "lab:supports",
+   "o": "lab:concept/balanced-accuracy",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/stop-gap",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/threshold-chosen",
+   "p": "lab:supports",
+   "o": "lab:concept/threshold-040",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/threshold-chosen",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s2",
+   "confidence": "high"
+  }
+ ]
+}

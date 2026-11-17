@@ -1,0 +1,614 @@
+{
+ "version": "1.0",
+ "page": "ch5_voice",
+ "nodes": [
+  {
+   "id": "lab:concept/waveform",
+   "type": "Concept",
+   "label": {
+    "ko": "파형",
+    "en": "Waveform"
+   },
+   "page": "ch5_voice",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "소리를 보는 법: 파형과 스펙트로그램"
+   }
+  },
+  {
+   "id": "lab:concept/spectrogram",
+   "type": "Concept",
+   "label": {
+    "ko": "스펙트로그램",
+    "en": "Spectrogram"
+   },
+   "page": "ch5_voice",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "소리를 보는 법: 파형과 스펙트로그램"
+   }
+  },
+  {
+   "id": "lab:concept/mel-spectrogram",
+   "type": "Method",
+   "label": {
+    "ko": "멜 스펙트로그램",
+    "en": "Mel spectrogram"
+   },
+   "page": "ch5_voice",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "소리를 보는 법: 파형과 스펙트로그램"
+   }
+  },
+  {
+   "id": "lab:concept/speech-augmentation",
+   "type": "Method",
+   "label": {
+    "ko": "음성 증강",
+    "en": "Speech augmentation"
+   },
+   "page": "ch5_voice",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "음성 데이터셋 1~3번"
+   }
+  },
+  {
+   "id": "lab:concept/snr",
+   "type": "Metric",
+   "label": {
+    "ko": "SNR",
+    "en": "Signal-to-noise ratio"
+   },
+   "page": "ch5_voice",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "음성 데이터셋 1~3번"
+   }
+  },
+  {
+   "id": "lab:concept/real-voice-conversion",
+   "type": "Method",
+   "label": {
+    "ko": "실제 음성 변환",
+    "en": "Real voice conversion"
+   },
+   "page": "ch5_voice",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "음성 데이터셋 1~3번"
+   }
+  },
+  {
+   "id": "lab:concept/confusion-matrix",
+   "type": "Metric",
+   "label": {
+    "ko": "혼동행렬",
+    "en": "Confusion matrix"
+   },
+   "page": "ch5_voice",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "음성 분류 모델 성적표"
+   }
+  },
+  {
+   "id": "lab:concept/speech-classification",
+   "type": "Task",
+   "label": {
+    "ko": "음성 분류",
+    "en": "Speech command classification"
+   },
+   "page": "ch5_voice",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "음성 분류 모델 성적표"
+   }
+  },
+  {
+   "id": "lab:concept/multimodal-fusion",
+   "type": "Method",
+   "label": {
+    "ko": "멀티 모달 융합",
+    "en": "Multimodal fusion"
+   },
+   "page": "ch5_voice",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "세 감각 합치기와 남은 일"
+   }
+  },
+  {
+   "id": "lab:concept/speech-rl-planned",
+   "type": "Question",
+   "label": {
+    "ko": "음성 강화학습(예정)",
+    "en": "Speech RL (planned)"
+   },
+   "page": "ch5_voice",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "세 감각 합치기와 남은 일"
+   }
+  },
+  {
+   "id": "lab:sim/ch5_voice-p51",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · 실제 음성 데이터를 듣고 그림으로 보기 데이터 예시 폴더의 실제 소리",
+    "en": "Interactive panel p51"
+   },
+   "page": "ch5_voice",
+   "anchor": "#p51",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch5_voice-p52",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · 같은 목소리에 잡음 레벨을 바꿔 들어 보기 설명용 재현",
+    "en": "Interactive panel p52"
+   },
+   "page": "ch5_voice",
+   "anchor": "#p52",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch5_voice-p53",
+   "type": "Simulation",
+   "label": {
+    "ko": "혼동행렬 · 음성 분류 시험 결과 발표 자료 값",
+    "en": "Interactive panel p53"
+   },
+   "page": "ch5_voice",
+   "anchor": "#p53",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch5_voice-p54",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · 세 감각을 합치면 확신이 어떻게 변할까 설명용 모형",
+    "en": "Interactive panel p54"
+   },
+   "page": "ch5_voice",
+   "anchor": "#p54",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch5_voice-q51",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 5-1",
+    "en": "Check quiz q51"
+   },
+   "page": "ch5_voice",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch5_voice-q52",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 5-2",
+    "en": "Check quiz q52"
+   },
+   "page": "ch5_voice",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch5_voice-q53",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 5-3",
+    "en": "Check quiz q53"
+   },
+   "page": "ch5_voice",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch5_voice-q54",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 5-4",
+    "en": "Check quiz q54"
+   },
+   "page": "ch5_voice",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:work/ahn2026langcon",
+   "type": "Work",
+   "label": {
+    "ko": "안상선 (2026) Langcon 2026 발표",
+    "en": "Ahn (2026) Langcon 2026 talk"
+   },
+   "page": "ch5_voice",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:claim/speech-acc-48",
+   "type": "Claim",
+   "label": {
+    "ko": "음성 분류 시험 1,018개의 정확도는 48.0%다",
+    "en": "Speech classification accuracy 48.0% on 1,018 samples"
+   },
+   "page": "ch5_voice",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/speech-9000",
+   "type": "Claim",
+   "label": {
+    "ko": "음성 데이터는 9,000개(go 4,500 · stop 4,500)다",
+    "en": "9,000 speech samples (4,500 go / 4,500 stop)"
+   },
+   "page": "ch5_voice",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:question/speech-rl",
+   "type": "Question",
+   "label": {
+    "ko": "음성 모델로 강화학습 대회를 열면 성적이 오를까? (발표: 예정)",
+    "en": "Will an RL contest improve the speech model? (planned)"
+   },
+   "page": "ch5_voice",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/spectrogram",
+   "p": "lab:partOf",
+   "o": "lab:concept/waveform",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/mel-spectrogram",
+   "p": "lab:partOf",
+   "o": "lab:concept/waveform",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/speech-augmentation",
+   "p": "lab:broader",
+   "o": "lab:topic/data-augmentation",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/snr",
+   "p": "lab:partOf",
+   "o": "lab:concept/speech-augmentation",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/real-voice-conversion",
+   "p": "lab:partOf",
+   "o": "lab:concept/speech-augmentation",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/confusion-matrix",
+   "p": "lab:broader",
+   "o": "lab:topic/confusion-matrix",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/speech-classification",
+   "p": "lab:partOf",
+   "o": "lab:concept/confusion-matrix",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/speech-rl-planned",
+   "p": "lab:partOf",
+   "o": "lab:concept/multimodal-fusion",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/waveform",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/speech-augmentation",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/speech-augmentation",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/confusion-matrix",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/confusion-matrix",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/multimodal-fusion",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/waveform",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch5_voice-p51",
+   "anchor": "#p51",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/speech-augmentation",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch5_voice-p52",
+   "anchor": "#p52",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/confusion-matrix",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch5_voice-p53",
+   "anchor": "#p53",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/multimodal-fusion",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch5_voice-p54",
+   "anchor": "#p54",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch5_voice-q51",
+   "p": "lab:assesses",
+   "o": "lab:concept/waveform",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch5_voice-q52",
+   "p": "lab:assesses",
+   "o": "lab:concept/speech-augmentation",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch5_voice-q53",
+   "p": "lab:assesses",
+   "o": "lab:concept/confusion-matrix",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch5_voice-q54",
+   "p": "lab:assesses",
+   "o": "lab:concept/multimodal-fusion",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/speech-acc-48",
+   "p": "lab:supports",
+   "o": "lab:concept/confusion-matrix",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/speech-acc-48",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/speech-9000",
+   "p": "lab:supports",
+   "o": "lab:concept/speech-augmentation",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/speech-9000",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/speech-rl-planned",
+   "p": "lab:raises",
+   "o": "lab:question/speech-rl",
+   "anchor": "#s4",
+   "confidence": "high"
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "title": "제1장 · 왜 겸손한 로봇인가",
+ "number": "1",
+ "series": "겸손한 로봇 연구실 (잘 못 알아들으면 되묻는 로봇)",
+ "about": [
+  "lab:concept/blind-execution",
+  "lab:concept/intelligent-input-handling",
+  "lab:concept/pi-car-x",
+  "lab:concept/input-analysis-action-pipeline"
+ ],
+ "basedOn": [
+  "ahn2026langcon"
+ ],
+ "educationalLevel": "입문",
+ "creator": [
+  {
+   "name": "안상선",
+   "role": "author"
+  }
+ ],
+ "contributor": [
+  {
+   "name": "AI 보조 제작",
+   "role": "assistant"
+  }
+ ],
+ "date": "2026-11-18",
+ "version": "1.0",
+ "language": [
+  "ko"
+ ],
+ "license": "",
+ "url": "https://adminmrobo.github.io/humble_robot_lab/ch1_why.html",
+ "registry": "KG_00_registry 0.2",
+ "learningResourceType": "interactive explainer",
+ "seeAlso": "",
+ "domain": [
+  "ai"
+ ],
+ "suggestedCitation": "안상선 (2026). 왜 겸손한 로봇인가. 겸손한 로봇 연구실 (잘 못 알아들으면 되묻는 로봇) 1, v1.0."
+}

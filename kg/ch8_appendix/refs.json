@@ -1,0 +1,43 @@
+[
+ {
+  "id": "ahn2026langcon",
+  "type": "speech",
+  "title": "불완전한 명령 보완을 위한 강화학습 모델링 적용 방안",
+  "author": [
+   {
+    "family": "안",
+    "given": "상선"
+   }
+  ],
+  "issued": {
+   "date-parts": [
+    [
+     2026,
+     2,
+     28
+    ]
+   ]
+  },
+  "event": "Langcon 2026",
+  "publisher": "(주)M-Robo",
+  "genre": "발표 자료 (93쪽)",
+  "lab": {
+   "work": "lab:work/ahn2026langcon",
+   "role": "primary",
+   "supports": [
+    "lab:claim/roadmap-8w"
+   ],
+   "locs": [],
+   "verified": {
+    "title": true,
+    "author": true,
+    "year": true,
+    "container": true,
+    "pages": false,
+    "doi": false
+   },
+   "checkedBy": "저자가 준 발표 PDF에서 옮김",
+   "checkedSource": "author"
+  }
+ }
+]

@@ -1,0 +1,463 @@
+{
+ "version": "1.0",
+ "page": "ch3_image",
+ "nodes": [
+  {
+   "id": "lab:concept/text-to-image",
+   "type": "Method",
+   "label": {
+    "ko": "텍스트 이미지화",
+    "en": "Text-to-image rendering"
+   },
+   "page": "ch3_image",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "글자를 64×128 흑백 그림으로"
+   }
+  },
+  {
+   "id": "lab:concept/pixel-normalization",
+   "type": "Method",
+   "label": {
+    "ko": "픽셀 정규화",
+    "en": "Pixel normalization"
+   },
+   "page": "ch3_image",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "글자를 64×128 흑백 그림으로"
+   }
+  },
+  {
+   "id": "lab:concept/font-augmentation",
+   "type": "Method",
+   "label": {
+    "ko": "폰트 데이터 증강",
+    "en": "Font data augmentation"
+   },
+   "page": "ch3_image",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "폰트 데이터셋 만들기"
+   }
+  },
+  {
+   "id": "lab:concept/font-diversity",
+   "type": "Concept",
+   "label": {
+    "ko": "글꼴 다양성",
+    "en": "Font diversity"
+   },
+   "page": "ch3_image",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "폰트 데이터셋 만들기"
+   }
+  },
+  {
+   "id": "lab:concept/mlp",
+   "type": "Method",
+   "label": {
+    "ko": "MLP",
+    "en": "Multi-layer perceptron"
+   },
+   "page": "ch3_image",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "분류 모델과 성적표"
+   }
+  },
+  {
+   "id": "lab:concept/logistic-regression",
+   "type": "Method",
+   "label": {
+    "ko": "로지스틱 회귀",
+    "en": "Logistic regression"
+   },
+   "page": "ch3_image",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "분류 모델과 성적표"
+   }
+  },
+  {
+   "id": "lab:concept/test-coverage",
+   "type": "Limitation",
+   "label": {
+    "ko": "시험 범위",
+    "en": "Test coverage"
+   },
+   "page": "ch3_image",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "분류 모델과 성적표"
+   }
+  },
+  {
+   "id": "lab:sim/ch3_image-p31",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · 글자를 64×128 그림으로 바꿔 보기 설명용 재현",
+    "en": "Interactive panel p31"
+   },
+   "page": "ch3_image",
+   "anchor": "#p31",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch3_image-p32",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · 데이터 생성기 돌려 보기 설명용 재현",
+    "en": "Interactive panel p32"
+   },
+   "page": "ch3_image",
+   "anchor": "#p32",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch3_image-p33",
+   "type": "Simulation",
+   "label": {
+    "ko": "성적표 읽기 · 발표의 시험 결과 발표 자료 값",
+    "en": "Interactive panel p33"
+   },
+   "page": "ch3_image",
+   "anchor": "#p33",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch3_image-q31",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 3-1",
+    "en": "Check quiz q31"
+   },
+   "page": "ch3_image",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch3_image-q32",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 3-2",
+    "en": "Check quiz q32"
+   },
+   "page": "ch3_image",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch3_image-q33",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 3-3",
+    "en": "Check quiz q33"
+   },
+   "page": "ch3_image",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:work/ahn2026langcon",
+   "type": "Work",
+   "label": {
+    "ko": "안상선 (2026) Langcon 2026 발표",
+    "en": "Ahn (2026) Langcon 2026 talk"
+   },
+   "page": "ch3_image",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:claim/font-test-100",
+   "type": "Claim",
+   "label": {
+    "ko": "일반 폰트 시험 200개를 모두 맞혔고, 변형 폰트 시험은 0개였다",
+    "en": "200/200 on regular fonts; 0 variant-font tests"
+   },
+   "page": "ch3_image",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:question/variant-font",
+   "type": "Question",
+   "label": {
+    "ko": "처음 보는 변형 폰트에서도 100%가 유지될까? (시험 0/0)",
+    "en": "Will accuracy hold on unseen variant fonts? (0/0 tested)"
+   },
+   "page": "ch3_image",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/text-to-image",
+   "p": "lab:broader",
+   "o": "lab:area/vision",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/pixel-normalization",
+   "p": "lab:partOf",
+   "o": "lab:concept/text-to-image",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/font-augmentation",
+   "p": "lab:broader",
+   "o": "lab:topic/data-augmentation",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/font-diversity",
+   "p": "lab:partOf",
+   "o": "lab:concept/font-augmentation",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/mlp",
+   "p": "lab:broader",
+   "o": "lab:topic/mlp",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/logistic-regression",
+   "p": "lab:broader",
+   "o": "lab:topic/logistic-regression",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/test-coverage",
+   "p": "lab:broader",
+   "o": "lab:area/evaluation",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/logistic-regression",
+   "p": "lab:partOf",
+   "o": "lab:concept/mlp",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/test-coverage",
+   "p": "lab:partOf",
+   "o": "lab:concept/mlp",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/text-to-image",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/font-augmentation",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/font-augmentation",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/mlp",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/text-to-image",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch3_image-p31",
+   "anchor": "#p31",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/font-augmentation",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch3_image-p32",
+   "anchor": "#p32",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/mlp",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch3_image-p33",
+   "anchor": "#p33",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch3_image-q31",
+   "p": "lab:assesses",
+   "o": "lab:concept/text-to-image",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch3_image-q32",
+   "p": "lab:assesses",
+   "o": "lab:concept/font-augmentation",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch3_image-q33",
+   "p": "lab:assesses",
+   "o": "lab:concept/mlp",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/font-test-100",
+   "p": "lab:supports",
+   "o": "lab:concept/test-coverage",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/font-test-100",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/test-coverage",
+   "p": "lab:raises",
+   "o": "lab:question/variant-font",
+   "anchor": "#s3",
+   "confidence": "high"
+  }
+ ]
+}

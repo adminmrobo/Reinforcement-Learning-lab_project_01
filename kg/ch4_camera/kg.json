@@ -1,0 +1,577 @@
+{
+ "version": "1.0",
+ "page": "ch4_camera",
+ "nodes": [
+  {
+   "id": "lab:concept/sensor-contamination-simulation",
+   "type": "Method",
+   "label": {
+    "ko": "센서 오염 시뮬레이션",
+    "en": "Sensor contamination simulation"
+   },
+   "page": "ch4_camera",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "약한 오염과 심한 오염 데이터"
+   }
+  },
+  {
+   "id": "lab:concept/contamination-level",
+   "type": "Concept",
+   "label": {
+    "ko": "오염 레벨",
+    "en": "Contamination level"
+   },
+   "page": "ch4_camera",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "약한 오염과 심한 오염 데이터"
+   }
+  },
+  {
+   "id": "lab:concept/mixed-training",
+   "type": "Method",
+   "label": {
+    "ko": "혼합 학습",
+    "en": "Mixed clean/spoiled training"
+   },
+   "page": "ch4_camera",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "혼합 학습과 성능 하락 곡선"
+   }
+  },
+  {
+   "id": "lab:concept/cnn-skeleton-features",
+   "type": "Method",
+   "label": {
+    "ko": "CNN 골격 특징",
+    "en": "CNN skeleton features"
+   },
+   "page": "ch4_camera",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "혼합 학습과 성능 하락 곡선"
+   }
+  },
+  {
+   "id": "lab:concept/expected-field-accuracy",
+   "type": "Metric",
+   "label": {
+    "ko": "예상 실전 정확도",
+    "en": "Expected field accuracy"
+   },
+   "page": "ch4_camera",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "혼합 학습과 성능 하락 곡선"
+   }
+  },
+  {
+   "id": "lab:concept/bayesian-inference",
+   "type": "Method",
+   "label": {
+    "ko": "베이지안 추론",
+    "en": "Bayesian inference"
+   },
+   "page": "ch4_camera",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "베이지안 사후확률과 행동 정책"
+   }
+  },
+  {
+   "id": "lab:concept/posterior-probability",
+   "type": "Concept",
+   "label": {
+    "ko": "사후확률",
+    "en": "Posterior probability"
+   },
+   "page": "ch4_camera",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "베이지안 사후확률과 행동 정책"
+   }
+  },
+  {
+   "id": "lab:concept/confidence-band-policy",
+   "type": "Method",
+   "label": {
+    "ko": "신뢰도 구간 정책",
+    "en": "Confidence-band action policy"
+   },
+   "page": "ch4_camera",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "베이지안 사후확률과 행동 정책"
+   }
+  },
+  {
+   "id": "lab:concept/active-sensing",
+   "type": "Method",
+   "label": {
+    "ko": "Active Sensing",
+    "en": "Active sensing"
+   },
+   "page": "ch4_camera",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "베이지안 사후확률과 행동 정책"
+   }
+  },
+  {
+   "id": "lab:sim/ch4_camera-p41",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · 깨끗한 그림을 직접 더럽혀 보기 설명용 재현",
+    "en": "Interactive panel p41"
+   },
+   "page": "ch4_camera",
+   "anchor": "#p41",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch4_camera-p42",
+   "type": "Simulation",
+   "label": {
+    "ko": "그래프 · 오염 레벨별 정확도 발표 그래프에서 읽은 근삿값",
+    "en": "Interactive panel p42"
+   },
+   "page": "ch4_camera",
+   "anchor": "#p42",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch4_camera-p43",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · 베이지안 판정기 예시값",
+    "en": "Interactive panel p43"
+   },
+   "page": "ch4_camera",
+   "anchor": "#p43",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch4_camera-q41",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 4-1",
+    "en": "Check quiz q41"
+   },
+   "page": "ch4_camera",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch4_camera-q42",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 4-2",
+    "en": "Check quiz q42"
+   },
+   "page": "ch4_camera",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch4_camera-q43",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 4-3",
+    "en": "Check quiz q43"
+   },
+   "page": "ch4_camera",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:work/ahn2026langcon",
+   "type": "Work",
+   "label": {
+    "ko": "안상선 (2026) Langcon 2026 발표",
+    "en": "Ahn (2026) Langcon 2026 talk"
+   },
+   "page": "ch4_camera",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:claim/contamination-9000",
+   "type": "Claim",
+   "label": {
+    "ko": "강화학습용 오염 데이터는 9,000장이며 레벨 3~5가 91.7%다",
+    "en": "9,000 contaminated images, 91.7% at levels 3-5"
+   },
+   "page": "ch4_camera",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/mixed-70-30",
+   "type": "Claim",
+   "label": {
+    "ko": "깨끗한 그림 70%와 오염 그림 30%를 섞어 학습했다",
+    "en": "Trained with 70% clean and 30% spoiled images"
+   },
+   "page": "ch4_camera",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/policy-90-70",
+   "type": "Claim",
+   "label": {
+    "ko": "신뢰도 90% 이상 실행, 70~90% 저속, 70% 미만 재질문한다",
+    "en": ">=90% execute, 70-90% slow, <70% re-ask"
+   },
+   "page": "ch4_camera",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/sensor-contamination-simulation",
+   "p": "lab:broader",
+   "o": "lab:topic/data-augmentation",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/contamination-level",
+   "p": "lab:partOf",
+   "o": "lab:concept/sensor-contamination-simulation",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/mixed-training",
+   "p": "lab:broader",
+   "o": "lab:topic/data-augmentation",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/cnn-skeleton-features",
+   "p": "lab:broader",
+   "o": "lab:area/vision",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/expected-field-accuracy",
+   "p": "lab:broader",
+   "o": "lab:area/evaluation",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/cnn-skeleton-features",
+   "p": "lab:partOf",
+   "o": "lab:concept/mixed-training",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/expected-field-accuracy",
+   "p": "lab:partOf",
+   "o": "lab:concept/mixed-training",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/bayesian-inference",
+   "p": "lab:broader",
+   "o": "lab:topic/probability-statistics",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/posterior-probability",
+   "p": "lab:broader",
+   "o": "lab:topic/probability-statistics",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/posterior-probability",
+   "p": "lab:partOf",
+   "o": "lab:concept/bayesian-inference",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/confidence-band-policy",
+   "p": "lab:partOf",
+   "o": "lab:concept/bayesian-inference",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/active-sensing",
+   "p": "lab:partOf",
+   "o": "lab:concept/bayesian-inference",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sensor-contamination-simulation",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/mixed-training",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/mixed-training",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/bayesian-inference",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sensor-contamination-simulation",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch4_camera-p41",
+   "anchor": "#p41",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/mixed-training",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch4_camera-p42",
+   "anchor": "#p42",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/bayesian-inference",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch4_camera-p43",
+   "anchor": "#p43",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch4_camera-q41",
+   "p": "lab:assesses",
+   "o": "lab:concept/sensor-contamination-simulation",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch4_camera-q42",
+   "p": "lab:assesses",
+   "o": "lab:concept/mixed-training",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch4_camera-q43",
+   "p": "lab:assesses",
+   "o": "lab:concept/bayesian-inference",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/contamination-9000",
+   "p": "lab:supports",
+   "o": "lab:concept/contamination-level",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/contamination-9000",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/mixed-70-30",
+   "p": "lab:supports",
+   "o": "lab:concept/mixed-training",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/mixed-70-30",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/policy-90-70",
+   "p": "lab:supports",
+   "o": "lab:concept/confidence-band-policy",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/policy-90-70",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s3",
+   "confidence": "high"
+  }
+ ]
+}
