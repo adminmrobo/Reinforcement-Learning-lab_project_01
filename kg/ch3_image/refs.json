@@ -25,7 +25,8 @@
    "work": "lab:work/ahn2026langcon",
    "role": "primary",
    "supports": [
-    "lab:claim/font-test-100"
+    "lab:claim/font-test-100",
+    "lab:claim/font-test-92"
    ],
    "locs": [],
    "verified": {

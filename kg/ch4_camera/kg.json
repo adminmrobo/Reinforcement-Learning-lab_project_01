@@ -213,7 +213,7 @@
    "id": "lab:sim/ch4_camera-p42",
    "type": "Simulation",
    "label": {
-    "ko": "그래프 · 오염 레벨별 정확도 발표 그래프에서 읽은 근삿값",
+    "ko": "그래프 · 오염 레벨별 정확도 CNN·OCR은 발표 그래프 근삿값, MLP는 코드 실행값",
     "en": "Interactive panel p42"
    },
    "page": "ch4_camera",
@@ -347,6 +347,30 @@
    "label": {
     "ko": "깨끗한 그림 70%와 오염 그림 30%를 섞어 학습했다",
     "en": "Trained with 70% clean and 30% spoiled images"
+   },
+   "page": "ch4_camera",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/mlp-8022",
+   "type": "Claim",
+   "label": {
+    "ko": "업로드된 코드(MLP)로 9,000장을 학습하면 시험 80.22%, 교차 검증 70.79 ± 8.19%, 예상 실전 57.2%다",
+    "en": "Code run (MLP, 9,000 images): test 80.22%, CV 70.79±8.19%, expected field 57.2%"
    },
    "page": "ch4_camera",
    "anchor": "#s2",
@@ -554,6 +578,20 @@
   },
   {
    "s": "lab:claim/mixed-70-30",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/mlp-8022",
+   "p": "lab:supports",
+   "o": "lab:concept/mixed-training",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/mlp-8022",
    "p": "lab:assertedIn",
    "o": "lab:work/ahn2026langcon",
    "anchor": "#s2",

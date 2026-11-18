@@ -529,6 +529,30 @@
      "loc": ""
     }
    ]
+  },
+  {
+   "id": "lab:claim/gemini-310",
+   "type": "Claim",
+   "label": {
+    "ko": "실제 학습 문장 310개 가운데 AI 라벨 재검토가 19개를 뒤집었고, 9문장은 파일마다 라벨이 달랐다",
+    "en": "310 training sentences: AI re-labeling flipped 19; 9 sentences conflict across files"
+   },
+   "page": "ch2_text",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
   }
  ],
  "edges": [
@@ -775,6 +799,20 @@
    "p": "lab:assertedIn",
    "o": "lab:work/ahn2026langcon",
    "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/gemini-310",
+   "p": "lab:supports",
+   "o": "lab:concept/betrayal-gap",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/gemini-310",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s1",
    "confidence": "high"
   }
  ]

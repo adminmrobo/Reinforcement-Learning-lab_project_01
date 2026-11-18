@@ -27,7 +27,8 @@
    "supports": [
     "lab:claim/forward-imbalance",
     "lab:claim/stop-gap",
-    "lab:claim/threshold-chosen"
+    "lab:claim/threshold-chosen",
+    "lab:claim/gemini-310"
    ],
    "locs": [],
    "verified": {

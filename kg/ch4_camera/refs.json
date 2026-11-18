@@ -27,6 +27,7 @@
    "supports": [
     "lab:claim/contamination-9000",
     "lab:claim/mixed-70-30",
+    "lab:claim/mlp-8022",
     "lab:claim/policy-90-70"
    ],
    "locs": [],

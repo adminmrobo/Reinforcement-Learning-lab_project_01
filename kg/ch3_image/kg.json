@@ -300,11 +300,35 @@
    ]
   },
   {
-   "id": "lab:question/variant-font",
+   "id": "lab:claim/font-test-92",
+   "type": "Claim",
+   "label": {
+    "ko": "변형 폰트를 넣은 2,000장 코드 실행에서 시험 정확도는 92.00%였다",
+    "en": "Code run with variant fonts: 92.00% on 400 test images"
+   },
+   "page": "ch3_image",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:question/real-camera",
    "type": "Question",
    "label": {
-    "ko": "처음 보는 변형 폰트에서도 100%가 유지될까? (시험 0/0)",
-    "en": "Will accuracy hold on unseen variant fonts? (0/0 tested)"
+    "ko": "실물 Pi Car X 카메라 사진에서도 92%가 유지될까?",
+    "en": "Will 92% hold on real Pi Car X camera images?"
    },
    "page": "ch3_image",
    "anchor": "#s3",
@@ -453,9 +477,23 @@
    "confidence": "high"
   },
   {
+   "s": "lab:claim/font-test-92",
+   "p": "lab:supports",
+   "o": "lab:concept/font-diversity",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/font-test-92",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
    "s": "lab:concept/test-coverage",
    "p": "lab:raises",
-   "o": "lab:question/variant-font",
+   "o": "lab:question/real-camera",
    "anchor": "#s3",
    "confidence": "high"
   }

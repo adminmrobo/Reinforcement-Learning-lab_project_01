@@ -195,7 +195,7 @@
    "id": "lab:sim/ch7_sim2real-p71",
    "type": "Simulation",
    "label": {
-    "ko": "실험 · 근거와 신뢰도를 넣으면 등급과 행동이 나옵니다 경계값 일부는 이 페이지가 이어 붙임",
+    "ko": "실험 · 시뮬레이터 코드 규칙 그대로 등급 매기기 실제 코드 기준 (V21.8)",
     "en": "Interactive panel p71"
    },
    "page": "ch7_sim2real",
@@ -213,7 +213,7 @@
    "id": "lab:sim/ch7_sim2real-p72",
    "type": "Simulation",
    "label": {
-    "ko": "실험 · 기록 속 명령을 다시 넣어 보는 미니 시뮬레이터 영상 기록을 재현",
+    "ko": "실험 · 기록 속 명령을 다시 넣어 보는 미니 시뮬레이터 실행 기록을 재현",
     "en": "Interactive panel p72"
    },
    "page": "ch7_sim2real",
@@ -381,8 +381,8 @@
    "id": "lab:claim/detective-754",
    "type": "Claim",
    "label": {
-    "ko": "\"앞으로 가가가가각\"은 AI 신뢰도 75.4%로 실행되었다",
-    "en": "\"앞으로 가가가가각\" executed at 75.4% AI confidence"
+    "ko": "\"앞으로 가가가가가각\"은 AI 신뢰도 75.4%로 실행되었다",
+    "en": "\"앞으로 가가가가가각\" executed at 75.4% AI confidence"
    },
    "page": "ch7_sim2real",
    "anchor": "#s2",
@@ -399,6 +399,72 @@
      "ref": "ahn2026langcon",
      "loc": ""
     }
+   ]
+  },
+  {
+   "id": "lab:claim/grade-cutoffs",
+   "type": "Claim",
+   "label": {
+    "ko": "시뮬레이터 코드는 P ≥ 0.40이면 실행하고, 결정 신뢰도 85%·60%로 등급을 나눈다",
+    "en": "Simulator executes at P >= 0.40; grades by decision confidence 85% / 60%"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:claim/negation-fail",
+   "type": "Claim",
+   "label": {
+    "ko": "\"앞으로 가지마\"(61.1%)와 \"앞으로 가면 절대 안된다.\"(70.3%)를 시뮬레이터가 실행했다",
+    "en": "Simulator executed negated commands at 61.1% and 70.3%"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:question/negation-guard",
+   "type": "Question",
+   "label": {
+    "ko": "부정 표현 데이터를 늘리고 탐정 이하 등급에서 되묻게 하면 부정문 실행을 막을 수 있을까?",
+    "en": "Would negation data plus re-asking below \"detective\" grade stop negated commands?"
+   },
+   "page": "ch7_sim2real",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "match": [],
+   "domain": [
+    "ai"
    ]
   }
  ],
@@ -547,6 +613,41 @@
    "s": "lab:claim/detective-754",
    "p": "lab:assertedIn",
    "o": "lab:work/ahn2026langcon",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/grade-cutoffs",
+   "p": "lab:supports",
+   "o": "lab:concept/four-intelligence-grades",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/grade-cutoffs",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/negation-fail",
+   "p": "lab:supports",
+   "o": "lab:concept/four-intelligence-grades",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/negation-fail",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/four-intelligence-grades",
+   "p": "lab:raises",
+   "o": "lab:question/negation-guard",
    "anchor": "#s2",
    "confidence": "high"
   }
