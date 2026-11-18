@@ -3,6 +3,90 @@
  "page": "ch6_rl",
  "nodes": [
   {
+   "id": "lab:concept/learning-paradigms",
+   "type": "Concept",
+   "label": {
+    "ko": "학습 방식 세 갈래",
+    "en": "Three learning paradigms"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s0",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "강화학습은 무엇이 다른가 — 두 도감과 비교"
+   }
+  },
+  {
+   "id": "lab:concept/supervised-learning",
+   "type": "Method",
+   "label": {
+    "ko": "지도학습",
+    "en": "Supervised learning"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s0",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "강화학습은 무엇이 다른가 — 두 도감과 비교"
+   }
+  },
+  {
+   "id": "lab:concept/unsupervised-learning",
+   "type": "Method",
+   "label": {
+    "ko": "비지도학습",
+    "en": "Unsupervised learning"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s0",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "강화학습은 무엇이 다른가 — 두 도감과 비교"
+   }
+  },
+  {
+   "id": "lab:concept/deep-reinforcement-learning",
+   "type": "Method",
+   "label": {
+    "ko": "심층 강화학습",
+    "en": "Deep reinforcement learning"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s0",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "강화학습은 무엇이 다른가 — 두 도감과 비교"
+   }
+  },
+  {
    "id": "lab:concept/reinforcement-learning",
    "type": "Method",
    "label": {
@@ -339,6 +423,24 @@
    }
   },
   {
+   "id": "lab:sim/ch6_rl-p60",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · 두 축 지도에서 칸을 눌러 보기 해설용 정리",
+    "en": "Interactive panel p60"
+   },
+   "page": "ch6_rl",
+   "anchor": "#p60",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
    "id": "lab:sim/ch6_rl-p61",
    "type": "Simulation",
    "label": {
@@ -437,6 +539,24 @@
    },
    "page": "ch6_rl",
    "anchor": "#p65",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch6_rl-q60",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 6-0",
+    "en": "Check quiz q60"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s0",
    "level": 2,
    "status": "known",
    "confidence": "high",
@@ -627,6 +747,30 @@
    ]
   },
   {
+   "id": "lab:claim/atlas-no-rl",
+   "type": "Claim",
+   "label": {
+    "ko": "머신러닝 모델 도감 27종과 신경망 구조 도감 27종에는 강화학습 카드가 없다",
+    "en": "Neither atlas (27 ML models, 27 NN structures) includes a reinforcement-learning card"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s0",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  },
+  {
    "id": "lab:claim/flip-test",
    "type": "Claim",
    "label": {
@@ -670,6 +814,41 @@
   }
  ],
  "edges": [
+  {
+   "s": "lab:concept/learning-paradigms",
+   "p": "lab:broader",
+   "o": "lab:area/rl",
+   "anchor": "#s0",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/deep-reinforcement-learning",
+   "p": "lab:broader",
+   "o": "lab:area/rl",
+   "anchor": "#s0",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/supervised-learning",
+   "p": "lab:partOf",
+   "o": "lab:concept/learning-paradigms",
+   "anchor": "#s0",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/unsupervised-learning",
+   "p": "lab:partOf",
+   "o": "lab:concept/learning-paradigms",
+   "anchor": "#s0",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/deep-reinforcement-learning",
+   "p": "lab:partOf",
+   "o": "lab:concept/learning-paradigms",
+   "anchor": "#s0",
+   "confidence": "high"
+  },
   {
    "s": "lab:concept/reinforcement-learning",
    "p": "lab:broader",
@@ -825,6 +1004,13 @@
    "confidence": "high"
   },
   {
+   "s": "lab:concept/learning-paradigms",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/reinforcement-learning",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
    "s": "lab:concept/reinforcement-learning",
    "p": "lab:prerequisiteOf",
    "o": "lab:concept/concept-reward-table",
@@ -850,6 +1036,13 @@
    "p": "lab:prerequisiteOf",
    "o": "lab:concept/label-flip-test",
    "anchor": "#s5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/learning-paradigms",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch6_rl-p60",
+   "anchor": "#p60",
    "confidence": "high"
   },
   {
@@ -892,6 +1085,13 @@
    "p": "lab:demonstratedBy",
    "o": "lab:sim/ch6_rl-p65",
    "anchor": "#p65",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch6_rl-q60",
+   "p": "lab:assesses",
+   "o": "lab:concept/learning-paradigms",
+   "anchor": "#s0",
    "confidence": "high"
   },
   {
@@ -969,6 +1169,20 @@
    "p": "lab:assertedIn",
    "o": "lab:work/ahn2026langcon",
    "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/atlas-no-rl",
+   "p": "lab:supports",
+   "o": "lab:concept/learning-paradigms",
+   "anchor": "#s0",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/atlas-no-rl",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s0",
    "confidence": "high"
   },
   {

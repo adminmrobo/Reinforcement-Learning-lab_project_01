@@ -3,6 +3,7 @@
  "number": "6",
  "series": "겸손한 로봇 연구실 (잘 못 알아들으면 되묻는 로봇)",
  "about": [
+  "lab:concept/learning-paradigms",
   "lab:concept/reinforcement-learning",
   "lab:concept/concept-reward-table",
   "lab:concept/average-reward-model-selection",
@@ -31,7 +32,7 @@
   "ko"
  ],
  "license": "",
- "url": "https://adminmrobo.github.io/humble_robot_lab/ch6_rl.html",
+ "url": "https://adminmrobo.github.io/Reinforcement-Learning-lab/ch6_rl.html",
  "registry": "KG_00_registry 0.2",
  "learningResourceType": "interactive explainer",
  "seeAlso": "",

@@ -28,6 +28,7 @@
     "lab:claim/logistic-top-reward",
     "lab:claim/rf-top-accuracy",
     "lab:claim/xgb-camera",
+    "lab:claim/atlas-no-rl",
     "lab:claim/flip-test"
    ],
    "locs": [],
