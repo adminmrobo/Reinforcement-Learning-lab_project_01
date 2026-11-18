@@ -715,6 +715,13 @@
    "label_en": "Deep reinforcement learning",
    "type": "Method",
    "first_page": "Reinforcement-Learning-lab_project_01/ch6_rl.html"
+  },
+  {
+   "id": "lab:concept/hands-on-setup",
+   "label_ko": "실습 환경",
+   "label_en": "Hands-on setup",
+   "type": "Method",
+   "first_page": "Reinforcement-Learning-lab_project_01/ch9_general.html"
   }
  ]
 }

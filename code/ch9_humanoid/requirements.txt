@@ -1,0 +1,8 @@
+gymnasium[mujoco]>=1.0
+stable-baselines3>=2.3
+tensorboard
+imageio
+imageio-ffmpeg
+matplotlib
+pandas
+pillow

@@ -1,0 +1,4 @@
+checkpoint,steps,return,alive_steps,mean_speed
+humanoid_10000_steps.zip,10000,312.0,59,0.54
+humanoid_20000_steps.zip,20000,309.7,61,0.38
+humanoid_30000_steps.zip,30000,411.9,84,0.21

@@ -1,13 +1,13 @@
 {
- "title": "제9장 · 3D 가상 주자로 일반화하기 (강화학습 학습 과정)",
+ "title": "제9장 · 직접 해 보기",
  "number": "9",
  "series": "겸손한 로봇 연구실 (잘 못 알아들으면 되묻는 로봇)",
  "about": [
   "lab:concept/state-action-reward",
-  "lab:concept/learning-curve",
+  "lab:concept/hands-on-setup",
   "lab:concept/trial-and-error-learning",
-  "lab:concept/reward-design",
-  "lab:concept/rl-generalization"
+  "lab:concept/learning-curve",
+  "lab:concept/reward-design"
  ],
  "basedOn": [
   "ahn2026langcon"
@@ -38,5 +38,5 @@
  "domain": [
   "ai"
  ],
- "suggestedCitation": "안상선 (2026). 3D 가상 주자로 넓혀 보기. 겸손한 로봇 연구실 (잘 못 알아들으면 되묻는 로봇) 9, v1.0."
+ "suggestedCitation": "안상선 (2026). 직접 해 보기 · 3D 가상 주자 강화학습 가이드. 겸손한 로봇 연구실 (잘 못 알아들으면 되묻는 로봇) 9, v1.0."
 }

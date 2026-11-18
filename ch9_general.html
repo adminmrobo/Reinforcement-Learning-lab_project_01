@@ -1,10 +1,10 @@
 <!DOCTYPE html><html lang="ko"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>제9장 · 3D 가상 주자로 일반화하기 (강화학습 학습 과정) — 겸손한 로봇 연구실</title>
-<meta name="description" content="바닥에서 버둥거리던 3D 가상 주자가 3,000만 걸음 만에 달리기까지. 상태·행동·보상, 학습 대시보드, 학습 과정 영상, 보상 설계가 몸을 바꾸는 실험, 겸손한 로봇과 휴머노이드·물류 로봇·언어 모델을 잇는 일반화 지도.">
-<meta property="og:title" content="제9장 · 3D 가상 주자로 일반화하기 (강화학습 학습 과정) — 겸손한 로봇 연구실">
-<meta property="og:description" content="바닥에서 버둥거리던 3D 가상 주자가 3,000만 걸음 만에 달리기까지. 상태·행동·보상, 학습 대시보드, 학습 과정 영상, 보상 설계가 몸을 바꾸는 실험, 겸손한 로봇과 휴머노이드·물류 로봇·언어 모델을 잇는 일반화 지도.">
+<title>제9장 · 직접 해 보기 — 3D 가상 주자 강화학습 가이드 — 겸손한 로봇 연구실</title>
+<meta name="description" content="겸손한 로봇의 결과를 일반화해 보는 실습 가이드. Gymnasium Humanoid-v5 가상 주자를 강화학습으로 직접 학습시키는 준비, 소스코드 네 개, 학습 과정 영상과 대시보드 만들기, 보상 바꿔 보기, 그리고 예상되는 결과 화면.">
+<meta property="og:title" content="제9장 · 직접 해 보기 — 3D 가상 주자 강화학습 가이드 — 겸손한 로봇 연구실">
+<meta property="og:description" content="겸손한 로봇의 결과를 일반화해 보는 실습 가이드. Gymnasium Humanoid-v5 가상 주자를 강화학습으로 직접 학습시키는 준비, 소스코드 네 개, 학습 과정 영상과 대시보드 만들기, 보상 바꿔 보기, 그리고 예상되는 결과 화면.">
 <meta property="og:url" content="https://adminmrobo.github.io/Reinforcement-Learning-lab_project_01/ch9_general.html"><meta property="og:image" content="https://adminmrobo.github.io/Reinforcement-Learning-lab_project_01/img/cover_09.webp">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://adminmrobo.github.io/Reinforcement-Learning-lab_project_01/ch9_general.html">
@@ -240,8 +240,8 @@ footer table.tb{font-size:13.5px}
 section.level#kg,section.level#export{padding-top:72px}
 </style>
 <!-- lab-kg:head -->
-<meta name="citation_title" content="제9장 · 3D 가상 주자로 일반화하기 (강화학습 학습 과정)">
-<meta name="dc.title" content="제9장 · 3D 가상 주자로 일반화하기 (강화학습 학습 과정)">
+<meta name="citation_title" content="제9장 · 직접 해 보기">
+<meta name="dc.title" content="제9장 · 직접 해 보기">
 <meta name="dc.date" content="2026-11-18">
 <meta name="dc.language" content="ko">
 <meta name="dc.type" content="InteractiveResource">
@@ -250,20 +250,20 @@ section.level#kg,section.level#export{padding-top:72px}
 <!-- /lab-kg:head -->
 </head><body>
 <div id="prog" aria-hidden="true"></div>
-<nav class="top" aria-label="이 페이지 목차"><a class="logo" href="index.html">겸손한 로봇 연구실</a><a href="#first">3줄</a><a href="#s1">9-1 몸과 점수표</a><a href="#s2">9-2 대시보드</a><a href="#s3">9-3 영상</a><a href="#s4">9-4 보상 설계</a><a href="#s5">9-5 일반화</a><a href="#sum">정리</a></nav>
+<nav class="top" aria-label="이 페이지 목차"><a class="logo" href="index.html">겸손한 로봇 연구실</a><a href="#first">3줄</a><a href="#s1">9-1 무엇을</a><a href="#s2">9-2 준비</a><a href="#s3">9-3 학습</a><a href="#s4">9-4 영상·대시보드</a><a href="#s5">9-5 보상 바꾸기</a><a href="#sum">정리</a></nav>
 <main id="top">
-<div class="cover band" data-img="cover_09" role="img" aria-label="3D 가상 주자로 넓혀 보기 표지"><svg class="fallback" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<div class="cover band" data-img="cover_09" role="img" aria-label="3D 가상 주자 강화학습 가이드 표지"><svg class="fallback" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
 <defs><linearGradient id="sky9" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7f9fc"/><stop offset="1" stop-color="#e6edf5"/></linearGradient>
 <pattern id="grid9" width="48" height="48" patternUnits="userSpaceOnUse"><path d="M48 0H0V48" fill="none" stroke="#d5dbe2" stroke-width="1"/></pattern></defs>
 <rect width="1600" height="900" fill="url(#sky9)"/><rect y="520" width="1600" height="380" fill="url(#grid9)"/>
 <path d="M640 900 L760 520 L840 520 L960 900Z" fill="#2b313a"/><path d="M800 540 L800 900" stroke="#f1d36b" stroke-width="8" stroke-dasharray="40 30"/>
 <rect x="770" y="640" width="60" height="96" rx="14" fill="#1e55c8"/><rect x="780" y="650" width="40" height="22" rx="4" fill="#cfe0ff"/>
-<g transform="translate(1040 300)"><rect x="-10" y="0" width="20" height="240" fill="#9aa5b1"/><rect x="-350" y="-80" width="700" height="96" rx="12" fill="#fff" stroke="#16212b" stroke-width="4"/>
-<text x="0" y="-18" text-anchor="middle" font-size="44" font-family="sans-serif" fill="#16212b" opacity=".85">30,000,000 steps</text></g>
-<g fill="#13733a" opacity=".18"><circle cx="300" cy="200" r="90"/><circle cx="1350" cy="160" r="60"/></g></svg><img class="cimg" data-cover="cover_09" alt="" hidden><div class="ctitle"><b>제9장 · 일반화</b><span>3D 가상 주자로 넓혀 보기</span></div></div><header class="hero"><div class="wrap"><p class="kicker">제9장 · 겸손한 로봇 연구실</p><h1>3D 가상 주자로 넓혀 보기</h1>
-<p class="q">핵심 질문: Pi Car X에서 쓴 "해 보고 → 점수를 보고 → 고친다"는, 두 다리로 달리는 몸에도 똑같이 통할까?</p><p class="lead">1~8장은 강화학습의 일반론에서 출발해 겸손한 로봇 프로젝트를 거쳐 결론까지 왔습니다. 이 장은 그 결과를 넓혀 봅니다. 연구실이 직접 그린 3D 가상 주자가 바닥에서 버둥거리다 달리기까지의 학습 과정을 대시보드와 영상으로 보고, 같은 고리가 다른 로봇과 사람 모양의 몸에서 어떻게 반복되는지 지도로 정리합니다.</p><section class="kpis" aria-label="숫자 요약"><div class="kpi i"><b>17개</b><span>행동: 관절에 주는 힘의 개수</span></div><div class="kpi m"><b>348개</b><span>상태: 로봇이 매 순간 읽는 숫자</span></div><div class="kpi a"><b>5.0 + 1.25v</b><span>한 걸음 보상: 서 있기 + 앞으로 간 속도</span></div><div class="kpi g"><b>3,000만</b><span>학습 걸음 수 (이 페이지 예시)</span></div></section><div class="chat"><div class="say" data-who="doc"><img data-who="doc" data-mood="board" alt="" aria-hidden="true"><div><b class="name">박사</b><p>마지막으로 한 걸음 더 나가 볼게요. 바퀴 달린 Pi Car X 대신, 두 다리로 달리는 가상의 몸입니다.</p></div></div><div class="say" data-who="asst"><img data-who="asst" data-mood="smile" alt="" aria-hidden="true"><div><b class="name">조수 하루</b><p>처음엔 일어서지도 못한대요. 넘어지고 또 넘어지면서 배워요.</p></div></div><div class="say" data-who="fly"><img data-who="fly" data-mood="magnify" alt="" aria-hidden="true"><div><b class="name">초파리 연구원</b><p>넘어지는 게 공짜인 곳이 시뮬레이터야. 실물로 3,000만 번 넘어지면 남는 게 없지.</p></div></div><div class="say" data-who="robo"><img data-who="robo" data-mood="coin" alt="" aria-hidden="true"><div><b class="name">주판봇</b><p>3,000만 걸음? 걸음마다 점수가 붙는다면… 그 장부는 내가 맡지!</p></div></div></div></div></header><section class="level" id="first" style="padding-top:28px"><div class="wrap"><div class="three">
+<g transform="translate(1040 300)"><rect x="-10" y="0" width="20" height="240" fill="#9aa5b1"/><rect x="-250" y="-80" width="500" height="96" rx="12" fill="#fff" stroke="#16212b" stroke-width="4"/>
+<text x="0" y="-18" text-anchor="middle" font-size="44" font-family="sans-serif" fill="#16212b" opacity=".85">Humanoid-v5</text></g>
+<g fill="#13733a" opacity=".18"><circle cx="300" cy="200" r="90"/><circle cx="1350" cy="160" r="60"/></g></svg><img class="cimg" data-cover="cover_09" alt="" hidden><div class="ctitle"><b>제9장 · 직접 해 보기</b><span>3D 가상 주자 강화학습 가이드</span></div></div><header class="hero"><div class="wrap"><p class="kicker">제9장 · 겸손한 로봇 연구실 · 실습 가이드</p><h1>직접 해 보기 · 3D 가상 주자 강화학습 가이드</h1>
+<p class="q">핵심 질문: 겸손한 로봇에서 본 "해 보고 → 점수를 보고 → 고친다"를, 두 다리로 달리는 가상 몸에 내 컴퓨터로 직접 적용하려면?</p><p class="lead">1~8장은 강화학습의 일반론에서 출발해 겸손한 로봇 프로젝트를 거쳐 결론까지 왔습니다. 이 장은 그 결과를 일반화해 보는 실습 안내서입니다. 강화학습 연습장으로 널리 쓰이는 Gymnasium의 Humanoid-v5 가상 주자를 학습시키는 준비 과정, 소스코드 네 개, 그리고 따라 했을 때 예상되는 결과 화면을 순서대로 보여 줍니다. 이 장의 그림과 영상은 예상 화면이며, 실제 결과는 직접 실행해서 얻습니다.</p><section class="kpis" aria-label="숫자 요약"><div class="kpi i"><b>17개</b><span>행동: 관절에 주는 힘의 개수</span></div><div class="kpi m"><b>348개</b><span>상태: 로봇이 매 순간 읽는 숫자</span></div><div class="kpi a"><b>5.0 + 1.25v</b><span>한 걸음 보상: 서 있기 + 앞으로 간 속도</span></div><div class="kpi g"><b>4개</b><span>소스코드: 환경 · 학습 · 녹화 · 대시보드</span></div></section><div class="chat"><div class="say" data-who="doc"><img data-who="doc" data-mood="board" alt="" aria-hidden="true"><div><b class="name">박사</b><p>마지막 장은 실습 안내서예요. 코드를 내려받아 내 컴퓨터에서 직접 가상 주자를 가르쳐 봅니다.</p></div></div><div class="say" data-who="asst"><img data-who="asst" data-mood="smile" alt="" aria-hidden="true"><div><b class="name">조수 하루</b><p>처음엔 일어서지도 못한대요. 넘어지고 또 넘어지면서 배우는 과정을 영상으로 남길 수 있어요.</p></div></div><div class="say" data-who="fly"><img data-who="fly" data-mood="magnify" alt="" aria-hidden="true"><div><b class="name">초파리 연구원</b><p>이 장의 그림은 "예상 화면"이야. 진짜 결과는 각자 돌려 봐야 나와. 컴퓨터와 난수에 따라 달라지고.</p></div></div><div class="say" data-who="robo"><img data-who="robo" data-mood="coin" alt="" aria-hidden="true"><div><b class="name">주판봇</b><p>내 컴퓨터로 직접? 그럼 걸음마다 점수 장부는 내가 맡지!</p></div></div></div></div></header><section class="level" id="first" style="padding-top:28px"><div class="wrap"><div class="three">
 <h2>처음 오신 분께 — 이 장을 3줄로</h2><ol>
-<li><b>무엇을</b> 3D 가상 주자에게 "서 있으면 +5, 앞으로 가면 +1.25×속도, 힘을 낭비하면 감점" 점수를 주고, 수천만 걸음 시행착오로 달리는 법을 배우게 하는 과정을 봅니다.</li><li><b>왜 중요한가</b> 겸손한 로봇에서 본 강화학습이 바퀴 로봇에만 맞는 요령인지, 모든 몸과 일에 통하는 틀인지 확인합니다. 보상을 잘못 적으면 엉뚱한 행동을 배운다는 것도 직접 봅니다.</li><li><b>업무에서는</b> 물류 로봇, 휴머노이드, 자율주행, 언어 모델 훈련(RLHF)까지 "상태 · 행동 · 보상 · 정책"과 "모를 때의 안전장치"로 똑같이 설계합니다.</li></ol>
+<li><b>무엇을</b> Gymnasium Humanoid-v5 가상 주자를 강화학습(SAC)으로 학습시키는 준비, 소스코드, 실행 순서, 예상 결과 화면을 안내합니다.</li><li><b>왜 중요한가</b> 겸손한 로봇에서 본 강화학습이 바퀴 로봇에만 맞는 요령이 아니라 어떤 몸에도 통하는 틀이라는 것을, 직접 돌려 보며 확인할 수 있습니다.</li><li><b>업무에서는</b> 같은 틀(상태 · 행동 · 보상 · 정책)로 물류 로봇, 휴머노이드, 자율주행, 언어 모델 훈련을 설계합니다. 학습 곡선과 단계별 영상은 어떤 강화학습 프로젝트든 보고서의 기본 자료가 됩니다.</li></ol>
 <p class="note">코드나 수식을 몰라도 됩니다. 밑줄 친 말을 누르면 뜻이 나옵니다.</p>
 <details><summary>이 장에 나오는 영어 약어 풀이</summary><dl class="abbr">
 <dt>OCR</dt><dd>사진 속 글자 읽기 (Optical Character Recognition)</dd>
@@ -278,107 +278,400 @@ section.level#kg,section.level#export{padding-top:72px}
 <div class="c" data-who="x1"><img data-who="x1" data-mood="hint" alt="" aria-hidden="true"><div><b>X1</b><span>타자를 급하게 칩니다. 오타 섞인 글자 명령을 보냅니다. "(타닥타닥)"</span></div></div>
 <div class="c" data-who="x2"><img data-who="x2" data-mood="hint" alt="" aria-hidden="true"><div><b>X2</b><span>흐릿한 표지판을 카메라 앞에 듭니다. "(번쩍)"</span></div></div>
 <div class="c" data-who="x3"><img data-who="x3" data-mood="hint" alt="" aria-hidden="true"><div><b>X3</b><span>작게 웅얼거리며 말로 명령합니다. "(웅얼웅얼)"</span></div></div></div></div></section><section class="level" id="map"><div class="wrap"><h2>이 장의 순서</h2>
-<div class="say" data-who="sia"><img data-who="sia" data-mood="explain" alt="" aria-hidden="true"><div><b class="name">인턴 시아</b><p>순서대로 말씀드릴게요. 가상 몸과 점수표, 학습 대시보드, 학습 영상, 보상 설계 실험, 그리고 일반화 지도입니다.</p></div></div>
-<div class="flow" aria-label="이 장의 순서"><a class="s" href="#s1" style="text-decoration:none;color:inherit"><span class="s">9-1 몸과 점수표</span></a><i>→</i><a class="s" href="#s2" style="text-decoration:none;color:inherit"><span class="s">9-2 학습 대시보드</span></a><i>→</i><a class="s" href="#s3" style="text-decoration:none;color:inherit"><span class="s">9-3 학습 영상</span></a><i>→</i><a class="s" href="#s4" style="text-decoration:none;color:inherit"><span class="s">9-4 보상 설계</span></a><i>→</i><a class="s" href="#s5" style="text-decoration:none;color:inherit"><span class="s">9-5 일반화 지도</span></a></div>
-<p><span class="cmdcard"><img data-who="x1" data-mood="hint" alt="" aria-hidden="true"><span><b>X1</b> (타닥타닥) 저 인형 진짜 혼자 배워?</span></span> <span class="cmdcard"><img data-who="x2" data-mood="hint" alt="" aria-hidden="true"><span><b>X2</b> (번쩍) 넘어질 때마다 찰칵</span></span> <span class="cmdcard"><img data-who="x3" data-mood="hint" alt="" aria-hidden="true"><span><b>X3</b> (웅웅) 몇 번 넘어져야 해?</span></span></p></div></section><section class="level" id="s1"><div class="wrap"><div class="lvhead"><div class="hexno">9-1<small>중챕터</small></div><div><h2>가상 몸과 점수표 · 상태 · 행동 · 보상</h2><div class="sub"><span class="lvtag rl">방법: 연속 행동 강화학습</span><span class="lvtag ">일상: 아기 걸음마</span></div></div></div><p>강화학습 문제는 네 가지만 정하면 됩니다. ① 로봇이 무엇을 보나(<b>상태</b>), ② 무엇을 할 수 있나(<b>행동</b>), ③ 무엇에 점수를 주나(<b>보상</b>), ④ 상태를 보고 행동을 고르는 규칙(<b>정책</b>)입니다. 이 장의 가상 주자는 강화학습 연습장으로 널리 쓰이는 <a href="https://gymnasium.farama.org/environments/mujoco/humanoid/">Gymnasium의 Humanoid 환경</a> 설정을 본떴습니다.</p>
-<div class="panel" id="p91"><h3>실험 · 가상 주자의 몸 돌려 보기 <span class="stamp">해설용 재현 · 물리 시뮬레이션 아님</span></h3>
-<div class="cwrap"><canvas id="cv91" data-h="320" aria-label="3D 가상 주자. 머리 높이, 관절 각도, 팔 힘, 발 닿음 표시가 붙어 있다"></canvas></div>
-<div class="ctrl"><div class="group"><span class="glabel">카메라 방향</span><input type="range" id="r91" min="-150" max="150" value="35" aria-label="카메라 방향"><span class="val" id="v91">35°</span></div>
-<div class="group"><span class="glabel">학습 정도</span><input type="range" id="r91s" min="0" max="100" value="60" aria-label="학습 정도"><span class="val" id="v91s">60%</span></div></div>
-<section class="kpis" id="k91" aria-live="polite"></section></div>
-<div class="tw"><table class="tb"><tr><th>네 가지</th><th>가상 주자 (Humanoid 설정)</th><th>겸손한 로봇 (Pi Car X)</th></tr>
+<div class="say" data-who="sia"><img data-who="sia" data-mood="explain" alt="" aria-hidden="true"><div><b class="name">인턴 시아</b><p>순서대로 안내할게요. 무엇을 학습시키는지, 준비, 학습 실행, 영상과 대시보드 만들기, 보상 바꿔 보기와 일반화입니다.</p></div></div>
+<div class="flow" aria-label="이 장의 순서"><a class="s" href="#s1" style="text-decoration:none;color:inherit"><span class="s">9-1 무엇을 학습시키나</span></a><i>→</i><a class="s" href="#s2" style="text-decoration:none;color:inherit"><span class="s">9-2 준비하기</span></a><i>→</i><a class="s" href="#s3" style="text-decoration:none;color:inherit"><span class="s">9-3 학습시키기</span></a><i>→</i><a class="s" href="#s4" style="text-decoration:none;color:inherit"><span class="s">9-4 영상 · 대시보드</span></a><i>→</i><a class="s" href="#s5" style="text-decoration:none;color:inherit"><span class="s">9-5 보상 바꿔 보기</span></a></div>
+<p><span class="cmdcard"><img data-who="x1" data-mood="hint" alt="" aria-hidden="true"><span><b>X1</b> (타닥타닥) 내 노트북으로도 돼?</span></span> <span class="cmdcard"><img data-who="x2" data-mood="hint" alt="" aria-hidden="true"><span><b>X2</b> (번쩍) 영상은 어떻게 뽑아?</span></span> <span class="cmdcard"><img data-who="x3" data-mood="hint" alt="" aria-hidden="true"><span><b>X3</b> (웅웅) 몇 시간 걸려?</span></span></p>
+<div class="tw"><table class="tb"><tr><th>파일</th><th>하는 일</th><th>어디서 쓰나</th></tr>
+<tr><td><a href="code/ch9_humanoid/requirements.txt" download>requirements.txt</a></td><td>설치할 꾸러미 목록</td><td>9-2</td></tr>
+<tr><td><a href="code/ch9_humanoid/reward_variants.py" download>reward_variants.py</a></td><td>보상 설계를 바꾼 환경 만들기</td><td>9-1 · 9-5</td></tr>
+<tr><td><a href="code/ch9_humanoid/train_humanoid.py" download>train_humanoid.py</a></td><td>학습시키고 체크포인트(중간 두뇌) 저장</td><td>9-3</td></tr>
+<tr><td><a href="code/ch9_humanoid/record_checkpoints.py" download>record_checkpoints.py</a></td><td>체크포인트별로 달려 보고 학습 과정 영상 · 요약표 만들기</td><td>9-4</td></tr>
+<tr><td><a href="code/ch9_humanoid/plot_dashboard.py" download>plot_dashboard.py</a></td><td>한 판 기록으로 학습 대시보드 그림 만들기</td><td>9-4</td></tr></table></div></div></section><section class="level" id="s1"><div class="wrap"><div class="lvhead"><div class="hexno">9-1<small>중챕터</small></div><div><h2>무엇을 학습시키나 · 상태 · 행동 · 보상</h2><div class="sub"><span class="lvtag rl">방법: 연속 행동 강화학습</span><span class="lvtag ">일상: 아기 걸음마</span></div></div></div><p>강화학습 문제는 네 가지만 정하면 됩니다. ① 로봇이 무엇을 보나(<b>상태</b>), ② 무엇을 할 수 있나(<b>행동</b>), ③ 무엇에 점수를 주나(<b>보상</b>), ④ 상태를 보고 행동을 고르는 규칙(<b>정책</b>)입니다. 이 장에서 학습시킬 가상 주자는 <a href="https://gymnasium.farama.org/environments/mujoco/humanoid/">Gymnasium의 Humanoid-v5</a>이고, 네 가지는 아래처럼 정해져 있습니다.</p>
+<div class="tw"><table class="tb"><tr><th>네 가지</th><th>가상 주자 (Humanoid-v5 기본 설정)</th><th>겸손한 로봇 (Pi Car X)</th></tr>
 <tr><td>상태 · 무엇을 보나</td><td>관절 각도·속도, 몸통 높이·기울기 등 숫자 <b>348개</b></td><td>명령 문장·그림·소리를 바꾼 숫자, 신뢰도</td></tr>
 <tr><td>행동 · 무엇을 하나</td><td>관절 <b>17곳</b>에 줄 힘 (각각 −0.4 ~ 0.4)</td><td>전진 · 정지 · 되묻기</td></tr>
 <tr><td>보상 · 무엇에 점수를</td><td>서 있으면 +5.0, 앞으로 간 속도 × 1.25, 힘 낭비 −0.1 × (힘²의 합)</td><td>정확한 전진 +1.5, 못 알아들음 −2.0, 착각 −5.0</td></tr>
-<tr><td>한 판의 끝</td><td>몸통 높이가 1.0~2.0m를 벗어나면(넘어지면) 끝, 최대 1,000걸음</td><td>명령 하나를 처리하면 끝</td></tr></table></div>
+<tr><td>한 판의 끝</td><td>몸통 높이가 1.0~2.0m를 벗어나면(넘어지면) 끝, 최대 1,000걸음</td><td>명령 하나를 처리하면 끝</td></tr>
+<tr><td>정책 (두뇌)</td><td>348개를 보고 17개를 고르는 신경망</td><td>보상 점수로 고른 분류 모델 (6장)</td></tr></table></div>
+<div class="gal"><figure><img src="media/ch9_expected_1.jpg" alt="예상 화면: 학습 초반, 바닥에서 버둥거리는 흰 관절 인형" width="320" height="180"><figcaption>① 학습 초반</figcaption></figure>
+<figure><img src="media/ch9_expected_2.jpg" alt="예상 화면: 일어서다 넘어지는 인형" width="320" height="180"><figcaption>② 일어서다 넘어짐</figcaption></figure>
+<figure><img src="media/ch9_expected_3.jpg" alt="예상 화면: 팔을 벌려 비틀비틀 걷는 인형" width="320" height="180"><figcaption>③ 비틀비틀 걷기</figcaption></figure>
+<figure><img src="media/ch9_expected_4.jpg" alt="예상 화면: 팔과 다리가 맞물려 달리는 인형" width="320" height="180"><figcaption>④ 학습 후반 · 달리기</figcaption></figure></div>
+<p class="small muted">위 네 장은 학습이 잘될 때 보게 될 단계를 연구실이 그린 예상 화면입니다. 실제 화면은 MuJoCo가 그린 주자 모습이며, 단계가 나타나는 시점은 컴퓨터·학습 방법·난수에 따라 다릅니다.</p>
 <div class="duo"><div class="why"><h4>왜 강화학습으로 가르치나</h4><ol><li><b>문제 상황</b> 두 다리로 달리는 법은 "왼 무릎을 몇 도"처럼 정답을 적어 줄 수 없습니다. 관절 17개의 조합이 너무 많습니다.</li><li><b>앞 방법의 한계</b> 사람이 동작을 손으로 짜면(규칙) 바닥이 조금만 달라도 넘어집니다. 지도학습은 정답 동작 자료가 있어야 합니다.</li><li><b>해법</b> "서 있으면 점수, 앞으로 가면 점수, 힘을 낭비하면 감점"만 적고 나머지는 시행착오에 맡깁니다. 6-0 표의 맨 아래 오른쪽 칸(강화학습 × 신경망)입니다.</li></ol><p class="easy"><b>쉽게 말하면</b> 아기에게 걷는 법을 설명하지 않습니다. 넘어지면 아프고, 한 걸음 가면 엄마가 웃습니다. 그 둘만으로 걸음이 늡니다.</p></div>
 <div class="mathbox"><h4>수학 수식을 어려워하는 조수가 대신 물어봅니다</h4><div class="ask"><img data-who="asst" data-mood="shock" alt="" aria-hidden="true"><p><b>하루</b> 걸음마다 점수가 붙는다는데, 실제로 몇 점씩이에요?</p></div><p class="school">학교 수학으로 보면: 중학교 수학 · 일차식</p><div class="eqbig">한 걸음 보상 = 5.0 + 1.25 × 속도 − 0.1 × (힘²의 합)</div><div class="tw"><table class="tb"><tr><th>식 조각</th><th>뜻</th></tr><tr><td>5.0</td><td>넘어지지 않고 서 있으면 받는 점수</td></tr><tr><td>1.25 × 속도</td><td>앞으로 간 속도(m/s)에 매기는 점수</td></tr><tr><td>0.1 × (힘²의 합)</td><td>관절 17곳에 준 힘을 제곱해 더한 값. 힘을 낭비할수록 감점</td></tr><tr><td>한 판 점수</td><td>넘어질 때까지(최대 1,000걸음) 보상을 더한 값</td></tr></table></div><div class="try"><b>숫자로 한 번 해 보기</b><br>속도 3 m/s, 힘²의 합 1.2라면 5.0 + 3.75 − 0.12 = <b>8.63점</b>. 1,000걸음을 버티면 한 판에 약 <b>8,630점</b>. 같은 속도라도 20걸음 만에 넘어지면 약 173점뿐이에요.</div><div class="ask" style="margin-top:12px"><img data-who="asst" data-mood="spark" alt="" aria-hidden="true"><p><b>하루</b> 아, 그래서 "빨리"보다 "오래 버티기"가 먼저군요. 넘어지면 남은 걸음 점수를 통째로 잃으니까요.</p></div></div></div>
-<div class="talk" aria-label="칸 대화"><div class="line" data-who="robo"><img data-who="robo" data-mood="calc" alt="" aria-hidden="true"><b>주판봇</b><p>서 있기만 해도 5점이면, 그냥 가만히 서 있으면 1,000걸음 × 5 = 5,000점이잖아. 개이득!</p></div><div class="line" data-who="fly"><img data-who="fly" data-mood="point" alt="" aria-hidden="true"><b>초파리</b><p>맞아, 그래서 보상을 잘못 짜면 서 있기만 배워. 9-4에서 직접 확인해 봐.</p></div><div class="line" data-who="asst"><img data-who="asst" data-mood="report" alt="" aria-hidden="true"><b>하루</b><p>학습 정도 슬라이더를 0으로 내리면 바닥에 누워 버둥거려요. 상태 숫자는 그대로 348개인데, 고르는 행동이 엉망인 거예요.</p></div></div>
-<div class="explain"><h4>풀이</h4><ol><li>상태는 숫자 348개, 행동은 관절 힘 17개입니다. 정책은 "348개를 보고 17개를 고르는" 신경망입니다.</li><li>보상은 걸음마다 받고, 넘어지면 한 판이 끝납니다. 그래서 오래 버티는 것 자체가 큰 점수입니다.</li><li>겸손한 로봇과 다른 점은 행동이 셋(전진·정지·되묻기)이 아니라 연속된 힘 17개라는 것뿐, 네 가지 틀은 같습니다.</li></ol><p class="lim"><b>이 칸의 한계</b> 그림 속 주자는 연구실이 직접 그린 해설용 인형입니다. 관절 움직임은 학습 정도에 맞춰 만든 동작이고, 실제 물리 엔진으로 학습한 결과가 아닙니다. 숫자 348·17·5.0·1.25·0.1은 Gymnasium Humanoid(v5) 문서의 기본 설정입니다.</p></div>
-<details><summary>연습장 코드로 보면 (몰라도 됩니다 · 이 페이지는 실행하지 않습니다)</summary><div class="codeline"><div class="code">env = gym.make("Humanoid-v5")</div><p>가상 몸과 바닥, 보상식이 들어 있는 연습장을 엽니다.</p></div><div class="codeline"><div class="code">obs, info = env.reset()</div><p>처음 자세의 상태 숫자 348개를 받습니다.</p></div><div class="codeline"><div class="code">obs, reward, terminated, truncated, info = env.step(action)</div><p>관절 힘 17개를 주면, 다음 상태·한 걸음 보상·넘어졌는지를 돌려줍니다.</p></div></details>
-<div class="quiz" data-quiz="q91"></div></div></section><section class="level" id="s2"><div class="wrap"><div class="lvhead"><div class="hexno">9-2<small>중챕터</small></div><div><h2>학습 대시보드 · 3,000만 걸음을 한눈에</h2><div class="sub"><span class="lvtag rl">방법: 학습 곡선 읽기</span><span class="lvtag ">일상: 운동 기록장</span></div></div></div><p>학습은 수천만 걸음 동안 같은 일을 되풀이합니다. ① 지금 정책으로 한 판 달려 보고, ② 걸음마다 점수를 모으고, ③ 점수가 높았던 동작이 더 자주 나오게 정책을 조금 고칩니다. 아래 대시보드는 그 과정을 한 화면에 모은 것입니다.</p>
-<div class="panel" id="p92"><h3>대시보드 · 3,000만 걸음의 학습 과정 <span class="stamp">해설용 재현 · 점수는 보상식으로 계산한 예시값</span></h3>
-<div class="cwrap"><canvas id="cv92" data-h="340" aria-label="학습 진행에 따라 달리는 모습이 바뀌는 3D 가상 주자와 화면 정보"></canvas></div>
-<div class="ctrl"><div class="group"><span class="glabel">학습 진행</span><input type="range" id="r92" min="0" max="100" value="15" aria-label="학습 진행"><span class="val" id="v92">15%</span></div>
-<div class="group"><button class="bt primary" id="b92">자동으로 학습시키기</button><button class="bt" id="b92r">처음으로</button></div></div>
-<section class="kpis" id="k92" aria-live="polite"></section>
-<div class="cwrap"><canvas id="cv92c" data-h="210" aria-label="학습 걸음 수에 따른 한 판 점수 곡선과 버틴 걸음 수"></canvas></div>
-<div class="insight" id="i92" aria-live="polite"></div></div>
+<div class="talk" aria-label="칸 대화"><div class="line" data-who="robo"><img data-who="robo" data-mood="calc" alt="" aria-hidden="true"><b>주판봇</b><p>서 있기만 해도 5점이면, 가만히 서 있어도 1,000걸음 × 5 = 5,000점이잖아. 개이득!</p></div><div class="line" data-who="fly"><img data-who="fly" data-mood="point" alt="" aria-hidden="true"><b>초파리</b><p>맞아, 그래서 보상을 잘못 짜면 서 있기만 배워. 9-5에서 직접 바꿔 볼 수 있어.</p></div><div class="line" data-who="asst"><img data-who="asst" data-mood="report" alt="" aria-hidden="true"><b>하루</b><p>보상 설계는 reward_variants.py 한 파일에 모아 뒀어요. 기본 설정이 위 표 그대로예요.</p></div></div>
+<div class="explain"><h4>풀이</h4><ol><li>상태는 숫자 348개, 행동은 관절 힘 17개, 보상은 서 있기 + 속도 − 힘 낭비입니다.</li><li>보상은 걸음마다 받고, 넘어지면 한 판이 끝납니다. 그래서 오래 버티는 것 자체가 큰 점수입니다.</li><li>겸손한 로봇과 다른 점은 행동이 셋이 아니라 연속된 힘 17개라는 것뿐, 네 가지 틀은 같습니다.</li></ol><p class="lim"><b>이 칸의 한계</b> 숫자 348·17·5.0·1.25·0.1·1,000은 Gymnasium Humanoid-v5 문서의 기본 설정입니다. 다른 버전이나 설정을 쓰면 달라질 수 있습니다.</p></div>
+<details><summary>소스코드 · reward_variants.py — 환경과 보상 설계 (펼치기)</summary><p class="small"><a href="code/ch9_humanoid/reward_variants.py" download>reward_variants.py 내려받기</a></p><div class="code">&quot;&quot;&quot;9장 가이드 · 보상 설계를 바꾼 Humanoid-v5 환경을 만든다.
+
+Humanoid-v5 기본 보상 (Gymnasium 문서):
+    한 걸음 보상 = healthy_reward(5.0) + forward_reward_weight(1.25) × 앞으로 간 속도
+                 − ctrl_cost_weight(0.1) × (관절 힘²의 합) − contact_cost
+몸통 높이가 healthy_z_range(1.0~2.0m)를 벗어나면(넘어지면) 한 판이 끝나고, 최대 1,000걸음이다.
+&quot;&quot;&quot;
+import gymnasium as gym
+
+VARIANTS = {
+    # 기본 보상: 서 있기 + 속도 − 힘 낭비
+    &quot;default&quot;: {},
+    # A 속도만: 서 있기 점수와 힘 벌점을 없앤다
+    &quot;speed_only&quot;: {&quot;healthy_reward&quot;: 0.0, &quot;ctrl_cost_weight&quot;: 0.0},
+    # B 서 있기만: 속도 점수와 힘 벌점을 없앤다
+    &quot;stand_only&quot;: {&quot;forward_reward_weight&quot;: 0.0, &quot;ctrl_cost_weight&quot;: 0.0},
+    # C 속도 + 서 있기: 힘 벌점만 없앤다
+    &quot;no_energy&quot;: {&quot;ctrl_cost_weight&quot;: 0.0},
+}
+
+
+def make_env(variant=&quot;default&quot;, render_mode=None, **extra):
+    &quot;&quot;&quot;보상 설계 이름(variant)으로 Humanoid-v5 환경을 만든다.&quot;&quot;&quot;
+    if variant not in VARIANTS:
+        raise ValueError(f&quot;variant는 {list(VARIANTS)} 가운데 하나여야 합니다: {variant}&quot;)
+    kwargs = dict(VARIANTS[variant])
+    kwargs.update(extra)
+    return gym.make(&quot;Humanoid-v5&quot;, render_mode=render_mode, **kwargs)
+</div></details>
+<div class="quiz" data-quiz="q91"></div></div></section><section class="level" id="s2"><div class="wrap"><div class="lvhead"><div class="hexno">9-2<small>중챕터</small></div><div><h2>준비하기 · 설치와 확인</h2><div class="sub"><span class="lvtag g">가이드: 환경 준비</span><span class="lvtag ">일상: 실험 전 장비 점검</span></div></div></div><p>준비는 세 단계입니다. ① 파이썬 가상환경을 만들고, ② 꾸러미를 설치하고, ③ 가상 주자가 열리는지 확인합니다. Windows · macOS · Linux 모두 같은 순서입니다.</p>
+<div class="steps"><div><span class="n">①</span><h4>가상환경 만들기</h4><p>파이썬 3.10 이상을 준비합니다. 다른 프로젝트와 섞이지 않게 이 실습만의 가상환경(venv 또는 conda)을 만듭니다.</p></div>
+<div><span class="n">②</span><h4>꾸러미 설치</h4><p>내려받은 폴더에서 requirements.txt로 설치합니다. 물리 엔진 MuJoCo가 Gymnasium과 함께 설치됩니다.</p></div>
+<div><span class="n">③</span><h4>열리는지 확인</h4><p>가상 주자를 한 번 만들어 상태 348개, 행동 17개가 나오는지 봅니다. 화면 없는 서버에서는 MUJOCO_GL=egl을 먼저 설정합니다.</p></div></div>
+<details><summary>명령어로 보면 (펼치기)</summary><div class="code"># ① 가상환경 (Windows는 rl\Scripts\activate)
+python -m venv rl
+source rl/bin/activate
+
+# ② 설치
+pip install -r requirements.txt
+
+# ③ 확인
+python -c &quot;from reward_variants import make_env; e=make_env(); o,_=e.reset(seed=0); print(o.shape, e.action_space.shape)&quot;
+
+# (화면 없는 서버만) 그림 그리기 설정
+export MUJOCO_GL=egl</div></details>
+<div class="why"><h4>예상 결과 화면 · ③ 확인</h4><div class="code">(348,) (17,)</div></div>
+<div class="duo"><div class="why"><h4>컴퓨터 사양 안내</h4><ol>
+<li><b>CPU만으로</b> 돌아갑니다. 다만 학습이 느려 짧은 시험(수만 걸음)에 알맞습니다</li>
+<li><b>NVIDIA GPU</b>가 있으면 <b>--device cuda</b>로 신경망 계산을 빠르게 할 수 있습니다. 물리 계산은 CPU가 맡습니다</li>
+<li><b>시간</b> 달리는 동작까지는 보통 수십만~수백만 걸음 이상이 필요하고, 컴퓨터에 따라 몇 시간 이상 걸립니다</li></ol>
+<p class="easy"><b>한 줄로</b> 먼저 짧게(--steps 20000) 돌려 코드가 도는지 보고, 그다음 길게 돌리세요.</p></div>
+<div class="why"><h4>자주 막히는 곳</h4><ol>
+<li><b>mujoco 설치 오류</b> 파이썬 버전을 3.10~3.12로 맞추고 pip를 최신으로 올립니다</li>
+<li><b>그림이 안 그려짐</b> 화면 없는 서버면 MUJOCO_GL=egl, 안 되면 osmesa</li>
+<li><b>한글 글자가 네모</b> 영상의 글자는 영어로 넣었으니 그대로 두면 됩니다</li></ol></div></div>
+<div class="talk" aria-label="칸 대화"><div class="line" data-who="sia"><img data-who="sia" data-mood="signal" alt="" aria-hidden="true"><b>시아</b><p>X1 질문에 답할게요. 노트북 CPU로도 돌아가요. 다만 짧은 시험부터 하세요.</p></div><div class="line" data-who="robo"><img data-who="robo" data-mood="sweat" alt="" aria-hidden="true"><b>주판봇</b><p>몇 시간이라… 전기료도 장부에 적어야겠군.</p></div><div class="line" data-who="fly"><img data-who="fly" data-mood="arms" alt="" aria-hidden="true"><b>초파리</b><p>실물 로봇 수리비에 비하면 공짜야. 그래서 가상에서 먼저 넘어뜨리는 거지(7장).</p></div></div>
+<div class="explain"><h4>풀이</h4><ol><li>가상환경 → 설치 → 확인 순서로 준비합니다.</li><li>확인 화면에 (348,) (17,)이 나오면 상태와 행동의 크기가 9-1 표와 같은 것입니다.</li><li>시간은 컴퓨터마다 크게 다르므로 짧은 시험으로 먼저 속도를 재 봅니다.</li></ol><p class="lim"><b>이 칸의 한계</b> 설치 명령과 확인 결과는 2026년 11월 기준 Gymnasium 1.x · Stable-Baselines3 2.x로 연구실이 확인했습니다. 버전이 바뀌면 설정 이름이 달라질 수 있습니다.</p></div>
+<details><summary>소스코드 · requirements.txt — 설치 목록 (펼치기)</summary><p class="small"><a href="code/ch9_humanoid/requirements.txt" download>requirements.txt 내려받기</a></p><div class="code">gymnasium[mujoco]&gt;=1.0
+stable-baselines3&gt;=2.3
+tensorboard
+imageio
+imageio-ffmpeg
+matplotlib
+pandas
+pillow
+</div></details>
+<div class="quiz" data-quiz="q92"></div></div></section><section class="level" id="s3"><div class="wrap"><div class="lvhead"><div class="hexno">9-3<small>중챕터</small></div><div><h2>학습시키기 · 명령 한 줄과 콘솔 읽기</h2><div class="sub"><span class="lvtag rl">가이드: SAC 학습</span><span class="lvtag ">일상: 훈련 일지</span></div></div></div><p>학습은 명령 한 줄로 시작합니다. 프로그램은 ① 지금 두뇌로 한 판 달려 보고, ② 걸음마다 점수를 모으고, ③ 점수가 높았던 동작이 더 자주 나오게 두뇌를 고치는 일을 정해진 걸음 수만큼 되풀이합니다. 일정 걸음마다 중간 두뇌(체크포인트)를 저장해 두어, 나중에 단계별 영상을 만들 수 있습니다.</p>
+<details><summary>명령어로 보면 (펼치기)</summary><div class="code"># 짧은 시험 (코드가 도는지 확인)
+python train_humanoid.py --steps 20000 --save-every 5000 --out runs/test
+
+# 본 학습 (GPU가 있으면 --device cuda)
+python train_humanoid.py --steps 2000000 --save-every 100000 --out runs/default
+
+# 진행 상황 보기 (다른 창에서)
+tensorboard --logdir runs</div></details>
+<div class="duo"><div class="why"><h4>예상 결과 화면 · 학습 중 콘솔 (일부)</h4><div class="code">---------------------------------
+| rollout/           |          |
+|    ep_len_mean     | 26.4     |
+|    ep_rew_mean     | 139      |
+| time/              |          |
+|    fps             | 68       |
+|    total_timesteps | 3897     |
+---------------------------------</div></div>
+<div class="why"><h4>콘솔 읽는 법</h4><ol>
+<li><b>ep_len_mean</b> 최근 판들의 평균 버틴 걸음. 처음엔 수십 걸음, 1,000에 가까워지면 넘어지지 않는 몸</li>
+<li><b>ep_rew_mean</b> 최근 판들의 평균 점수. 학습 곡선의 주인공</li>
+<li><b>fps</b> 1초에 처리하는 걸음 수. 이것으로 남은 시간을 어림합니다</li>
+<li><b>total_timesteps</b> 지금까지 밟은 걸음 전체</li></ol>
+<p class="easy"><b>한 줄로</b> 처음에는 버틴 걸음이 먼저 늘고, 그다음 점수가 가파르게 오르는 모습을 기대하면 됩니다.</p></div></div>
+<p class="small muted">위 콘솔은 연구실 서버(CPU 2개)에서 짧은 시험을 돌렸을 때 실제로 찍힌 값입니다. 학습 초반이라 평균 26걸음 만에 넘어지고 있습니다.</p>
+<div class="duo"><div class="why"><h4>학습 방법과 저장</h4><ol><li><b>왜 SAC인가</b> 관절 힘처럼 연속된 행동에 잘 맞는 학습 방법으로 널리 쓰입니다. 같은 경험을 여러 번 다시 써서 걸음 수 대비 학습이 빠른 편입니다.</li><li><b>PPO도 된다</b> --algo ppo로 바꿀 수 있습니다. 대신 보통 더 많은 걸음이 필요합니다.</li><li><b>체크포인트</b> 학습이 끝나면 처음부터 다시 볼 수 없으니, 중간 두뇌를 저장해 두어야 "버둥거림 → 달리기" 영상을 만들 수 있습니다.</li></ol><p class="easy"><b>쉽게 말하면</b> 운동 선수가 훈련 일지를 쓰고 주마다 영상을 찍어 두는 것과 같습니다.</p></div>
+<div class="mathbox"><h4>수학 수식을 어려워하는 조수가 대신 물어봅니다</h4><div class="ask"><img data-who="asst" data-mood="shock" alt="" aria-hidden="true"><p><b>하루</b> 곡선이 계단처럼 확 뛰는 구간이 있다던데, 왜 거기서 갑자기 좋아져요?</p></div><p class="school">학교 수학으로 보면: 중학교 수학 · 곱셈과 일차식</p><div class="eqbig">한 판 점수 = 버틴 걸음 수 × 한 걸음 보상</div><div class="tw"><table class="tb"><tr><th>식 조각</th><th>뜻</th></tr><tr><td>버틴 걸음 수</td><td>넘어지기 전까지 걸음. 처음엔 수십 걸음</td></tr><tr><td>한 걸음 보상</td><td>5.0 + 1.25 × 속도 − 힘 낭비</td></tr><tr><td>곱</td><td>둘 중 하나만 늘어도 점수가 늘고, 둘이 함께 늘면 크게 뜁니다</td></tr></table></div><div class="try"><b>숫자로 한 번 해 보기</b><br>26걸음 × 5.3점 ≈ <b>139점</b>(위 콘솔과 같은 크기). 만약 1,000걸음을 버티며 걸음당 8점을 받으면 <b>8,000점</b>. 버틴 걸음이 늘어나는 순간 점수가 수십 배로 뜁니다.</div><div class="ask" style="margin-top:12px"><img data-who="asst" data-mood="spark" alt="" aria-hidden="true"><p><b>하루</b> 곱셈이라서 그렇군요! "안 넘어지기"를 배우는 순간 점수가 확 뛰어요.</p></div></div></div>
+<div class="talk" aria-label="칸 대화"><div class="line" data-who="sia"><img data-who="sia" data-mood="signal" alt="" aria-hidden="true"><b>시아</b><p>X3 질문에 답할게요. 짧은 시험으로 fps를 재고, 목표 걸음 수를 fps로 나누면 대략의 시간이 나와요.</p></div><div class="line" data-who="robo"><img data-who="robo" data-mood="calc" alt="" aria-hidden="true"><b>주판봇</b><p>fps 68이면 200만 걸음은… 약 8시간이네. 밤새 돌리면 되겠다!</p></div><div class="line" data-who="fly"><img data-who="fly" data-mood="point" alt="" aria-hidden="true"><b>초파리</b><p>학습이 진행되면 계산이 늘어 fps가 더 떨어지기도 해. 그 숫자는 어림일 뿐이야.</p></div><div class="line" data-who="moa"><img data-who="moa" data-mood="report" alt="" aria-hidden="true"><b>모아</b><p>기록할게요. 오늘의 숫자는 "버틴 걸음 1,000"이에요!</p></div></div>
+<div class="explain"><h4>풀이</h4><ol><li>train_humanoid.py가 학습하며 한 판 기록(monitor.csv), 체크포인트, TensorBoard 기록을 남깁니다.</li><li>콘솔의 ep_len_mean(버틴 걸음)과 ep_rew_mean(점수)이 함께 오르는지 봅니다.</li><li>점수가 한동안 제자리여도 정상입니다. 버티는 법을 찾는 순간 크게 뜁니다.</li></ol><p class="lim"><b>이 칸의 한계</b> 학습에 드는 걸음 수와 시간, 곡선 모양은 학습 방법·설정·난수·컴퓨터에 따라 크게 다릅니다. 이 장은 결과를 보장하지 않으며, 페이지의 그림은 예상 화면입니다.</p></div>
+<details><summary>소스코드 · train_humanoid.py — 학습과 체크포인트 저장 (펼치기)</summary><p class="small"><a href="code/ch9_humanoid/train_humanoid.py" download>train_humanoid.py 내려받기</a></p><div class="code">&quot;&quot;&quot;9장 가이드 · Humanoid-v5 가상 주자를 강화학습(SAC 또는 PPO)으로 학습시킨다.
+
+사용 예:
+    python train_humanoid.py --steps 2000000 --out runs/default
+    python train_humanoid.py --variant speed_only --steps 1000000 --out runs/speed_only
+결과:
+    runs/&lt;이름&gt;/monitor.csv          한 판마다 점수(r)·걸음 수(l)·시간(t)
+    runs/&lt;이름&gt;/checkpoints/*.zip    일정 걸음마다 저장한 두뇌(정책)
+    runs/&lt;이름&gt;/tb/                  TensorBoard 기록 (tensorboard --logdir runs)
+    runs/&lt;이름&gt;/final.zip            마지막 두뇌
+&quot;&quot;&quot;
+import argparse
+import os
+
+from stable_baselines3 import PPO, SAC
+from stable_baselines3.common.callbacks import CheckpointCallback
+from stable_baselines3.common.monitor import Monitor
+
+from reward_variants import VARIANTS, make_env
+
+
+def main():
+    p = argparse.ArgumentParser()
+    p.add_argument(&quot;--algo&quot;, choices=[&quot;sac&quot;, &quot;ppo&quot;], default=&quot;sac&quot;, help=&quot;학습 방법 (기본 SAC)&quot;)
+    p.add_argument(&quot;--variant&quot;, choices=list(VARIANTS), default=&quot;default&quot;, help=&quot;보상 설계&quot;)
+    p.add_argument(&quot;--steps&quot;, type=int, default=2_000_000, help=&quot;전체 학습 걸음 수&quot;)
+    p.add_argument(&quot;--save-every&quot;, type=int, default=100_000, help=&quot;체크포인트 저장 간격(걸음)&quot;)
+    p.add_argument(&quot;--out&quot;, default=&quot;runs/default&quot;, help=&quot;결과 폴더&quot;)
+    p.add_argument(&quot;--seed&quot;, type=int, default=0)
+    p.add_argument(&quot;--device&quot;, default=&quot;auto&quot;, help=&quot;auto · cuda · cpu&quot;)
+    a = p.parse_args()
+
+    os.makedirs(a.out, exist_ok=True)
+    env = Monitor(make_env(a.variant), os.path.join(a.out, &quot;monitor.csv&quot;))
+
+    Algo = SAC if a.algo == &quot;sac&quot; else PPO
+    model = Algo(&quot;MlpPolicy&quot;, env, seed=a.seed, verbose=1, device=a.device,
+                 tensorboard_log=os.path.join(a.out, &quot;tb&quot;))
+
+    ckpt = CheckpointCallback(save_freq=a.save_every, save_path=os.path.join(a.out, &quot;checkpoints&quot;),
+                              name_prefix=&quot;humanoid&quot;)
+    model.learn(total_timesteps=a.steps, callback=ckpt, progress_bar=False)
+    model.save(os.path.join(a.out, &quot;final&quot;))
+    env.close()
+    print(&quot;끝:&quot;, a.out)
+
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</div></details>
+<div class="quiz" data-quiz="q93"></div></div></section><section class="level" id="s4"><div class="wrap"><div class="lvhead"><div class="hexno">9-4<small>중챕터</small></div><div><h2>학습 과정 영상과 대시보드 만들기</h2><div class="sub"><span class="lvtag g">가이드: 녹화 · 시각화</span><span class="lvtag ">일상: 성장 앨범</span></div></div></div><p>학습이 끝나면 두 가지 결과물을 만듭니다. ① 체크포인트마다 한 판씩 달리게 해 단계별 동작을 이어 붙인 <b>학습 과정 영상</b>, ② 한 판 기록으로 그린 <b>학습 대시보드</b>(점수 · 버틴 걸음 · 속도)입니다.</p>
+<details><summary>명령어로 보면 (펼치기)</summary><div class="code"># 학습 과정 영상 + 체크포인트 요약표
+python record_checkpoints.py --run runs/default --count 6
+
+# 학습 대시보드 그림
+python plot_dashboard.py --run runs/default</div></details>
+<h3>예상 결과 화면 · 학습 과정 영상 <span class="stamp">연구실이 그린 예상 화면 · 실제 학습 영상 아님</span></h3>
+<figure><video src="media/ch9_expected_process.mp4" poster="media/ch9_expected_poster.jpg" controls muted playsinline preload="metadata" width="960" style="width:100%;height:auto"></video>
+<figcaption>학습이 잘되면 이런 순서의 영상이 나옵니다: 버둥거림 → 일어서다 넘어짐 → 비틀비틀 → 내딛기 → 버티기 → 달리기. 실제 영상은 MuJoCo가 그린 주자이고, 화면 왼쪽 위에 걸음 수 · 점수 · 속도가 찍힙니다.</figcaption></figure>
+<h3>실제 결과 화면 · 연구실에서 짧게 돌려 본 3만 걸음 <span class="stamp real">실제 실행 결과</span></h3>
+<p>코드가 정말 도는지 보려고 연구실 서버(CPU 2개, GPU 없음)에서 SAC로 3만 걸음만 학습시키고, 위 두 명령으로 영상과 대시보드를 만들었습니다. 아직 학습 초반이라 달리지 못하고, 몇 걸음 내딛다 넘어지는 단계입니다.</p>
+<div class="duo"><figure><video src="media/ch9_real_30k.mp4" poster="media/ch9_real_30k_poster.jpg" controls muted playsinline preload="metadata" width="640" style="width:100%;height:auto"></video>
+<figcaption>learning_process.mp4 (실제): 1만 · 2만 · 3만 걸음 체크포인트의 한 판. MuJoCo가 그린 주자입니다.</figcaption></figure>
+<figure><img src="media/ch9_real_30k_dashboard.png" alt="실제 학습 대시보드: 점수는 약 100에서 350 안팎으로 오르고, 버틴 걸음은 70 안팎에 머문다" width="900" height="900" style="width:100%;height:auto"><figcaption>dashboard.png (실제): 위부터 한 판 점수 · 버틴 걸음 · 체크포인트별 평균 속도</figcaption></figure></div>
+<div class="tw"><table class="tb"><tr><th>항목 (실제 기록)</th><th class="n">값</th><th>읽는 법</th></tr>
+<tr><td>학습한 걸음 · 판 수</td><td class="n">30,274걸음 · 516판</td><td>한 판 평균 60걸음 남짓. 대부분 금방 넘어짐</td></tr>
+<tr><td>처음 20판 평균 점수 → 마지막 50판</td><td class="n">113 → 360</td><td>약 3배. "넘어지기 전에 조금 더 버티기"를 배우는 중</td></tr>
+<tr><td>마지막 50판 평균 버틴 걸음</td><td class="n">72 / 1,000</td><td>아직 1,000에 한참 못 미침. 달리기까지는 훨씬 더 학습해야 함</td></tr>
+<tr><td>체크포인트별 평균 속도 (1만 · 2만 · 3만)</td><td class="n">0.54 · 0.38 · 0.21 m/s</td><td>속도는 오히려 줄었음. 지금은 "버티기"를 먼저 배우는 단계라는 신호</td></tr></table></div>
+<p class="small muted">이 기록은 <a href="code/ch9_humanoid/sample_run/monitor.csv" download>monitor.csv</a>와 <a href="code/ch9_humanoid/sample_run/checkpoint_summary.csv" download>checkpoint_summary.csv</a>로 함께 올려 두었습니다. 같은 명령이라도 컴퓨터와 난수가 다르면 값이 달라집니다.</p>
+<div class="tw"><table class="tb"><tr><th>만들어지는 파일</th><th>무엇이 들어 있나</th><th>무엇을 보면 되나</th></tr>
+<tr><td>learning_process.mp4</td><td>체크포인트별 한 판 영상을 이어 붙인 것</td><td>단계마다 동작이 어떻게 바뀌는지</td></tr>
+<tr><td>checkpoint_summary.csv</td><td>체크포인트별 점수 · 버틴 걸음 · 평균 속도</td><td>"버티기 → 속도" 순서로 느는지</td></tr>
+<tr><td>dashboard.png</td><td>학습 걸음에 따른 점수 · 버틴 걸음 · 속도 그래프</td><td>곡선이 오르다 눕는지, 뚝 떨어지는 판(탐험)이 있는지</td></tr></table></div>
 <div class="duo"><div class="why"><h4>대시보드 읽는 법</h4><ol>
-<li><b>학습 걸음 수</b> 지금까지 시뮬레이터에서 밟은 걸음 전체. 한 판은 최대 1,000걸음</li>
-<li><b>한 판 점수</b> 넘어질 때까지 받은 보상의 합. 학습이 잘되는지 보는 첫 숫자</li>
-<li><b>버틴 걸음</b> 넘어지기 전까지 걸음 수. 1,000에 닿으면 "넘어지지 않는 몸"</li>
-<li><b>점수 곡선의 흔들림</b> 곡선 위 점이 가끔 뚝 떨어집니다. 새 동작을 시험하다 넘어진 판입니다</li></ol>
-<p class="easy"><b>한 줄로</b> 처음엔 "버티기"가 늘고(초록), 그다음 "속도"가 늡니다(파랑). 순서가 바뀌는 일은 드뭅니다.</p></div>
-<div class="mathbox"><h4>수학 수식을 어려워하는 조수가 대신 물어봅니다</h4><div class="ask"><img data-who="asst" data-mood="shock" alt="" aria-hidden="true"><p><b>하루</b> 곡선이 계단처럼 확 뛰는 구간이 있던데, 왜 거기서 갑자기 좋아져요?</p></div><p class="school">학교 수학으로 보면: 중학교 수학 · 곱셈과 일차식</p><div class="eqbig">한 판 점수 = 버틴 걸음 수 × 한 걸음 보상</div><div class="tw"><table class="tb"><tr><th>식 조각</th><th>뜻</th></tr><tr><td>버틴 걸음 수</td><td>넘어지기 전까지 걸음. 처음엔 수십 걸음</td></tr><tr><td>한 걸음 보상</td><td>5.0 + 1.25 × 속도 − 힘 낭비</td></tr><tr><td>곱</td><td>둘 중 하나만 늘어도 점수가 늘고, 둘이 함께 늘면 크게 뜁니다</td></tr></table></div><div class="try"><b>숫자로 한 번 해 보기</b><br>학습 50%: 545걸음 × 8.43점 ≈ <b>4,593점</b>. 학습 75%: 1,000걸음 × 10.91점 ≈ <b>10,911점</b>. 버틴 걸음이 두 배 가까이, 걸음당 점수도 30% 늘어 점수가 2.4배가 됐어요.</div><div class="ask" style="margin-top:12px"><img data-who="asst" data-mood="spark" alt="" aria-hidden="true"><p><b>하루</b> 곱셈이라서 그렇군요! "안 넘어지기"를 배우는 순간 점수가 확 뛰어요.</p></div></div></div>
-<div class="talk" aria-label="칸 대화"><div class="line" data-who="robo"><img data-who="robo" data-mood="happy" alt="" aria-hidden="true"><b>주판봇</b><p>곡선이 쭉쭉 올라가잖아! 1억 걸음 시키면 무한대로 오르겠네.</p></div><div class="line" data-who="fly"><img data-who="fly" data-mood="point" alt="" aria-hidden="true"><b>초파리</b><p>1,000걸음이 한 판의 끝이야. 버틴 걸음이 1,000에 닿으면 남는 건 속도뿐이고, 몸이 낼 수 있는 속도엔 한계가 있지. 곡선 끝이 눕는 거 봐.</p></div><div class="line" data-who="asst"><img data-who="asst" data-mood="report" alt="" aria-hidden="true"><b>하루</b><p>자동 학습을 눌러 보세요. 25% 근처에서 버틴 걸음이 갑자기 늘고, 75%쯤에서 1,000에 닿아요.</p></div><div class="line" data-who="moa"><img data-who="moa" data-mood="report" alt="" aria-hidden="true"><b>모아</b><p>기록할게요. 오늘의 숫자는 "버틴 걸음 1,000"이에요!</p></div></div>
-<div class="explain"><h4>풀이</h4><ol><li>한 판 점수는 버틴 걸음 수와 걸음당 보상의 곱입니다.</li><li>학습 초반에는 넘어지지 않는 법(버티기)이, 후반에는 빨리 가는 법(속도)이 점수를 끌어올립니다.</li><li>점수 곡선의 뚝 떨어지는 점은 탐험의 흔적입니다. 새 동작을 시험하다 넘어진 판이고, 이 시행착오가 없으면 더 나은 동작을 찾지 못합니다.</li></ol><p class="lim"><b>이 칸의 한계</b> 3,000만 걸음, 학습 정도별 속도·버틴 시간은 이 페이지가 정한 예시값입니다. 점수는 그 예시값을 Gymnasium Humanoid 보상식에 넣어 계산했습니다. 실제 학습에 드는 걸음 수는 학습 방법과 설정에 따라 크게 다릅니다.</p></div>
-<div class="quiz" data-quiz="q92"></div></div></section><section class="level" id="s3"><div class="wrap"><div class="lvhead"><div class="hexno">9-3<small>중챕터</small></div><div><h2>학습 영상 · 버둥거림에서 달리기까지</h2><div class="sub"><span class="lvtag g">자료: 학습 과정 영상</span><span class="lvtag ">일상: 성장 앨범</span></div></div></div><p>대시보드의 장면을 시간 순서로 이어 붙인 영상입니다. 처음 60만 걸음에서는 일어서지도 못하고, 450만 걸음에서는 일어서다 넘어지고, 3,000만 걸음에서야 팔과 다리가 맞물려 달립니다. 화면 왼쪽 아래의 학습 걸음 수 · 한 판 점수 · 속도는 9-2 대시보드와 같은 계산입니다.</p>
-<figure><video src="media/rl_runner_training.mp4" poster="media/rl_runner_poster.jpg" controls muted playsinline preload="metadata" width="960" style="width:100%;height:auto"></video>
-<figcaption>3D 가상 주자의 학습 과정 (약 26초). 연구실이 직접 그린 해설용 재현이며, 실제 물리 학습 영상이 아닙니다.</figcaption></figure>
-<div class="tw"><table class="tb"><tr><th>장면</th><th class="n">학습 걸음 수</th><th class="n">버틴 걸음</th><th class="n">속도</th><th class="n">한 판 점수</th><th>무엇을 배운 단계인가</th></tr>
-<tr><td>① 버둥거림</td><td class="n">60만</td><td class="n">17</td><td class="n">0.2 m/s</td><td class="n">85</td><td>어떤 힘이 몸을 일으키는지 아직 모름</td></tr>
-<tr><td>② 일어서다 넘어짐</td><td class="n">450만</td><td class="n">68</td><td class="n">0.7 m/s</td><td class="n">384</td><td>서 있으면 점수가 난다는 것을 앎</td></tr>
-<tr><td>③ 비틀비틀 걷기</td><td class="n">900만</td><td class="n">188</td><td class="n">1.5 m/s</td><td class="n">1,259</td><td>팔을 벌려 균형 잡기</td></tr>
-<tr><td>④ 달리기 시작</td><td class="n">1,500만</td><td class="n">545</td><td class="n">2.8 m/s</td><td class="n">4,593</td><td>다리를 번갈아 내딛기</td></tr>
-<tr><td>⑤ 잘 안 넘어짐</td><td class="n">2,250만</td><td class="n">1,000</td><td class="n">4.8 m/s</td><td class="n">10,911</td><td>한 판을 끝까지 버팀</td></tr>
-<tr class="hi"><td>⑥ 달린다</td><td class="n">3,000만</td><td class="n">1,000</td><td class="n">7.0 m/s</td><td class="n">13,667</td><td>팔·다리가 맞물린 효율적인 동작</td></tr></table></div>
-<p>방청석의 반응입니다. <span class="cmdcard"><img data-who="x1" data-mood="hint" alt="" aria-hidden="true"><span><b>X1</b> (타닥) 450만 걸음에서도 넘어져?</span></span> <span class="cmdcard"><img data-who="x2" data-mood="hint" alt="" aria-hidden="true"><span><b>X2</b> (번쩍) 3,000만에서 드디어!</span></span> <span class="cmdcard"><img data-who="x3" data-mood="hint" alt="" aria-hidden="true"><span><b>X3</b> (웅웅) 그동안 몇 번 넘어진 거야</span></span></p>
-<div class="talk" aria-label="칸 대화"><div class="line" data-who="sia"><img data-who="sia" data-mood="signal" alt="" aria-hidden="true"><b>시아</b><p>X3 질문에 답할게요. 표의 버틴 걸음으로 거꾸로 세면, 초반에는 수십 걸음마다 한 번씩 넘어졌어요. 처음 수백만 걸음에서만 수만 번이에요.</p></div><div class="line" data-who="robo"><img data-who="robo" data-mood="sweat" alt="" aria-hidden="true"><b>주판봇</b><p>수만 번… 실물 로봇이었으면 수리비만 내 주판알보다 많겠다.</p></div><div class="line" data-who="fly"><img data-who="fly" data-mood="arms" alt="" aria-hidden="true"><b>초파리</b><p>그래서 가상에서 배우고 실물로 옮기는 거야. 7장의 Sim-to-Real과 같은 이유지.</p></div><div class="line" data-who="doc"><img data-who="doc" data-mood="think" alt="" aria-hidden="true"><b>박사</b><p>그리고 그 고리는 연구실의 다른 시리즈 「강화학습이 꿰는 실」에서 본 "해 보고, 점수를 보고, 고친다"와 같습니다.</p></div></div>
-<div class="explain"><h4>풀이</h4><ol><li>영상의 여섯 장면은 대시보드에서 학습 정도를 2%, 15%, 30%, 50%, 75%, 100%로 둔 화면입니다.</li><li>버틴 걸음이 1,000에 닿는 ⑤부터는 넘어지지 않고, 그 뒤로는 속도만 오릅니다.</li><li>영상 마지막 문장 "해 보고 → 점수를 보고 → 고친다"는 6-0에서 본 강화학습의 고리입니다.</li></ol><p class="lim"><b>이 칸의 한계</b> 영상은 이 페이지의 그림 엔진으로 만든 26초짜리 해설 영상입니다. 실제 학습 영상은 학습 방법·보상식·난수에 따라 넘어지는 모습과 걸음 수가 모두 다릅니다.</p></div>
-<div class="quiz" data-quiz="q93"></div></div></section><section class="level" id="s4"><div class="wrap"><div class="lvhead"><div class="hexno">9-4<small>중챕터</small></div><div><h2>보상 설계가 몸을 바꾼다 · 보상 해킹</h2><div class="sub"><span class="lvtag rl">방법: 보상 설계</span><span class="lvtag ">일상: 영업 평가표</span></div></div></div><p>강화학습은 보상에 적힌 것만 배웁니다. 그래서 보상을 어떻게 적느냐가 몸의 모양을 바꿉니다. 아래에서 보상 설계 네 가지를 고르면, 그 보상으로 끝까지 학습한 주자가 어떻게 움직이는지 볼 수 있습니다.</p>
-<div class="panel" id="p94"><h3>실험 · 보상을 바꾸면 몸이 바뀐다 <span class="stamp">해설용 재현 · 결과 수치는 예시</span></h3>
-<div class="ctrl"><div class="group"><span class="glabel">보상 설계</span>
-<button class="bt" data-st="dive" aria-pressed="false">A 속도만</button><button class="bt" data-st="stand" aria-pressed="false">B 서 있기만</button><button class="bt" data-st="flail" aria-pressed="false">C 속도 + 서 있기</button><button class="bt" data-st="smooth" aria-pressed="true">D 속도 + 서 있기 + 힘 절약</button></div></div>
-<div class="cwrap"><canvas id="cv94" data-h="300" aria-label="선택한 보상으로 학습한 가상 주자의 동작"></canvas></div>
-<section class="kpis" id="k94" aria-live="polite"></section><div class="insight" id="i94" aria-live="polite"></div></div>
-<div class="duo"><div class="why"><h4>왜 보상 설계가 중요한가 (보상 해킹)</h4><ol><li><b>A 속도만</b> 몸을 앞으로 던져 순간 속도를 내고 바로 넘어집니다. 넘어져도 감점이 없으니 "다이빙"이 가장 쉬운 고득점입니다.</li><li><b>B 서 있기만</b> 한 발도 내딛지 않습니다. 움직이면 넘어질 위험만 늘기 때문입니다.</li><li><b>C 속도 + 서 있기</b> 달리지만 팔을 마구 휘두릅니다. 힘을 아낄 이유가 없기 때문입니다.</li><li><b>D 셋 다</b> 오래 버티며, 빠르고, 힘을 아끼는 동작. Humanoid 기본 보상식이 이 모양입니다.</li></ol><p class="easy"><b>쉽게 말하면</b> "판매량만 보는 영업 평가"는 반품 폭탄을, "결근만 안 하면 되는 평가"는 자리 지키기를 낳습니다. 사람도 점수표대로 움직입니다.</p></div>
-<div class="why"><h4>겸손한 로봇에서 본 같은 문제</h4><ol>
-<li><b>6-2 엄격한 훈련관</b> 착각에 −5.0을 크게 매기자, 정확도 1위가 아니라 "덜 착각하는" 두뇌가 뽑혔습니다</li>
-<li><b>7-2 부정문 함정</b> 실행에 등급을 연결하지 않자, 탐정 등급의 "가지마"도 실행했습니다</li>
-<li><b>「강화학습이 꿰는 실」</b> 점수를 주는 쪽이 속을 수 있으면(보상 해킹), 규칙 채점·검증기로 선을 긋습니다</li></ol>
-<p class="easy"><b>한 줄로</b> 무엇을 보상하느냐가 곧 무엇을 배우느냐입니다. 가상 주자든 바퀴 로봇이든 언어 모델이든 같습니다.</p></div></div>
-<div class="duel" id="d94"><h3 style="margin-top:0">대결 · 한 판(1,000걸음, 15초) 동안 가장 멀리 가는 보상 설계는?</h3>
+<li><b>점수 곡선</b> 점 하나가 한 판. 굵은 선은 최근 판들의 평균</li>
+<li><b>버틴 걸음</b> 1,000(점선)에 닿으면 넘어지지 않는 몸</li>
+<li><b>뚝 떨어지는 점</b> 새 동작을 시험하다 넘어진 판. 탐험의 흔적</li>
+<li><b>속도</b> 버티기가 해결된 뒤에 오르기 시작</li></ol></div>
+<div class="why"><h4>겸손한 로봇과 같은 자리</h4><ol>
+<li><b>단계별 기록</b> 7-2의 시뮬레이터 실행 기록처럼, 학습 과정도 기록으로 남겨야 설명할 수 있습니다</li>
+<li><b>평균만 보지 않기</b> 6-3 대회처럼 평균 점수와 최악의 판(넘어짐)을 함께 봅니다</li></ol></div></div>
+<div class="talk" aria-label="칸 대화"><div class="line" data-who="sia"><img data-who="sia" data-mood="signal" alt="" aria-hidden="true"><b>시아</b><p>X2 질문에 답할게요. record_checkpoints.py 한 번이면 영상과 요약표가 같이 나와요.</p></div><div class="line" data-who="asst"><img data-who="asst" data-mood="report" alt="" aria-hidden="true"><b>하루</b><p>영상 위 글자는 영어로 넣었어요. 컴퓨터마다 한글 글꼴이 달라서 깨지지 않게요.</p></div><div class="line" data-who="fly"><img data-who="fly" data-mood="magnify" alt="" aria-hidden="true"><b>초파리</b><p>연구실 3만 걸음 결과를 봐. 속도는 오히려 줄었어. 아직 버티기를 배우는 중이라는 뜻이지. 예상 화면과 다르면 이유를 찾는 게 공부야.</p></div><div class="line" data-who="robo"><img data-who="robo" data-mood="happy" alt="" aria-hidden="true"><b>주판봇</b><p>그럼 내 영상이 더 멋지게 나올 수도 있겠네!</p></div></div>
+<div class="explain"><h4>풀이</h4><ol><li>record_checkpoints.py는 저장해 둔 중간 두뇌들을 골라 한 판씩 달리게 하고 화면을 녹화합니다.</li><li>plot_dashboard.py는 monitor.csv의 한 판 기록으로 점수 · 버틴 걸음 · 속도 그래프를 그립니다.</li><li>영상과 대시보드를 나란히 보면 "언제 무엇을 배웠는지"를 설명할 수 있습니다.</li></ol><p class="lim"><b>이 칸의 한계</b> 위 영상은 학습 단계를 보여 주려고 연구실이 직접 그린 예상 화면입니다. 실제 결과 영상과 그래프는 각자 실행해서 얻습니다.</p></div>
+<details><summary>소스코드 · record_checkpoints.py — 학습 과정 영상과 요약표 (펼치기)</summary><p class="small"><a href="code/ch9_humanoid/record_checkpoints.py" download>record_checkpoints.py 내려받기</a></p><div class="code">&quot;&quot;&quot;9장 가이드 · 체크포인트마다 한 판씩 달려 보고, 학습 과정 영상과 요약표를 만든다.
+
+사용 예:
+    python record_checkpoints.py --run runs/default --count 6
+결과:
+    runs/&lt;이름&gt;/learning_process.mp4   단계별 동작을 이어 붙인 영상 (화면에 걸음 수·점수·속도 표시)
+    runs/&lt;이름&gt;/checkpoint_summary.csv 체크포인트별 점수·버틴 걸음·평균 속도
+화면 없는 서버에서는 MUJOCO_GL=egl (또는 osmesa)를 먼저 설정한다.
+&quot;&quot;&quot;
+import argparse
+import csv
+import glob
+import os
+import re
+
+import imageio
+import numpy as np
+from PIL import Image, ImageDraw, ImageFont
+from stable_baselines3 import PPO, SAC
+
+from reward_variants import VARIANTS, make_env
+
+
+def load(path):
+    for Algo in (SAC, PPO):
+        try:
+            return Algo.load(path, device=&quot;cpu&quot;)
+        except Exception:
+            continue
+    raise RuntimeError(f&quot;불러올 수 없음: {path}&quot;)
+
+
+def font(size):
+    for f in (&quot;malgun.ttf&quot;, &quot;NanumGothic.ttf&quot;, &quot;NotoSansCJK-Regular.ttc&quot;, &quot;DejaVuSans.ttf&quot;):
+        try:
+            return ImageFont.truetype(f, size)
+        except OSError:
+            continue
+    return ImageFont.load_default()
+
+
+def overlay(frame, lines):
+    im = Image.fromarray(frame)
+    d = ImageDraw.Draw(im)
+    f = font(18)
+    d.rectangle([10, 10, 330, 22 + 26 * len(lines)], fill=(255, 255, 255))
+    for i, t in enumerate(lines):
+        d.text((20, 16 + 26 * i), t, fill=(22, 33, 43), font=f)
+    return np.asarray(im)
+
+
+def main():
+    p = argparse.ArgumentParser()
+    p.add_argument(&quot;--run&quot;, default=&quot;runs/default&quot;)
+    p.add_argument(&quot;--variant&quot;, choices=list(VARIANTS), default=&quot;default&quot;)
+    p.add_argument(&quot;--count&quot;, type=int, default=6, help=&quot;고를 체크포인트 수&quot;)
+    p.add_argument(&quot;--max-steps&quot;, type=int, default=300, help=&quot;영상에 담을 한 판의 최대 걸음&quot;)
+    p.add_argument(&quot;--size&quot;, type=int, nargs=2, default=[640, 480])
+    a = p.parse_args()
+
+    files = glob.glob(os.path.join(a.run, &quot;checkpoints&quot;, &quot;*.zip&quot;))
+    files.sort(key=lambda f: int(re.findall(r&quot;(\d+)_steps&quot;, f)[0]))
+    final = os.path.join(a.run, &quot;final.zip&quot;)
+    if os.path.exists(final):
+        files.append(final)
+    if not files:
+        raise SystemExit(&quot;체크포인트가 없습니다. 먼저 train_humanoid.py를 실행하세요.&quot;)
+    pick = [files[int(i)] for i in np.linspace(0, len(files) - 1, min(a.count, len(files)))]
+
+    # 주자를 화면 가운데에 두고 따라가는 카메라
+    cam = {&quot;trackbodyid&quot;: 1, &quot;distance&quot;: 4.0, &quot;lookat&quot;: [0.0, 0.0, 1.0], &quot;elevation&quot;: -15.0}
+    env = make_env(a.variant, render_mode=&quot;rgb_array&quot;, width=a.size[0], height=a.size[1], default_camera_config=cam)
+    frames, rows = [], []
+    for f in pick:
+        m = re.findall(r&quot;(\d+)_steps&quot;, f)
+        step = int(m[0]) if m else -1
+        model = load(f)
+        obs, _ = env.reset(seed=0)
+        ret, speeds = 0.0, []
+        for t in range(1000):
+            act, _ = model.predict(obs, deterministic=True)
+            obs, r, term, trunc, info = env.step(act)
+            ret += r
+            speeds.append(info.get(&quot;x_velocity&quot;, 0.0))
+            if t &lt; a.max_steps:
+                label = &quot;final&quot; if step &lt; 0 else f&quot;{step:,} steps&quot;
+                frames.append(overlay(env.render(), [label, f&quot;score {ret:,.0f}&quot;, f&quot;speed {info.get(&#x27;x_velocity&#x27;, 0.0):.1f} m/s&quot;]))
+            if term or trunc:
+                break
+        rows.append({&quot;checkpoint&quot;: os.path.basename(f), &quot;steps&quot;: step, &quot;return&quot;: round(float(ret), 1),
+                     &quot;alive_steps&quot;: t + 1, &quot;mean_speed&quot;: round(float(np.mean(speeds)), 2)})
+        print(rows[-1])
+    env.close()
+
+    imageio.mimsave(os.path.join(a.run, &quot;learning_process.mp4&quot;), frames, fps=30)
+    with open(os.path.join(a.run, &quot;checkpoint_summary.csv&quot;), &quot;w&quot;, newline=&quot;&quot;, encoding=&quot;utf-8&quot;) as fp:
+        w = csv.DictWriter(fp, fieldnames=list(rows[0]))
+        w.writeheader()
+        w.writerows(rows)
+    print(&quot;저장:&quot;, os.path.join(a.run, &quot;learning_process.mp4&quot;))
+
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</div></details>
+<details><summary>소스코드 · plot_dashboard.py — 학습 대시보드 그림 (펼치기)</summary><p class="small"><a href="code/ch9_humanoid/plot_dashboard.py" download>plot_dashboard.py 내려받기</a></p><div class="code">&quot;&quot;&quot;9장 가이드 · monitor.csv(한 판 기록)로 학습 대시보드 그림을 만든다.
+
+사용 예:
+    python plot_dashboard.py --run runs/default
+결과:
+    runs/&lt;이름&gt;/dashboard.png   학습 걸음 수에 따른 ① 한 판 점수 ② 버틴 걸음 ③ (있으면) 체크포인트별 평균 속도
+&quot;&quot;&quot;
+import argparse
+import os
+
+import matplotlib
+matplotlib.use(&quot;Agg&quot;)
+import matplotlib.pyplot as plt
+import pandas as pd
+
+
+def main():
+    p = argparse.ArgumentParser()
+    p.add_argument(&quot;--run&quot;, default=&quot;runs/default&quot;)
+    p.add_argument(&quot;--window&quot;, type=int, default=50, help=&quot;이동 평균에 쓸 판 수&quot;)
+    a = p.parse_args()
+
+    df = pd.read_csv(os.path.join(a.run, &quot;monitor.csv&quot;), skiprows=1)  # 첫 줄은 설명(#)
+    df[&quot;steps&quot;] = df[&quot;l&quot;].cumsum()
+    roll = df[[&quot;r&quot;, &quot;l&quot;]].rolling(a.window, min_periods=1).mean()
+
+    summ = os.path.join(a.run, &quot;checkpoint_summary.csv&quot;)
+    n = 3 if os.path.exists(summ) else 2
+    fig, ax = plt.subplots(n, 1, figsize=(9, 3 * n), sharex=True)
+    ax[0].scatter(df[&quot;steps&quot;], df[&quot;r&quot;], s=3, alpha=.25, color=&quot;#13733a&quot;)
+    ax[0].plot(df[&quot;steps&quot;], roll[&quot;r&quot;], color=&quot;#13733a&quot;, lw=2)
+    ax[0].set_ylabel(&quot;episode return&quot;)
+    ax[1].plot(df[&quot;steps&quot;], roll[&quot;l&quot;], color=&quot;#1e55c8&quot;, lw=2)
+    ax[1].axhline(1000, ls=&quot;--&quot;, color=&quot;#5b6874&quot;, lw=1)
+    ax[1].set_ylabel(&quot;alive steps (max 1000)&quot;)
+    if n == 3:
+        s = pd.read_csv(summ)
+        s = s[s[&quot;steps&quot;] &gt;= 0]
+        ax[2].plot(s[&quot;steps&quot;], s[&quot;mean_speed&quot;], &quot;o-&quot;, color=&quot;#a35c00&quot;)
+        ax[2].set_ylabel(&quot;mean speed (m/s)&quot;)
+    ax[-1].set_xlabel(&quot;training steps&quot;)
+    fig.suptitle(f&quot;Humanoid-v5 training dashboard · {os.path.basename(a.run.rstrip(&#x27;/&#x27;))}&quot;)
+    fig.tight_layout()
+    out = os.path.join(a.run, &quot;dashboard.png&quot;)
+    fig.savefig(out, dpi=120)
+    print(&quot;저장:&quot;, out)
+
+
+if __name__ == &quot;__main__&quot;:
+    main()
+</div></details>
+<div class="quiz" data-quiz="q94"></div></div></section><section class="level" id="s5"><div class="wrap"><div class="lvhead"><div class="hexno">9-5<small>중챕터</small></div><div><h2>보상 바꿔 보기와 일반화 지도</h2><div class="sub"><span class="lvtag rl">가이드: 보상 설계 실험</span><span class="lvtag ">정리: 같은 틀, 다른 몸</span></div></div></div><p>강화학습은 보상에 적힌 것만 배웁니다. reward_variants.py에는 보상 설계 네 가지가 들어 있어, --variant 하나만 바꿔 학습시키면 보상이 몸을 어떻게 바꾸는지 직접 비교할 수 있습니다.</p>
+<details><summary>명령어로 보면 (펼치기)</summary><div class="code">python train_humanoid.py --variant speed_only --steps 1000000 --out runs/speed_only
+python train_humanoid.py --variant stand_only --steps 1000000 --out runs/stand_only
+python train_humanoid.py --variant no_energy  --steps 1000000 --out runs/no_energy
+python record_checkpoints.py --run runs/speed_only --variant speed_only</div></details>
+<div class="tw"><table class="tb"><tr><th>--variant</th><th>보상</th><th>예상되는 동작 (나올 수 있는 모습)</th></tr>
+<tr><td>speed_only</td><td>속도만</td><td>넘어져도 감점이 없어, 몸을 앞으로 던져 순간 속도를 내고 금방 넘어지는 동작</td></tr>
+<tr><td>stand_only</td><td>서 있기만</td><td>앞으로 갈 이유가 없어, 거의 움직이지 않고 버티는 동작</td></tr>
+<tr><td>no_energy</td><td>속도 + 서 있기</td><td>달리지만 힘을 아낄 이유가 없어, 팔다리를 크게 휘두르는 동작</td></tr>
+<tr class="hi"><td>default</td><td>속도 + 서 있기 − 힘 낭비</td><td>오래 버티고, 앞으로 가고, 힘을 아끼는 동작</td></tr></table></div>
+<div class="duo"><div class="why"><h4>왜 보상을 바꿔 보나 (보상 해킹)</h4><ol><li><b>보상 해킹</b> 점수표의 빈칸을 파고드는 동작이 나옵니다. 넘어짐 벌점이 없으면 넘어지고, 힘 벌점이 없으면 힘을 낭비합니다.</li><li><b>겸손한 로봇에서도</b> 6-2에서 착각에 −5.0을 크게 매기자 정확도 1위가 아니라 "덜 착각하는" 두뇌가 뽑혔습니다.</li><li><b>「강화학습이 꿰는 실」에서도</b> 점수를 주는 쪽이 속을 수 있으면 규칙 채점·검증기로 선을 긋습니다.</li></ol><p class="easy"><b>쉽게 말하면</b> "판매량만 보는 영업 평가"는 반품 폭탄을, "결근만 안 하면 되는 평가"는 자리 지키기를 낳습니다. 사람도 점수표대로 움직입니다.</p></div>
+<div class="why"><h4>일반화 지도 · 같은 틀, 다른 몸</h4>
+<div class="tw"><table class="tb"><tr><th>어디에</th><th>보상</th><th>모를 때의 안전장치</th></tr>
+<tr class="hi"><td>겸손한 로봇</td><td>+1.5 / −2.0 / −5.0</td><td>"다시 말씀해 주세요"</td></tr>
+<tr><td>가상 주자</td><td>서 있기 + 속도 − 힘</td><td>바닥이 불확실하면 보폭 줄이기</td></tr>
+<tr><td>물류 로봇</td><td>제시간 배송 − 충돌</td><td>사람이 가까우면 감속 · 정지</td></tr>
+<tr><td>휴머노이드</td><td>목표 동작 + 균형 − 에너지</td><td>낯선 지형에서 걸음 바꾸기</td></tr>
+<tr><td>언어 모델 (RLHF)</td><td>사람이 고른 더 좋은 답</td><td>모르면 "확실하지 않습니다"</td></tr></table></div>
+<p class="easy"><b>한 줄로</b> 틀(상태 · 행동 · 보상 · 정책)은 옮겨 가고, 숫자와 함정은 일마다 새로 찾습니다.</p></div></div>
+<div class="duel" id="d95"><h3 style="margin-top:0">대결 · 기본 보상(default)과 속도만(speed_only) 가운데, 한 판 동안 더 멀리 가는 주자를 길러 낼 쪽은?</h3>
 <div class="refs"><img data-who="sia" data-mood="signal" alt="" aria-hidden="true"><img data-who="moa" data-mood="cheer" alt="" aria-hidden="true"></div>
 <p class="small muted" style="text-align:center;margin:0">진행 신호: 인턴 시아 · 응원: 인턴 모아 · 판정: 박사</p>
-<div class="vs"><div class="side fly"><img data-who="fly" data-mood="point" alt="" aria-hidden="true"><div><b style="color:var(--c-fly)">초파리 연구원</b><p style="margin:0">셋 다 넣어야 해(D). 버티고, 빠르고, 힘을 아껴야 멀리 가.</p></div></div>
+<div class="vs"><div class="side fly"><img data-who="fly" data-mood="point" alt="" aria-hidden="true"><div><b style="color:var(--c-fly)">초파리 연구원</b><p style="margin:0">기본 보상이지. 넘어지면 남은 걸음을 다 잃으니 버티는 법부터 배워.</p></div></div>
 <div class="mid">VS</div>
-<div class="side robo"><img data-who="robo" data-mood="coin" alt="" aria-hidden="true"><div><b style="color:var(--c-robo)">주판봇</b><p style="margin:0">속도만 크게 주면 되지(A)! 빠른 게 최고야, 단순할수록 강해.</p></div></div></div>
+<div class="side robo"><img data-who="robo" data-mood="coin" alt="" aria-hidden="true"><div><b style="color:var(--c-robo)">주판봇</b><p style="margin:0">속도만 크게 주면 되지! 빠른 게 최고야, 단순할수록 강해.</p></div></div></div>
 <div class="ctrl" style="justify-content:center"><span class="glabel">먼저 맞혀 보기</span><button class="bt guess" data-side="fly" aria-pressed="false">초파리가 이길 것 같다</button><button class="bt guess" data-side="robo" aria-pressed="false">주판봇이 이길 것 같다</button><button class="bt primary run">결과 보기</button></div>
-<div class="bars" aria-live="polite"><div class="bar f"><span>초파리 · D 셋 다</span><div class="track"><div class="fill"></div></div><span class="v">?</span></div>
-<div class="bar r"><span>주판봇 · A 속도만</span><div class="track"><div class="fill"></div></div><span class="v">?</span></div></div>
-<p class="small muted" style="text-align:center;margin:0">잣대: 한 판 동안 간 거리 (예시값). 클수록 이긴다</p>
+<div class="bars" aria-live="polite"><div class="bar f"><span>초파리 · default</span><div class="track"><div class="fill"></div></div><span class="v">?</span></div>
+<div class="bar r"><span>주판봇 · speed_only</span><div class="track"><div class="fill"></div></div><span class="v">?</span></div></div>
+<p class="small muted" style="text-align:center;margin:0">잣대: 판정 기준: 보상식의 구조 (넘어짐에 손해가 있는가). 예상 결과이며 실제 거리는 직접 실행해 확인</p>
 <div class="verdict"><p class="gtext small muted"></p><div class="vtext"></div></div></div>
-<div class="talk" aria-label="칸 대화"><div class="line" data-who="robo"><img data-who="robo" data-mood="sweat" alt="" aria-hidden="true"><b>주판봇</b><p>…다이빙이라니. 1.5초 만에 넘어지면 멀리 갈 수가 없구나.</p></div><div class="line" data-who="fly"><img data-who="fly" data-mood="coffee" alt="" aria-hidden="true"><b>초파리</b><p>속도는 점수표에 있었지만 "넘어지면 끝"이라는 사실은 점수표에 없었어. 보상에 적지 않은 건 배우지 않아.</p></div><div class="line" data-who="moa"><img data-who="moa" data-mood="cheer" alt="" aria-hidden="true"><b>모아</b><p>초파리 선배 승리! 105m 대 4.8m예요.</p></div><div class="line" data-who="asst"><img data-who="asst" data-mood="report" alt="" aria-hidden="true"><b>하루</b><p>C도 꽤 멀리 가지만 힘을 D의 네 배 넘게 써요. 실물 로봇이면 배터리가 먼저 바닥나요.</p></div></div>
-<div class="explain"><h4>풀이</h4><ol><li>보상에 "속도"만 있으면 넘어지는 일을 피할 이유가 없어 몸을 던집니다.</li><li>"서 있기"만 있으면 움직일 이유가 없어 가만히 섭니다.</li><li>속도·서 있기·힘 절약을 함께 넣어야 "오래, 빠르게, 아껴서" 달립니다. 겸손한 로봇이 착각에 큰 벌점을 매긴 것도 같은 설계입니다.</li></ol><p class="lim"><b>이 칸의 한계</b> 네 가지 동작과 거리·힘 사용량은 보상 설계의 차이를 보여 주려고 이 페이지가 정한 예시입니다. 실제로 어떤 엉뚱한 동작이 나올지는 학습해 봐야 압니다.</p></div>
-<div class="quiz" data-quiz="q94"></div></div></section><section class="level" id="s5"><div class="wrap"><div class="lvhead"><div class="hexno">9-5<small>중챕터</small></div><div><h2>일반화 지도 · 겸손한 로봇에서 휴머노이드까지</h2><div class="sub"><span class="lvtag g">정리: 상태 · 행동 · 보상 · 정책</span><span class="lvtag ">연결: 1~8장</span></div></div></div><p>마지막으로 결과를 넓혀 봅니다. 겸손한 로봇의 두 가지 생각 — ① 보상으로 가르친다, ② 확신이 낮으면 멈추고 다시 확인한다 — 은 몸과 일이 달라도 그대로 옮겨 갑니다.</p>
-<div class="panel" id="p95"><h3>실험 · 달리는 주자에게 "겸손"을 붙이면 <span class="stamp">해설용 재현 · 90/70 규칙은 4-3에서 가져옴</span></h3>
-<p class="small muted">바닥이 젖었는지, 앞에 장애물이 있는지 확신이 낮은 상황을 떠올려 보세요. 4-3의 베이지안 정책(90% 이상 실행 · 70~90% 저속 · 70% 미만 재확인)을 그대로 붙였습니다.</p>
-<div class="ctrl"><div class="group"><span class="glabel">바닥 상태에 대한 확신</span><input type="range" id="r95" min="0" max="100" value="95" aria-label="바닥 상태에 대한 확신"><span class="val" id="v95">95%</span></div></div>
-<div class="cwrap"><canvas id="cv95" data-h="280" aria-label="확신도에 따라 달리기, 천천히 걷기, 멈춰 살피기로 바뀌는 가상 주자"></canvas></div>
-<section class="kpis" id="k95" aria-live="polite"></section><div class="insight" id="i95" aria-live="polite"></div></div>
-<div class="tw"><table class="tb"><tr><th>어디에</th><th>상태</th><th>행동</th><th>보상</th><th>모를 때의 안전장치</th></tr>
-<tr class="hi"><td>겸손한 로봇 (이 시리즈)</td><td>명령 글자·그림·소리</td><td>전진 · 정지 · 되묻기</td><td>+1.5 / −2.0 / −5.0</td><td>확신 낮으면 "다시 말씀해 주세요"</td></tr>
-<tr><td>3D 가상 주자 (이 장)</td><td>관절·몸통 숫자 348개</td><td>관절 힘 17개</td><td>서 있기 + 속도 − 힘 낭비</td><td>바닥이 불확실하면 보폭 줄이기 · 멈춰 살피기</td></tr>
-<tr><td>물류 · 배송 로봇</td><td>지도, 라이다, 짐 무게</td><td>속도 · 경로</td><td>제시간 배송 − 충돌</td><td>사람이 가까우면 감속 · 정지</td></tr>
-<tr><td>실물 휴머노이드</td><td>관절 센서, 카메라, 발바닥 압력</td><td>모터 힘</td><td>목표 동작 + 균형 − 에너지</td><td>낯선 지형에서 걸음 바꾸기, 넘어질 때 보호 자세</td></tr>
-<tr><td>언어 모델 훈련 (RLHF)</td><td>질문과 대화 맥락</td><td>다음에 쓸 말</td><td>사람이 더 좋다고 고른 답</td><td>모르면 "확실하지 않습니다", 되묻기</td></tr></table></div>
-<div class="duo"><div class="why"><h4>일반화할 때 그대로 옮겨 가는 것</h4><ol>
-<li><b>네 가지 틀</b> 상태 · 행동 · 보상 · 정책. 어느 일이든 이 넷부터 적는다</li>
-<li><b>벌점의 크기</b> 가장 비싼 실수(사고·착각·넘어짐)에 가장 큰 벌점</li>
-<li><b>가상에서 먼저</b> 시행착오는 시뮬레이터에서, 실물에는 검증된 정책만 (7장)</li>
-<li><b>확신이 낮을 때의 행동</b> 실행 · 저속 · 재확인의 세 구간 (4-3, 7-1)</li></ol></div>
-<div class="why"><h4>그대로 옮겨 가지 않는 것</h4><ol>
-<li><b>행동의 크기</b> 셋 중 고르기(Pi Car X)와 연속된 힘 17개(주자)는 학습 방법이 다름</li>
-<li><b>가상과 실물의 차이</b> 바닥 마찰·모터 지연이 다르면 가상에서 달리던 정책도 넘어짐. 4장의 도메인 무작위화가 그래서 필요</li>
-<li><b>보상의 함정</b> 새 일마다 "적지 않은 것"이 다름. 9-4처럼 매번 시험해 봐야 함</li></ol>
-<p class="easy"><b>한 줄로</b> 틀은 옮겨 가고, 숫자와 함정은 일마다 새로 찾아야 합니다.</p></div></div>
-<div class="talk" aria-label="칸 대화"><div class="line" data-who="sia"><img data-who="sia" data-mood="explain" alt="" aria-hidden="true"><b>시아</b><p>슬라이더를 80%로 두면 걷고, 60%로 두면 멈춰서 둘러봐요. Pi Car X가 되묻던 것과 같은 자리예요.</p></div><div class="line" data-who="robo"><img data-who="robo" data-mood="coin" alt="" aria-hidden="true"><b>주판봇</b><p>멈추면 속도 점수가 0이잖아. 손해 아니야?</p></div><div class="line" data-who="fly"><img data-who="fly" data-mood="magnify" alt="" aria-hidden="true"><b>초파리</b><p>넘어지면 남은 걸음 점수를 통째로 잃어. 6-2에서 계산했던 63.3% 손익분기와 같은 셈이야.</p></div><div class="line" data-who="doc"><img data-who="doc" data-mood="board" alt="" aria-hidden="true"><b>박사</b><p>틀은 같고 숫자만 다릅니다. 이것이 이 시리즈를 일반화한 결론입니다.</p></div></div>
-<div class="explain"><h4>풀이</h4><ol><li>강화학습의 네 가지 틀(상태·행동·보상·정책)은 바퀴 로봇, 두 다리 로봇, 배송 로봇, 언어 모델에 모두 그대로 쓰입니다.</li><li>확신이 낮을 때 행동을 바꾸는 "겸손" 장치도 옮겨 갑니다. 말로 하는 로봇은 되묻고, 달리는 로봇은 보폭을 줄이거나 멈춰 살핍니다.</li><li>다만 가상과 실물의 차이, 보상의 함정은 일마다 새로 확인해야 합니다.</li></ol><p class="lim"><b>이 칸의 한계</b> 표의 물류 로봇·휴머노이드·언어 모델 칸은 이해를 돕기 위한 일반적인 예시이며, 특정 제품이나 연구의 설정을 옮긴 것이 아닙니다. 가상 주자의 90/70 규칙도 이 페이지가 4-3의 규칙을 빌려 붙인 예시입니다.</p></div>
+<div class="talk" aria-label="칸 대화"><div class="line" data-who="robo"><img data-who="robo" data-mood="sweat" alt="" aria-hidden="true"><b>주판봇</b><p>…속도만 주면 몸을 던지고 끝난다니. 넘어지면 손해라는 걸 점수표에 안 적었구나.</p></div><div class="line" data-who="fly"><img data-who="fly" data-mood="coffee" alt="" aria-hidden="true"><b>초파리</b><p>보상에 적지 않은 건 배우지 않아. 직접 돌려서 내 예상이 맞는지 확인해 봐.</p></div><div class="line" data-who="moa"><img data-who="moa" data-mood="cheer" alt="" aria-hidden="true"><b>모아</b><p>초파리 선배 승리예요! 대신 진짜 결과는 각자 컴퓨터에서 확인!</p></div><div class="line" data-who="doc"><img data-who="doc" data-mood="board" alt="" aria-hidden="true"><b>박사</b><p>틀은 같고 숫자만 다릅니다. 이것이 이 시리즈를 일반화한 결론입니다.</p></div></div>
+<div class="explain"><h4>풀이</h4><ol><li>--variant만 바꾸면 보상 설계가 바뀝니다. 나머지 코드는 그대로입니다.</li><li>속도만 주면 넘어짐을 피할 이유가 없고, 서 있기만 주면 움직일 이유가 없습니다.</li><li>겸손한 로봇이 착각에 큰 벌점을 매긴 것과 같은 원리로, 가장 비싼 실수에 가장 큰 벌점을 매겨야 합니다.</li></ol><p class="lim"><b>이 칸의 한계</b> 표의 "예상되는 동작"은 보상식의 구조에서 짐작한 것입니다. 실제로 어떤 동작이 나올지는 학습해 봐야 알며, 실행할 때마다 다를 수 있습니다. 일반화 표의 물류 로봇·휴머노이드·언어 모델 칸은 일반적인 예시입니다.</p></div>
 <div class="quiz" data-quiz="q95"></div></div></section><section class="level" id="sum"><div class="wrap"><h2>정리</h2>
-<div class="tw"><table class="tb"><tr><th>중챕터</th><th>핵심 한 줄</th><th>숫자</th></tr><tr><td>9-1 몸과 점수표</td><td>상태 348 · 행동 17 · 보상 5.0 + 1.25v − 0.1Σ힘²</td><td>한 판 최대 1,000걸음</td></tr><tr><td>9-2 학습 대시보드</td><td>한 판 점수 = 버틴 걸음 × 걸음당 보상, 버티기 먼저 속도 나중</td><td>85 → 13,667점 (예시)</td></tr><tr><td>9-3 학습 영상</td><td>버둥거림 → 넘어짐 → 비틀 → 달리기</td><td>60만 → 3,000만 걸음 (예시)</td></tr><tr><td>9-4 보상 설계</td><td>적지 않은 것은 배우지 않는다 (보상 해킹)</td><td>105m 대 4.8m (예시)</td></tr><tr><td>9-5 일반화 지도</td><td>틀은 옮겨 가고, 숫자와 함정은 새로 찾는다</td><td>실행 · 저속 · 재확인</td></tr></table></div></div></section>
+<div class="tw"><table class="tb"><tr><th>중챕터</th><th>핵심 한 줄</th><th>숫자</th></tr><tr><td>9-1 무엇을 학습시키나</td><td>상태 348 · 행동 17 · 보상 5.0 + 1.25v − 0.1Σ힘²</td><td>한 판 최대 1,000걸음</td></tr><tr><td>9-2 준비하기</td><td>가상환경 → requirements.txt 설치 → (348,) (17,) 확인</td><td>파이썬 3.10+</td></tr><tr><td>9-3 학습시키기</td><td>train_humanoid.py, 체크포인트 저장, 콘솔의 버틴 걸음 · 점수</td><td>짧은 시험 먼저</td></tr><tr><td>9-4 영상 · 대시보드</td><td>record_checkpoints.py · plot_dashboard.py</td><td>mp4 · csv · png</td></tr><tr><td>9-5 보상 바꿔 보기</td><td>--variant로 보상 설계 비교, 같은 틀을 다른 몸에</td><td>default · speed_only · stand_only · no_energy</td></tr></table></div></div></section>
 <section class="level" id="outro"><div class="wrap"><h2>아웃트로</h2>
-<div class="chat"><div class="say" data-who="doc"><img data-who="doc" data-mood="front" alt="" aria-hidden="true"><div><b class="name">박사</b><p>정리할게요. 상태·행동·보상·정책 네 가지를 적는다. 가상에서 넘어지며 배운다. 보상에 적은 것만 배운다. 모르면 속도를 줄이고 묻는다.</p></div></div><div class="say" data-who="fly"><img data-who="fly" data-mood="arms" alt="" aria-hidden="true"><div><b class="name">초파리 연구원</b><p>대결은 내가 이겼지만, 진짜 교훈은 주판봇의 다이빙이었어. 점수표의 빈칸이 어디인지 보여 줬거든.</p></div></div><div class="say" data-who="robo"><img data-who="robo" data-mood="happy" alt="" aria-hidden="true"><div><b class="name">주판봇</b><p>다이빙도 연구에 공헌한 셈이군! 다음엔 넘어짐 벌점도 장부에 적어 둘게.</p></div></div><div class="say" data-who="moa"><img data-who="moa" data-mood="cheer" alt="" aria-hidden="true"><div><b class="name">인턴 모아</b><p>모든 장을 다 보셨어요! 퀴즈 기록은 저장되지 않으니 편하게 다시 풀어 보세요.</p></div></div><div class="say" data-who="asst"><img data-who="asst" data-mood="proud" alt="" aria-hidden="true"><div><b class="name">조수 하루</b><p><a href="index.html">목차로 돌아가기 →</a></p></div></div></div></div></section><!-- lab-kg:body -->
+<div class="chat"><div class="say" data-who="doc"><img data-who="doc" data-mood="front" alt="" aria-hidden="true"><div><b class="name">박사</b><p>정리할게요. 네 가지를 적는다. 가상에서 넘어지며 배운다. 기록을 영상과 대시보드로 남긴다. 보상에 적은 것만 배운다.</p></div></div><div class="say" data-who="fly"><img data-who="fly" data-mood="arms" alt="" aria-hidden="true"><div><b class="name">초파리 연구원</b><p>이 장의 그림은 예상 화면이야. 진짜 결과는 여러분 컴퓨터에서 나와. 다르게 나오면 이유를 찾아 봐.</p></div></div><div class="say" data-who="robo"><img data-who="robo" data-mood="happy" alt="" aria-hidden="true"><div><b class="name">주판봇</b><p>내 다이빙 예측이 진짜로 나오는지 나도 돌려 봐야겠어!</p></div></div><div class="say" data-who="moa"><img data-who="moa" data-mood="cheer" alt="" aria-hidden="true"><div><b class="name">인턴 모아</b><p>모든 장을 다 보셨어요! 퀴즈 기록은 저장되지 않으니 편하게 다시 풀어 보세요.</p></div></div><div class="say" data-who="asst"><img data-who="asst" data-mood="proud" alt="" aria-hidden="true"><div><b class="name">조수 하루</b><p><a href="index.html">목차로 돌아가기 →</a></p></div></div></div></div></section><!-- lab-kg:body -->
 <section class="kgx kgx-sec" id="kg"><div class="kgx-wrap">
 <h2>지식 색인 — 이 페이지에서 찾아보기</h2>
 <p class="kgx-sub">이 페이지에 나온 개념, 방법, 생물 대응, 주장, 열린 질문을 한곳에 모았다. 검색하고, 항목을 눌러 이웃 관계를 보고, "설명 보러 가기"로 본문에 돌아간다.</p>
@@ -389,14 +682,14 @@ section.level#kg,section.level#export{padding-top:72px}
 <p class="kgx-sub">지식 색인을 출처와 함께 파일로 내려받는다. Zotero(BibTeX·RIS), Protégé(Turtle), Neo4j·Gephi(CSV), 여러 페이지 합치기(kg.json)에 쓴다.</p>
 <div id="export-mount"></div>
 </div></section>
-<script type="application/json" id="kg-raw">{"version":"1.0","page":"ch9_general","nodes":[{"id":"lab:concept/state-action-reward","type":"Concept","label":{"ko":"상태·행동·보상","en":"State, action, reward"},"page":"ch9_general","anchor":"#s1","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"definition":{"ko":"가상 몸과 점수표"}},{"id":"lab:concept/virtual-humanoid-runner","type":"Concept","label":{"ko":"가상 주자","en":"Virtual humanoid runner"},"page":"ch9_general","anchor":"#s1","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"definition":{"ko":"가상 몸과 점수표"}},{"id":"lab:concept/policy","type":"Concept","label":{"ko":"정책","en":"Policy"},"page":"ch9_general","anchor":"#s1","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"definition":{"ko":"가상 몸과 점수표"}},{"id":"lab:concept/learning-curve","type":"Concept","label":{"ko":"학습 곡선","en":"Learning curve"},"page":"ch9_general","anchor":"#s2","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"definition":{"ko":"학습 대시보드"}},{"id":"lab:concept/exploration-exploitation","type":"Concept","label":{"ko":"탐험과 활용","en":"Exploration and exploitation"},"page":"ch9_general","anchor":"#s2","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"definition":{"ko":"학습 대시보드"}},{"id":"lab:concept/trial-and-error-learning","type":"Concept","label":{"ko":"시행착오 학습","en":"Trial-and-error learning"},"page":"ch9_general","anchor":"#s3","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"definition":{"ko":"학습 과정 영상"}},{"id":"lab:concept/reward-design","type":"Method","label":{"ko":"보상 설계","en":"Reward design"},"page":"ch9_general","anchor":"#s4","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"definition":{"ko":"보상 설계와 보상 해킹"}},{"id":"lab:concept/reward-hacking","type":"Limitation","label":{"ko":"보상 해킹","en":"Reward hacking"},"page":"ch9_general","anchor":"#s4","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"definition":{"ko":"보상 설계와 보상 해킹"}},{"id":"lab:concept/rl-generalization","type":"Concept","label":{"ko":"강화학습 일반화","en":"Generalizing reinforcement learning"},"page":"ch9_general","anchor":"#s5","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"definition":{"ko":"일반화 지도"}},{"id":"lab:concept/sim-to-real","type":"Method","label":{"ko":"Sim-to-Real","en":"Sim-to-real transfer"},"page":"ch9_general","anchor":"#s5","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"definition":{"ko":"일반화 지도"}},{"id":"lab:concept/confidence-band-policy","type":"Method","label":{"ko":"신뢰도 구간 정책","en":"Confidence-band action policy"},"page":"ch9_general","anchor":"#s5","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"definition":{"ko":"일반화 지도"}},{"id":"lab:sim/ch9_general-p91","type":"Simulation","label":{"ko":"실험 · 가상 주자의 몸 돌려 보기 해설용 재현 · 물리 시뮬레이션 아님","en":"Interactive panel p91"},"page":"ch9_general","anchor":"#p91","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"]},{"id":"lab:sim/ch9_general-p92","type":"Simulation","label":{"ko":"대시보드 · 3,000만 걸음의 학습 과정 해설용 재현 · 점수는 보상식으로 계산한 예시값","en":"Interactive panel p92"},"page":"ch9_general","anchor":"#p92","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"]},{"id":"lab:sim/ch9_general-p94","type":"Simulation","label":{"ko":"실험 · 보상을 바꾸면 몸이 바뀐다 해설용 재현 · 결과 수치는 예시","en":"Interactive panel p94"},"page":"ch9_general","anchor":"#p94","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"]},{"id":"lab:sim/ch9_general-p95","type":"Simulation","label":{"ko":"실험 · 달리는 주자에게 \"겸손\"을 붙이면 해설용 재현 · 90/70 규칙은 4-3에서 가져옴","en":"Interactive panel p95"},"page":"ch9_general","anchor":"#p95","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"]},{"id":"lab:quiz/ch9_general-q91","type":"QuizItem","label":{"ko":"확인 퀴즈 9-1","en":"Check quiz q91"},"page":"ch9_general","anchor":"#s1","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"]},{"id":"lab:quiz/ch9_general-q92","type":"QuizItem","label":{"ko":"확인 퀴즈 9-2","en":"Check quiz q92"},"page":"ch9_general","anchor":"#s2","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"]},{"id":"lab:quiz/ch9_general-q93","type":"QuizItem","label":{"ko":"확인 퀴즈 9-3","en":"Check quiz q93"},"page":"ch9_general","anchor":"#s3","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"]},{"id":"lab:quiz/ch9_general-q94","type":"QuizItem","label":{"ko":"확인 퀴즈 9-4","en":"Check quiz q94"},"page":"ch9_general","anchor":"#s4","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"]},{"id":"lab:quiz/ch9_general-q95","type":"QuizItem","label":{"ko":"확인 퀴즈 9-5","en":"Check quiz q95"},"page":"ch9_general","anchor":"#s5","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"]},{"id":"lab:work/ahn2026langcon","type":"Work","label":{"ko":"안상선 (2026) Langcon 2026 발표","en":"Ahn (2026) Langcon 2026 talk"},"page":"ch9_general","anchor":"#export","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"]},{"id":"lab:claim/humanoid-spec","type":"Claim","label":{"ko":"Gymnasium Humanoid(v5)는 상태 348개, 행동 17개, 보상 5.0 + 1.25×속도 − 0.1×Σ힘²을 쓴다","en":"Gymnasium Humanoid v5: 348 obs, 17 actions, reward 5.0 + 1.25v - 0.1 sum(a^2)"},"page":"ch9_general","anchor":"#s1","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"source":[{"ref":"ahn2026langcon","loc":""}]},{"id":"lab:question/reward-gap","type":"Question","label":{"ko":"보상에 적지 않은 것(넘어짐, 힘 낭비)을 주자는 피하지 않는다 — 실물 로봇에서도 같을까?","en":"Does what the reward omits stay unlearned on real robots too?"},"page":"ch9_general","anchor":"#s4","level":2,"status":"known","confidence":"high","coverage":"mentioned","match":[],"domain":["ai"]}],"edges":[{"s":"lab:concept/state-action-reward","p":"lab:broader","o":"lab:area/rl","anchor":"#s1","confidence":"high"},{"s":"lab:concept/virtual-humanoid-runner","p":"lab:broader","o":"lab:area/rl","anchor":"#s1","confidence":"high"},{"s":"lab:concept/policy","p":"lab:broader","o":"lab:area/rl","anchor":"#s1","confidence":"high"},{"s":"lab:concept/virtual-humanoid-runner","p":"lab:partOf","o":"lab:concept/state-action-reward","anchor":"#s1","confidence":"high"},{"s":"lab:concept/policy","p":"lab:partOf","o":"lab:concept/state-action-reward","anchor":"#s1","confidence":"high"},{"s":"lab:concept/exploration-exploitation","p":"lab:broader","o":"lab:area/rl","anchor":"#s2","confidence":"high"},{"s":"lab:concept/exploration-exploitation","p":"lab:partOf","o":"lab:concept/learning-curve","anchor":"#s2","confidence":"high"},{"s":"lab:concept/trial-and-error-learning","p":"lab:broader","o":"lab:area/rl","anchor":"#s3","confidence":"high"},{"s":"lab:concept/reward-design","p":"lab:broader","o":"lab:topic/reward","anchor":"#s4","confidence":"high"},{"s":"lab:concept/reward-hacking","p":"lab:broader","o":"lab:topic/reward","anchor":"#s4","confidence":"high"},{"s":"lab:concept/reward-hacking","p":"lab:partOf","o":"lab:concept/reward-design","anchor":"#s4","confidence":"high"},{"s":"lab:concept/rl-generalization","p":"lab:broader","o":"lab:area/rl","anchor":"#s5","confidence":"high"},{"s":"lab:concept/sim-to-real","p":"lab:broader","o":"lab:topic/transfer-learning","anchor":"#s5","confidence":"high"},{"s":"lab:concept/sim-to-real","p":"lab:partOf","o":"lab:concept/rl-generalization","anchor":"#s5","confidence":"high"},{"s":"lab:concept/confidence-band-policy","p":"lab:partOf","o":"lab:concept/rl-generalization","anchor":"#s5","confidence":"high"},{"s":"lab:concept/state-action-reward","p":"lab:prerequisiteOf","o":"lab:concept/learning-curve","anchor":"#s2","confidence":"high"},{"s":"lab:concept/learning-curve","p":"lab:prerequisiteOf","o":"lab:concept/trial-and-error-learning","anchor":"#s3","confidence":"high"},{"s":"lab:concept/trial-and-error-learning","p":"lab:prerequisiteOf","o":"lab:concept/reward-design","anchor":"#s4","confidence":"high"},{"s":"lab:concept/reward-design","p":"lab:prerequisiteOf","o":"lab:concept/rl-generalization","anchor":"#s5","confidence":"high"},{"s":"lab:concept/state-action-reward","p":"lab:demonstratedBy","o":"lab:sim/ch9_general-p91","anchor":"#p91","confidence":"high"},{"s":"lab:concept/learning-curve","p":"lab:demonstratedBy","o":"lab:sim/ch9_general-p92","anchor":"#p92","confidence":"high"},{"s":"lab:concept/reward-design","p":"lab:demonstratedBy","o":"lab:sim/ch9_general-p94","anchor":"#p94","confidence":"high"},{"s":"lab:concept/rl-generalization","p":"lab:demonstratedBy","o":"lab:sim/ch9_general-p95","anchor":"#p95","confidence":"high"},{"s":"lab:quiz/ch9_general-q91","p":"lab:assesses","o":"lab:concept/state-action-reward","anchor":"#s1","confidence":"high"},{"s":"lab:quiz/ch9_general-q92","p":"lab:assesses","o":"lab:concept/learning-curve","anchor":"#s2","confidence":"high"},{"s":"lab:quiz/ch9_general-q93","p":"lab:assesses","o":"lab:concept/trial-and-error-learning","anchor":"#s3","confidence":"high"},{"s":"lab:quiz/ch9_general-q94","p":"lab:assesses","o":"lab:concept/reward-design","anchor":"#s4","confidence":"high"},{"s":"lab:quiz/ch9_general-q95","p":"lab:assesses","o":"lab:concept/rl-generalization","anchor":"#s5","confidence":"high"},{"s":"lab:claim/humanoid-spec","p":"lab:supports","o":"lab:concept/state-action-reward","anchor":"#s1","confidence":"high"},{"s":"lab:claim/humanoid-spec","p":"lab:assertedIn","o":"lab:work/ahn2026langcon","anchor":"#s1","confidence":"high"},{"s":"lab:concept/reward-hacking","p":"lab:raises","o":"lab:question/reward-gap","anchor":"#s4","confidence":"high"}],"topicLabels":{"lab:area/math":"수학 기초","lab:topic/linear-algebra":"선형대수","lab:topic/probability-statistics":"확률·통계","lab:topic/calculus-optimization-math":"미적분과 최적화 수학","lab:topic/information-theory":"정보 이론","lab:area/ml-basics":"머신러닝 기초","lab:topic/supervised-learning":"지도 학습","lab:topic/unsupervised-learning":"비지도 학습 개념","lab:topic/generalization":"일반화·과적합","lab:topic/bias-variance":"편향-분산 균형","lab:topic/data-splitting":"훈련·검증·시험 분리","lab:topic/feature-engineering":"특징 공학","lab:topic/rule-vs-learning":"규칙 기반 vs 학습 기반","lab:area/classical":"고전 모델","lab:topic/linear-regression":"선형 회귀","lab:topic/logistic-regression":"로지스틱 회귀","lab:topic/svm":"서포트 벡터 머신","lab:topic/knn":"k-최근접 이웃","lab:topic/decision-tree":"결정 트리","lab:topic/naive-bayes":"나이브 베이즈","lab:area/ensemble":"앙상블","lab:topic/bagging":"배깅","lab:topic/random-forest":"랜덤 포레스트","lab:topic/boosting":"부스팅","lab:topic/stacking":"스태킹","lab:area/nn-basics":"신경망 기초","lab:topic/weights-and-biases":"가중치와 편향","lab:topic/perceptron":"퍼셉트론","lab:topic/mlp":"다층 퍼셉트론","lab:topic/activation-function":"활성화 함수","lab:topic/loss-function":"손실 함수","lab:topic/backpropagation":"역전파","lab:topic/universal-approximation":"보편 근사 정리","lab:area/optimization":"최적화","lab:topic/gradient-descent":"경사하강법","lab:topic/sgd-minibatch":"확률적 경사하강·미니배치","lab:topic/momentum-adam":"모멘텀·Adam","lab:topic/learning-rate-schedule":"학습률 조정","lab:area/regularization":"정규화·일반화 기법","lab:topic/weight-decay":"가중치 감쇠(L2)","lab:topic/dropout":"드롭아웃","lab:topic/early-stopping":"조기 종료","lab:topic/normalization-layers":"정규화 층","lab:topic/data-augmentation":"데이터 증강","lab:area/vision":"합성곱·시각","lab:topic/convolution":"합성곱·가중치 공유","lab:topic/pooling":"풀링","lab:topic/receptive-field":"수용 영역","lab:topic/residual-connections":"잔차 연결","lab:topic/object-detection":"객체 탐지","lab:topic/segmentation":"분할","lab:area/sequence":"시퀀스 모델","lab:topic/rnn":"순환 신경망","lab:topic/lstm-gru":"LSTM·GRU","lab:topic/seq2seq":"시퀀스-투-시퀀스","lab:topic/time-series":"시계열 예측","lab:area/attention":"어텐션·트랜스포머","lab:topic/attention-mechanism":"어텐션 메커니즘","lab:topic/self-attention":"셀프 어텐션","lab:topic/multi-head-attention":"멀티헤드 어텐션","lab:topic/positional-encoding":"위치 인코딩","lab:topic/transformer":"트랜스포머","lab:area/language":"언어 모델·자연어 처리","lab:topic/tokenization":"토큰화","lab:topic/word-embedding":"단어 임베딩","lab:topic/pretrained-lm":"사전학습 언어 모델","lab:topic/transfer-learning":"전이 학습·파인튜닝","lab:topic/lora":"LoRA·어댑터","lab:topic/prompting":"프롬프팅","lab:topic/rag":"검색 증강 생성","lab:area/generative":"생성 모델","lab:topic/autoencoder":"오토인코더","lab:topic/vae":"변분 오토인코더","lab:topic/gan":"적대적 생성 신경망","lab:topic/diffusion":"확산 모델","lab:topic/autoregressive-generation":"자기회귀 생성","lab:area/representation":"표현 학습","lab:topic/embedding-space":"임베딩 공간","lab:topic/self-supervised":"자기지도 학습","lab:topic/contrastive":"대조 학습","lab:topic/sparse-representation":"희소 표현","lab:topic/random-features":"무작위 특징","lab:topic/multi-task-learning":"멀티태스크 학습","lab:area/rl":"강화 학습","lab:topic/mdp":"마르코프 결정 과정","lab:topic/reward":"보상","lab:topic/value-function":"가치 함수","lab:topic/q-learning":"Q-러닝","lab:topic/policy-gradient":"정책 경사","lab:topic/exploration":"탐험과 활용","lab:topic/reward-prediction-error":"보상 예측 오차","lab:area/unsupervised":"비지도 기법","lab:topic/clustering":"군집화","lab:topic/pca":"주성분 분석","lab:topic/tsne-umap":"t-SNE·UMAP","lab:topic/density-estimation":"밀도 추정","lab:topic/anomaly-detection":"이상 탐지","lab:area/evaluation":"평가","lab:topic/accuracy-metrics":"정확도·손실 지표","lab:topic/precision-recall":"정밀도·재현율","lab:topic/roc-auc":"ROC·AUC","lab:topic/confusion-matrix":"혼동 행렬","lab:topic/data-leakage":"데이터 누수","lab:topic/ablation":"절제 실험","lab:area/graph":"그래프 학습","lab:topic/gnn":"그래프 신경망","lab:topic/message-passing":"메시지 전달","lab:topic/knowledge-graph":"지식 그래프","lab:area/systems":"시스템·MLOps","lab:topic/deployment":"배포","lab:topic/distribution-shift":"분포 이동","lab:topic/monitoring":"모니터링","lab:topic/reproducibility":"재현성","lab:area/responsible":"책임 있는 AI","lab:topic/fairness":"공정성","lab:topic/interpretability":"설명 가능성·해석","lab:topic/ai-safety":"안전성","lab:topic/privacy":"프라이버시","lab:area/neuro":"신경과학과 AI","lab:topic/biological-neuron":"생물 뉴런과 스파이크","lab:topic/synaptic-plasticity":"시냅스 가소성","lab:topic/connectome":"커넥톰","lab:topic/sensory-processing":"감각 처리","lab:topic/learning-memory-circuits":"학습·기억 회로","lab:topic/circuit-methods":"신경 회로 실험 기법"}}</script>
-<script type="application/ld+json" id="kg-ld">{"@context":{"@vocab":"urn:lab:","lab":"urn:lab:","skos":"http://www.w3.org/2004/02/skos/core#","schema":"https://schema.org/","dct":"http://purl.org/dc/terms/","prov":"http://www.w3.org/ns/prov#","rdfs":"http://www.w3.org/2000/01/rdf-schema#"},"@graph":[{"@id":"urn:lab:page/9","@type":["schema:LearningResource","schema:WebPage"],"schema:name":"제9장 · 3D 가상 주자로 일반화하기 (강화학습 학습 과정)","schema:inLanguage":["ko"],"schema:dateCreated":"2026-11-18","schema:version":"1.0","dct:isPartOf":"겸손한 로봇 연구실 (잘 못 알아들으면 되묻는 로봇)","schema:about":[{"@id":"lab:concept/state-action-reward"},{"@id":"lab:concept/learning-curve"},{"@id":"lab:concept/trial-and-error-learning"},{"@id":"lab:concept/reward-design"},{"@id":"lab:concept/rl-generalization"}],"schema:educationalLevel":"입문","schema:learningResourceType":"interactive explainer","dct:source":[{"@id":"lab:work/ahn2026langcon"}]},{"@id":"lab:concept/state-action-reward","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"상태·행동·보상","@language":"ko"},{"@value":"State, action, reward","@language":"en"}],"skos:definition":[{"@value":"가상 몸과 점수표","@language":"ko"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s1","lab:broader":[{"@id":"lab:area/rl"}],"skos:broader":[{"@id":"lab:area/rl"}],"lab:prerequisiteOf":[{"@id":"lab:concept/learning-curve"}],"lab:demonstratedBy":[{"@id":"lab:sim/ch9_general-p91"}]},{"@id":"lab:concept/virtual-humanoid-runner","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"가상 주자","@language":"ko"},{"@value":"Virtual humanoid runner","@language":"en"}],"skos:definition":[{"@value":"가상 몸과 점수표","@language":"ko"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s1","lab:broader":[{"@id":"lab:area/rl"}],"skos:broader":[{"@id":"lab:area/rl"}],"lab:partOf":[{"@id":"lab:concept/state-action-reward"}]},{"@id":"lab:concept/policy","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"정책","@language":"ko"},{"@value":"Policy","@language":"en"}],"skos:definition":[{"@value":"가상 몸과 점수표","@language":"ko"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s1","lab:broader":[{"@id":"lab:area/rl"}],"skos:broader":[{"@id":"lab:area/rl"}],"lab:partOf":[{"@id":"lab:concept/state-action-reward"}]},{"@id":"lab:concept/learning-curve","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"학습 곡선","@language":"ko"},{"@value":"Learning curve","@language":"en"}],"skos:definition":[{"@value":"학습 대시보드","@language":"ko"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s2","lab:prerequisiteOf":[{"@id":"lab:concept/trial-and-error-learning"}],"lab:demonstratedBy":[{"@id":"lab:sim/ch9_general-p92"}]},{"@id":"lab:concept/exploration-exploitation","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"탐험과 활용","@language":"ko"},{"@value":"Exploration and exploitation","@language":"en"}],"skos:definition":[{"@value":"학습 대시보드","@language":"ko"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s2","lab:broader":[{"@id":"lab:area/rl"}],"skos:broader":[{"@id":"lab:area/rl"}],"lab:partOf":[{"@id":"lab:concept/learning-curve"}]},{"@id":"lab:concept/trial-and-error-learning","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"시행착오 학습","@language":"ko"},{"@value":"Trial-and-error learning","@language":"en"}],"skos:definition":[{"@value":"학습 과정 영상","@language":"ko"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s3","lab:broader":[{"@id":"lab:area/rl"}],"skos:broader":[{"@id":"lab:area/rl"}],"lab:prerequisiteOf":[{"@id":"lab:concept/reward-design"}]},{"@id":"lab:concept/reward-design","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"보상 설계","@language":"ko"},{"@value":"Reward design","@language":"en"}],"skos:definition":[{"@value":"보상 설계와 보상 해킹","@language":"ko"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s4","lab:broader":[{"@id":"lab:topic/reward"}],"skos:broader":[{"@id":"lab:topic/reward"}],"lab:prerequisiteOf":[{"@id":"lab:concept/rl-generalization"}],"lab:demonstratedBy":[{"@id":"lab:sim/ch9_general-p94"}]},{"@id":"lab:concept/reward-hacking","@type":["lab:Limitation","skos:Concept"],"skos:prefLabel":[{"@value":"보상 해킹","@language":"ko"},{"@value":"Reward hacking","@language":"en"}],"skos:definition":[{"@value":"보상 설계와 보상 해킹","@language":"ko"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s4","lab:broader":[{"@id":"lab:topic/reward"}],"skos:broader":[{"@id":"lab:topic/reward"}],"lab:partOf":[{"@id":"lab:concept/reward-design"}],"lab:raises":[{"@id":"lab:question/reward-gap"}]},{"@id":"lab:concept/rl-generalization","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"강화학습 일반화","@language":"ko"},{"@value":"Generalizing reinforcement learning","@language":"en"}],"skos:definition":[{"@value":"일반화 지도","@language":"ko"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s5","lab:broader":[{"@id":"lab:area/rl"}],"skos:broader":[{"@id":"lab:area/rl"}],"lab:demonstratedBy":[{"@id":"lab:sim/ch9_general-p95"}]},{"@id":"lab:concept/sim-to-real","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"Sim-to-Real","@language":"ko"},{"@value":"Sim-to-real transfer","@language":"en"}],"skos:definition":[{"@value":"일반화 지도","@language":"ko"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s5","lab:broader":[{"@id":"lab:topic/transfer-learning"}],"skos:broader":[{"@id":"lab:topic/transfer-learning"}],"lab:partOf":[{"@id":"lab:concept/rl-generalization"}]},{"@id":"lab:concept/confidence-band-policy","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"신뢰도 구간 정책","@language":"ko"},{"@value":"Confidence-band action policy","@language":"en"}],"skos:definition":[{"@value":"일반화 지도","@language":"ko"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s5","lab:partOf":[{"@id":"lab:concept/rl-generalization"}]},{"@id":"lab:sim/ch9_general-p91","@type":["lab:Simulation","schema:SoftwareApplication"],"skos:prefLabel":[{"@value":"실험 · 가상 주자의 몸 돌려 보기 해설용 재현 · 물리 시뮬레이션 아님","@language":"ko"},{"@value":"Interactive panel p91","@language":"en"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#p91"},{"@id":"lab:sim/ch9_general-p92","@type":["lab:Simulation","schema:SoftwareApplication"],"skos:prefLabel":[{"@value":"대시보드 · 3,000만 걸음의 학습 과정 해설용 재현 · 점수는 보상식으로 계산한 예시값","@language":"ko"},{"@value":"Interactive panel p92","@language":"en"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#p92"},{"@id":"lab:sim/ch9_general-p94","@type":["lab:Simulation","schema:SoftwareApplication"],"skos:prefLabel":[{"@value":"실험 · 보상을 바꾸면 몸이 바뀐다 해설용 재현 · 결과 수치는 예시","@language":"ko"},{"@value":"Interactive panel p94","@language":"en"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#p94"},{"@id":"lab:sim/ch9_general-p95","@type":["lab:Simulation","schema:SoftwareApplication"],"skos:prefLabel":[{"@value":"실험 · 달리는 주자에게 \"겸손\"을 붙이면 해설용 재현 · 90/70 규칙은 4-3에서 가져옴","@language":"ko"},{"@value":"Interactive panel p95","@language":"en"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#p95"},{"@id":"lab:quiz/ch9_general-q91","@type":["lab:QuizItem","schema:Question"],"skos:prefLabel":[{"@value":"확인 퀴즈 9-1","@language":"ko"},{"@value":"Check quiz q91","@language":"en"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s1","lab:assesses":[{"@id":"lab:concept/state-action-reward"}]},{"@id":"lab:quiz/ch9_general-q92","@type":["lab:QuizItem","schema:Question"],"skos:prefLabel":[{"@value":"확인 퀴즈 9-2","@language":"ko"},{"@value":"Check quiz q92","@language":"en"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s2","lab:assesses":[{"@id":"lab:concept/learning-curve"}]},{"@id":"lab:quiz/ch9_general-q93","@type":["lab:QuizItem","schema:Question"],"skos:prefLabel":[{"@value":"확인 퀴즈 9-3","@language":"ko"},{"@value":"Check quiz q93","@language":"en"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s3","lab:assesses":[{"@id":"lab:concept/trial-and-error-learning"}]},{"@id":"lab:quiz/ch9_general-q94","@type":["lab:QuizItem","schema:Question"],"skos:prefLabel":[{"@value":"확인 퀴즈 9-4","@language":"ko"},{"@value":"Check quiz q94","@language":"en"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s4","lab:assesses":[{"@id":"lab:concept/reward-design"}]},{"@id":"lab:quiz/ch9_general-q95","@type":["lab:QuizItem","schema:Question"],"skos:prefLabel":[{"@value":"확인 퀴즈 9-5","@language":"ko"},{"@value":"Check quiz q95","@language":"en"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s5","lab:assesses":[{"@id":"lab:concept/rl-generalization"}]},{"@id":"lab:work/ahn2026langcon","@type":["lab:Work","schema:ScholarlyArticle"],"skos:prefLabel":[{"@value":"안상선 (2026) Langcon 2026 발표","@language":"ko"},{"@value":"Ahn (2026) Langcon 2026 talk","@language":"en"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#export"},{"@id":"lab:claim/humanoid-spec","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"Gymnasium Humanoid(v5)는 상태 348개, 행동 17개, 보상 5.0 + 1.25×속도 − 0.1×Σ힘²을 쓴다","@language":"ko"},{"@value":"Gymnasium Humanoid v5: 348 obs, 17 actions, reward 5.0 + 1.25v - 0.1 sum(a^2)","@language":"en"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s1","lab:supports":[{"@id":"lab:concept/state-action-reward"}],"lab:assertedIn":[{"@id":"lab:work/ahn2026langcon"}],"prov:wasDerivedFrom":[{"@id":"lab:work/ahn2026langcon"}]},{"@id":"lab:question/reward-gap","@type":["lab:Question","schema:Question"],"skos:prefLabel":[{"@value":"보상에 적지 않은 것(넘어짐, 힘 낭비)을 주자는 피하지 않는다 — 실물 로봇에서도 같을까?","@language":"ko"},{"@value":"Does what the reward omits stay unlearned on real robots too?","@language":"en"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"mentioned","lab:page":"ch9_general","lab:anchor":"#s4"}]}</script>
+<script type="application/json" id="kg-raw">{"version":"1.0","page":"ch9_general","nodes":[{"id":"lab:concept/state-action-reward","type":"Concept","label":{"ko":"상태·행동·보상","en":"State, action, reward"},"page":"ch9_general","anchor":"#s1","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"definition":{"ko":"무엇을 학습시키나"}},{"id":"lab:concept/virtual-humanoid-runner","type":"Concept","label":{"ko":"가상 주자","en":"Virtual humanoid runner"},"page":"ch9_general","anchor":"#s1","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"definition":{"ko":"무엇을 학습시키나"}},{"id":"lab:concept/policy","type":"Concept","label":{"ko":"정책","en":"Policy"},"page":"ch9_general","anchor":"#s1","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"definition":{"ko":"무엇을 학습시키나"}},{"id":"lab:concept/hands-on-setup","type":"Method","label":{"ko":"실습 환경","en":"Hands-on setup"},"page":"ch9_general","anchor":"#s2","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"definition":{"ko":"준비하기"}},{"id":"lab:concept/trial-and-error-learning","type":"Concept","label":{"ko":"시행착오 학습","en":"Trial-and-error learning"},"page":"ch9_general","anchor":"#s3","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"definition":{"ko":"학습시키기"}},{"id":"lab:concept/learning-curve","type":"Concept","label":{"ko":"학습 곡선","en":"Learning curve"},"page":"ch9_general","anchor":"#s3","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"definition":{"ko":"학습시키기"}},{"id":"lab:concept/exploration-exploitation","type":"Concept","label":{"ko":"탐험과 활용","en":"Exploration and exploitation"},"page":"ch9_general","anchor":"#s4","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"definition":{"ko":"영상과 대시보드"}},{"id":"lab:concept/reward-design","type":"Method","label":{"ko":"보상 설계","en":"Reward design"},"page":"ch9_general","anchor":"#s5","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"definition":{"ko":"보상 바꿔 보기와 일반화"}},{"id":"lab:concept/reward-hacking","type":"Limitation","label":{"ko":"보상 해킹","en":"Reward hacking"},"page":"ch9_general","anchor":"#s5","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"definition":{"ko":"보상 바꿔 보기와 일반화"}},{"id":"lab:concept/rl-generalization","type":"Concept","label":{"ko":"강화학습 일반화","en":"Generalizing reinforcement learning"},"page":"ch9_general","anchor":"#s5","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"definition":{"ko":"보상 바꿔 보기와 일반화"}},{"id":"lab:quiz/ch9_general-q91","type":"QuizItem","label":{"ko":"확인 퀴즈 9-1","en":"Check quiz q91"},"page":"ch9_general","anchor":"#s1","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"]},{"id":"lab:quiz/ch9_general-q92","type":"QuizItem","label":{"ko":"확인 퀴즈 9-2","en":"Check quiz q92"},"page":"ch9_general","anchor":"#s2","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"]},{"id":"lab:quiz/ch9_general-q93","type":"QuizItem","label":{"ko":"확인 퀴즈 9-3","en":"Check quiz q93"},"page":"ch9_general","anchor":"#s3","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"]},{"id":"lab:quiz/ch9_general-q94","type":"QuizItem","label":{"ko":"확인 퀴즈 9-4","en":"Check quiz q94"},"page":"ch9_general","anchor":"#s4","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"]},{"id":"lab:quiz/ch9_general-q95","type":"QuizItem","label":{"ko":"확인 퀴즈 9-5","en":"Check quiz q95"},"page":"ch9_general","anchor":"#s5","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"]},{"id":"lab:work/ahn2026langcon","type":"Work","label":{"ko":"안상선 (2026) Langcon 2026 발표","en":"Ahn (2026) Langcon 2026 talk"},"page":"ch9_general","anchor":"#export","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"]},{"id":"lab:claim/humanoid-spec","type":"Claim","label":{"ko":"Gymnasium Humanoid(v5)는 상태 348개, 행동 17개, 보상 5.0 + 1.25×속도 − 0.1×Σ힘²을 쓴다","en":"Gymnasium Humanoid v5: 348 obs, 17 actions, reward 5.0 + 1.25v - 0.1 sum(a^2)"},"page":"ch9_general","anchor":"#s1","level":2,"status":"known","confidence":"high","coverage":"explained","match":[],"domain":["ai"],"source":[{"ref":"ahn2026langcon","loc":""}]},{"id":"lab:question/reward-gap","type":"Question","label":{"ko":"보상에 적지 않은 것(넘어짐, 힘 낭비)을 주자는 피하지 않을까? — --variant로 직접 확인","en":"Does the runner ignore what the reward omits? Check with --variant"},"page":"ch9_general","anchor":"#s5","level":2,"status":"known","confidence":"high","coverage":"mentioned","match":[],"domain":["ai"]}],"edges":[{"s":"lab:concept/state-action-reward","p":"lab:broader","o":"lab:area/rl","anchor":"#s1","confidence":"high"},{"s":"lab:concept/virtual-humanoid-runner","p":"lab:broader","o":"lab:area/rl","anchor":"#s1","confidence":"high"},{"s":"lab:concept/policy","p":"lab:broader","o":"lab:area/rl","anchor":"#s1","confidence":"high"},{"s":"lab:concept/virtual-humanoid-runner","p":"lab:partOf","o":"lab:concept/state-action-reward","anchor":"#s1","confidence":"high"},{"s":"lab:concept/policy","p":"lab:partOf","o":"lab:concept/state-action-reward","anchor":"#s1","confidence":"high"},{"s":"lab:concept/trial-and-error-learning","p":"lab:broader","o":"lab:area/rl","anchor":"#s3","confidence":"high"},{"s":"lab:concept/learning-curve","p":"lab:partOf","o":"lab:concept/trial-and-error-learning","anchor":"#s3","confidence":"high"},{"s":"lab:concept/exploration-exploitation","p":"lab:broader","o":"lab:area/rl","anchor":"#s4","confidence":"high"},{"s":"lab:concept/exploration-exploitation","p":"lab:partOf","o":"lab:concept/learning-curve","anchor":"#s4","confidence":"high"},{"s":"lab:concept/reward-design","p":"lab:broader","o":"lab:topic/reward","anchor":"#s5","confidence":"high"},{"s":"lab:concept/reward-hacking","p":"lab:broader","o":"lab:topic/reward","anchor":"#s5","confidence":"high"},{"s":"lab:concept/rl-generalization","p":"lab:broader","o":"lab:area/rl","anchor":"#s5","confidence":"high"},{"s":"lab:concept/reward-hacking","p":"lab:partOf","o":"lab:concept/reward-design","anchor":"#s5","confidence":"high"},{"s":"lab:concept/rl-generalization","p":"lab:partOf","o":"lab:concept/reward-design","anchor":"#s5","confidence":"high"},{"s":"lab:concept/state-action-reward","p":"lab:prerequisiteOf","o":"lab:concept/hands-on-setup","anchor":"#s2","confidence":"high"},{"s":"lab:concept/hands-on-setup","p":"lab:prerequisiteOf","o":"lab:concept/trial-and-error-learning","anchor":"#s3","confidence":"high"},{"s":"lab:concept/trial-and-error-learning","p":"lab:prerequisiteOf","o":"lab:concept/learning-curve","anchor":"#s4","confidence":"high"},{"s":"lab:concept/learning-curve","p":"lab:prerequisiteOf","o":"lab:concept/reward-design","anchor":"#s5","confidence":"high"},{"s":"lab:quiz/ch9_general-q91","p":"lab:assesses","o":"lab:concept/state-action-reward","anchor":"#s1","confidence":"high"},{"s":"lab:quiz/ch9_general-q92","p":"lab:assesses","o":"lab:concept/hands-on-setup","anchor":"#s2","confidence":"high"},{"s":"lab:quiz/ch9_general-q93","p":"lab:assesses","o":"lab:concept/trial-and-error-learning","anchor":"#s3","confidence":"high"},{"s":"lab:quiz/ch9_general-q94","p":"lab:assesses","o":"lab:concept/learning-curve","anchor":"#s4","confidence":"high"},{"s":"lab:quiz/ch9_general-q95","p":"lab:assesses","o":"lab:concept/reward-design","anchor":"#s5","confidence":"high"},{"s":"lab:claim/humanoid-spec","p":"lab:supports","o":"lab:concept/state-action-reward","anchor":"#s1","confidence":"high"},{"s":"lab:claim/humanoid-spec","p":"lab:assertedIn","o":"lab:work/ahn2026langcon","anchor":"#s1","confidence":"high"},{"s":"lab:concept/reward-hacking","p":"lab:raises","o":"lab:question/reward-gap","anchor":"#s5","confidence":"high"}],"topicLabels":{"lab:area/math":"수학 기초","lab:topic/linear-algebra":"선형대수","lab:topic/probability-statistics":"확률·통계","lab:topic/calculus-optimization-math":"미적분과 최적화 수학","lab:topic/information-theory":"정보 이론","lab:area/ml-basics":"머신러닝 기초","lab:topic/supervised-learning":"지도 학습","lab:topic/unsupervised-learning":"비지도 학습 개념","lab:topic/generalization":"일반화·과적합","lab:topic/bias-variance":"편향-분산 균형","lab:topic/data-splitting":"훈련·검증·시험 분리","lab:topic/feature-engineering":"특징 공학","lab:topic/rule-vs-learning":"규칙 기반 vs 학습 기반","lab:area/classical":"고전 모델","lab:topic/linear-regression":"선형 회귀","lab:topic/logistic-regression":"로지스틱 회귀","lab:topic/svm":"서포트 벡터 머신","lab:topic/knn":"k-최근접 이웃","lab:topic/decision-tree":"결정 트리","lab:topic/naive-bayes":"나이브 베이즈","lab:area/ensemble":"앙상블","lab:topic/bagging":"배깅","lab:topic/random-forest":"랜덤 포레스트","lab:topic/boosting":"부스팅","lab:topic/stacking":"스태킹","lab:area/nn-basics":"신경망 기초","lab:topic/weights-and-biases":"가중치와 편향","lab:topic/perceptron":"퍼셉트론","lab:topic/mlp":"다층 퍼셉트론","lab:topic/activation-function":"활성화 함수","lab:topic/loss-function":"손실 함수","lab:topic/backpropagation":"역전파","lab:topic/universal-approximation":"보편 근사 정리","lab:area/optimization":"최적화","lab:topic/gradient-descent":"경사하강법","lab:topic/sgd-minibatch":"확률적 경사하강·미니배치","lab:topic/momentum-adam":"모멘텀·Adam","lab:topic/learning-rate-schedule":"학습률 조정","lab:area/regularization":"정규화·일반화 기법","lab:topic/weight-decay":"가중치 감쇠(L2)","lab:topic/dropout":"드롭아웃","lab:topic/early-stopping":"조기 종료","lab:topic/normalization-layers":"정규화 층","lab:topic/data-augmentation":"데이터 증강","lab:area/vision":"합성곱·시각","lab:topic/convolution":"합성곱·가중치 공유","lab:topic/pooling":"풀링","lab:topic/receptive-field":"수용 영역","lab:topic/residual-connections":"잔차 연결","lab:topic/object-detection":"객체 탐지","lab:topic/segmentation":"분할","lab:area/sequence":"시퀀스 모델","lab:topic/rnn":"순환 신경망","lab:topic/lstm-gru":"LSTM·GRU","lab:topic/seq2seq":"시퀀스-투-시퀀스","lab:topic/time-series":"시계열 예측","lab:area/attention":"어텐션·트랜스포머","lab:topic/attention-mechanism":"어텐션 메커니즘","lab:topic/self-attention":"셀프 어텐션","lab:topic/multi-head-attention":"멀티헤드 어텐션","lab:topic/positional-encoding":"위치 인코딩","lab:topic/transformer":"트랜스포머","lab:area/language":"언어 모델·자연어 처리","lab:topic/tokenization":"토큰화","lab:topic/word-embedding":"단어 임베딩","lab:topic/pretrained-lm":"사전학습 언어 모델","lab:topic/transfer-learning":"전이 학습·파인튜닝","lab:topic/lora":"LoRA·어댑터","lab:topic/prompting":"프롬프팅","lab:topic/rag":"검색 증강 생성","lab:area/generative":"생성 모델","lab:topic/autoencoder":"오토인코더","lab:topic/vae":"변분 오토인코더","lab:topic/gan":"적대적 생성 신경망","lab:topic/diffusion":"확산 모델","lab:topic/autoregressive-generation":"자기회귀 생성","lab:area/representation":"표현 학습","lab:topic/embedding-space":"임베딩 공간","lab:topic/self-supervised":"자기지도 학습","lab:topic/contrastive":"대조 학습","lab:topic/sparse-representation":"희소 표현","lab:topic/random-features":"무작위 특징","lab:topic/multi-task-learning":"멀티태스크 학습","lab:area/rl":"강화 학습","lab:topic/mdp":"마르코프 결정 과정","lab:topic/reward":"보상","lab:topic/value-function":"가치 함수","lab:topic/q-learning":"Q-러닝","lab:topic/policy-gradient":"정책 경사","lab:topic/exploration":"탐험과 활용","lab:topic/reward-prediction-error":"보상 예측 오차","lab:area/unsupervised":"비지도 기법","lab:topic/clustering":"군집화","lab:topic/pca":"주성분 분석","lab:topic/tsne-umap":"t-SNE·UMAP","lab:topic/density-estimation":"밀도 추정","lab:topic/anomaly-detection":"이상 탐지","lab:area/evaluation":"평가","lab:topic/accuracy-metrics":"정확도·손실 지표","lab:topic/precision-recall":"정밀도·재현율","lab:topic/roc-auc":"ROC·AUC","lab:topic/confusion-matrix":"혼동 행렬","lab:topic/data-leakage":"데이터 누수","lab:topic/ablation":"절제 실험","lab:area/graph":"그래프 학습","lab:topic/gnn":"그래프 신경망","lab:topic/message-passing":"메시지 전달","lab:topic/knowledge-graph":"지식 그래프","lab:area/systems":"시스템·MLOps","lab:topic/deployment":"배포","lab:topic/distribution-shift":"분포 이동","lab:topic/monitoring":"모니터링","lab:topic/reproducibility":"재현성","lab:area/responsible":"책임 있는 AI","lab:topic/fairness":"공정성","lab:topic/interpretability":"설명 가능성·해석","lab:topic/ai-safety":"안전성","lab:topic/privacy":"프라이버시","lab:area/neuro":"신경과학과 AI","lab:topic/biological-neuron":"생물 뉴런과 스파이크","lab:topic/synaptic-plasticity":"시냅스 가소성","lab:topic/connectome":"커넥톰","lab:topic/sensory-processing":"감각 처리","lab:topic/learning-memory-circuits":"학습·기억 회로","lab:topic/circuit-methods":"신경 회로 실험 기법"}}</script>
+<script type="application/ld+json" id="kg-ld">{"@context":{"@vocab":"urn:lab:","lab":"urn:lab:","skos":"http://www.w3.org/2004/02/skos/core#","schema":"https://schema.org/","dct":"http://purl.org/dc/terms/","prov":"http://www.w3.org/ns/prov#","rdfs":"http://www.w3.org/2000/01/rdf-schema#"},"@graph":[{"@id":"urn:lab:page/9","@type":["schema:LearningResource","schema:WebPage"],"schema:name":"제9장 · 직접 해 보기","schema:inLanguage":["ko"],"schema:dateCreated":"2026-11-18","schema:version":"1.0","dct:isPartOf":"겸손한 로봇 연구실 (잘 못 알아들으면 되묻는 로봇)","schema:about":[{"@id":"lab:concept/state-action-reward"},{"@id":"lab:concept/hands-on-setup"},{"@id":"lab:concept/trial-and-error-learning"},{"@id":"lab:concept/learning-curve"},{"@id":"lab:concept/reward-design"}],"schema:educationalLevel":"입문","schema:learningResourceType":"interactive explainer","dct:source":[{"@id":"lab:work/ahn2026langcon"}]},{"@id":"lab:concept/state-action-reward","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"상태·행동·보상","@language":"ko"},{"@value":"State, action, reward","@language":"en"}],"skos:definition":[{"@value":"무엇을 학습시키나","@language":"ko"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s1","lab:broader":[{"@id":"lab:area/rl"}],"skos:broader":[{"@id":"lab:area/rl"}],"lab:prerequisiteOf":[{"@id":"lab:concept/hands-on-setup"}]},{"@id":"lab:concept/virtual-humanoid-runner","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"가상 주자","@language":"ko"},{"@value":"Virtual humanoid runner","@language":"en"}],"skos:definition":[{"@value":"무엇을 학습시키나","@language":"ko"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s1","lab:broader":[{"@id":"lab:area/rl"}],"skos:broader":[{"@id":"lab:area/rl"}],"lab:partOf":[{"@id":"lab:concept/state-action-reward"}]},{"@id":"lab:concept/policy","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"정책","@language":"ko"},{"@value":"Policy","@language":"en"}],"skos:definition":[{"@value":"무엇을 학습시키나","@language":"ko"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s1","lab:broader":[{"@id":"lab:area/rl"}],"skos:broader":[{"@id":"lab:area/rl"}],"lab:partOf":[{"@id":"lab:concept/state-action-reward"}]},{"@id":"lab:concept/hands-on-setup","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"실습 환경","@language":"ko"},{"@value":"Hands-on setup","@language":"en"}],"skos:definition":[{"@value":"준비하기","@language":"ko"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s2","lab:prerequisiteOf":[{"@id":"lab:concept/trial-and-error-learning"}]},{"@id":"lab:concept/trial-and-error-learning","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"시행착오 학습","@language":"ko"},{"@value":"Trial-and-error learning","@language":"en"}],"skos:definition":[{"@value":"학습시키기","@language":"ko"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s3","lab:broader":[{"@id":"lab:area/rl"}],"skos:broader":[{"@id":"lab:area/rl"}],"lab:prerequisiteOf":[{"@id":"lab:concept/learning-curve"}]},{"@id":"lab:concept/learning-curve","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"학습 곡선","@language":"ko"},{"@value":"Learning curve","@language":"en"}],"skos:definition":[{"@value":"학습시키기","@language":"ko"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s3","lab:partOf":[{"@id":"lab:concept/trial-and-error-learning"}],"lab:prerequisiteOf":[{"@id":"lab:concept/reward-design"}]},{"@id":"lab:concept/exploration-exploitation","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"탐험과 활용","@language":"ko"},{"@value":"Exploration and exploitation","@language":"en"}],"skos:definition":[{"@value":"영상과 대시보드","@language":"ko"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s4","lab:broader":[{"@id":"lab:area/rl"}],"skos:broader":[{"@id":"lab:area/rl"}],"lab:partOf":[{"@id":"lab:concept/learning-curve"}]},{"@id":"lab:concept/reward-design","@type":["lab:Method","skos:Concept"],"skos:prefLabel":[{"@value":"보상 설계","@language":"ko"},{"@value":"Reward design","@language":"en"}],"skos:definition":[{"@value":"보상 바꿔 보기와 일반화","@language":"ko"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s5","lab:broader":[{"@id":"lab:topic/reward"}],"skos:broader":[{"@id":"lab:topic/reward"}]},{"@id":"lab:concept/reward-hacking","@type":["lab:Limitation","skos:Concept"],"skos:prefLabel":[{"@value":"보상 해킹","@language":"ko"},{"@value":"Reward hacking","@language":"en"}],"skos:definition":[{"@value":"보상 바꿔 보기와 일반화","@language":"ko"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s5","lab:broader":[{"@id":"lab:topic/reward"}],"skos:broader":[{"@id":"lab:topic/reward"}],"lab:partOf":[{"@id":"lab:concept/reward-design"}],"lab:raises":[{"@id":"lab:question/reward-gap"}]},{"@id":"lab:concept/rl-generalization","@type":["lab:Concept","skos:Concept"],"skos:prefLabel":[{"@value":"강화학습 일반화","@language":"ko"},{"@value":"Generalizing reinforcement learning","@language":"en"}],"skos:definition":[{"@value":"보상 바꿔 보기와 일반화","@language":"ko"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s5","lab:broader":[{"@id":"lab:area/rl"}],"skos:broader":[{"@id":"lab:area/rl"}],"lab:partOf":[{"@id":"lab:concept/reward-design"}]},{"@id":"lab:quiz/ch9_general-q91","@type":["lab:QuizItem","schema:Question"],"skos:prefLabel":[{"@value":"확인 퀴즈 9-1","@language":"ko"},{"@value":"Check quiz q91","@language":"en"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s1","lab:assesses":[{"@id":"lab:concept/state-action-reward"}]},{"@id":"lab:quiz/ch9_general-q92","@type":["lab:QuizItem","schema:Question"],"skos:prefLabel":[{"@value":"확인 퀴즈 9-2","@language":"ko"},{"@value":"Check quiz q92","@language":"en"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s2","lab:assesses":[{"@id":"lab:concept/hands-on-setup"}]},{"@id":"lab:quiz/ch9_general-q93","@type":["lab:QuizItem","schema:Question"],"skos:prefLabel":[{"@value":"확인 퀴즈 9-3","@language":"ko"},{"@value":"Check quiz q93","@language":"en"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s3","lab:assesses":[{"@id":"lab:concept/trial-and-error-learning"}]},{"@id":"lab:quiz/ch9_general-q94","@type":["lab:QuizItem","schema:Question"],"skos:prefLabel":[{"@value":"확인 퀴즈 9-4","@language":"ko"},{"@value":"Check quiz q94","@language":"en"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s4","lab:assesses":[{"@id":"lab:concept/learning-curve"}]},{"@id":"lab:quiz/ch9_general-q95","@type":["lab:QuizItem","schema:Question"],"skos:prefLabel":[{"@value":"확인 퀴즈 9-5","@language":"ko"},{"@value":"Check quiz q95","@language":"en"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s5","lab:assesses":[{"@id":"lab:concept/reward-design"}]},{"@id":"lab:work/ahn2026langcon","@type":["lab:Work","schema:ScholarlyArticle"],"skos:prefLabel":[{"@value":"안상선 (2026) Langcon 2026 발표","@language":"ko"},{"@value":"Ahn (2026) Langcon 2026 talk","@language":"en"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#export"},{"@id":"lab:claim/humanoid-spec","@type":["lab:Claim","schema:Claim"],"skos:prefLabel":[{"@value":"Gymnasium Humanoid(v5)는 상태 348개, 행동 17개, 보상 5.0 + 1.25×속도 − 0.1×Σ힘²을 쓴다","@language":"ko"},{"@value":"Gymnasium Humanoid v5: 348 obs, 17 actions, reward 5.0 + 1.25v - 0.1 sum(a^2)","@language":"en"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"explained","lab:page":"ch9_general","lab:anchor":"#s1","lab:supports":[{"@id":"lab:concept/state-action-reward"}],"lab:assertedIn":[{"@id":"lab:work/ahn2026langcon"}],"prov:wasDerivedFrom":[{"@id":"lab:work/ahn2026langcon"}]},{"@id":"lab:question/reward-gap","@type":["lab:Question","schema:Question"],"skos:prefLabel":[{"@value":"보상에 적지 않은 것(넘어짐, 힘 낭비)을 주자는 피하지 않을까? — --variant로 직접 확인","@language":"ko"},{"@value":"Does the runner ignore what the reward omits? Check with --variant","@language":"en"}],"lab:level":2,"lab:status":"known","lab:confidence":"high","lab:coverage":"mentioned","lab:page":"ch9_general","lab:anchor":"#s5"}]}</script>
 <script type="application/json" id="refs-csl">[{"id":"ahn2026langcon","type":"speech","title":"불완전한 명령 보완을 위한 강화학습 모델링 적용 방안","author":[{"family":"안","given":"상선"}],"issued":{"date-parts":[[2026,2,28]]},"event":"Langcon 2026","publisher":"(주)M-Robo","genre":"발표 자료 (93쪽)","lab":{"work":"lab:work/ahn2026langcon","role":"primary","supports":["lab:claim/humanoid-spec"],"locs":[],"verified":{"title":true,"author":true,"year":true,"container":true,"pages":false,"doi":false},"checkedBy":"저자가 준 발표 PDF에서 옮김","checkedSource":"author"}}]</script>
-<script type="application/json" id="page-meta">{"title":"제9장 · 3D 가상 주자로 일반화하기 (강화학습 학습 과정)","number":"9","series":"겸손한 로봇 연구실 (잘 못 알아들으면 되묻는 로봇)","about":["lab:concept/state-action-reward","lab:concept/learning-curve","lab:concept/trial-and-error-learning","lab:concept/reward-design","lab:concept/rl-generalization"],"basedOn":["ahn2026langcon"],"educationalLevel":"입문","creator":[{"name":"안상선","role":"author"}],"contributor":[{"name":"AI 보조 제작","role":"assistant"}],"date":"2026-11-18","version":"1.0","language":["ko"],"license":"","url":"https://adminmrobo.github.io/Reinforcement-Learning-lab_project_01/ch9_general.html","registry":"KG_00_registry 0.2","learningResourceType":"interactive explainer","seeAlso":"","domain":["ai"],"suggestedCitation":"안상선 (2026). 3D 가상 주자로 넓혀 보기. 겸손한 로봇 연구실 (잘 못 알아들으면 되묻는 로봇) 9, v1.0."}</script>
+<script type="application/json" id="page-meta">{"title":"제9장 · 직접 해 보기","number":"9","series":"겸손한 로봇 연구실 (잘 못 알아들으면 되묻는 로봇)","about":["lab:concept/state-action-reward","lab:concept/hands-on-setup","lab:concept/trial-and-error-learning","lab:concept/learning-curve","lab:concept/reward-design"],"basedOn":["ahn2026langcon"],"educationalLevel":"입문","creator":[{"name":"안상선","role":"author"}],"contributor":[{"name":"AI 보조 제작","role":"assistant"}],"date":"2026-11-18","version":"1.0","language":["ko"],"license":"","url":"https://adminmrobo.github.io/Reinforcement-Learning-lab_project_01/ch9_general.html","registry":"KG_00_registry 0.2","learningResourceType":"interactive explainer","seeAlso":"","domain":["ai"],"suggestedCitation":"안상선 (2026). 직접 해 보기 · 3D 가상 주자 강화학습 가이드. 겸손한 로봇 연구실 (잘 못 알아들으면 되묻는 로봇) 9, v1.0."}</script>
 <!-- /lab-kg:body -->
 <footer><div class="wrap"><div class="pager"><a href="ch8_appendix.html"><small>← 앞 장</small>제8장 · 맺음 · 부록</a><a class="next" href="index.html"><small>처음으로 →</small>목차</a></div>
-<h3>출처</h3><div class="tw"><table class="tb"><tr><th>내용</th><th>출처</th></tr><tr><td>상태 348개, 행동 17개(−0.4~0.4), 보상 5.0 + 1.25×속도 − 0.1×Σ힘², 몸통 높이 1.0~2.0m 밖이면 종료, 최대 1,000걸음</td><td>Gymnasium 문서 「Humanoid」 (v5 기본 설정)</td></tr><tr><td>"해 보고, 점수를 보고, 고친다", 보상 해킹과 규칙 채점</td><td>안상선, 「플로우 차트의 rule base에서 일하는 AI까지」 2편 6장 「강화학습이 꿰는 실」</td></tr><tr><td>보상 +1.5/−2.0/−5.0, 베이지안 90/70 정책, Sim-to-Real</td><td>이 시리즈 4장·6장·7장 (원자료: Langcon 2026 발표 자료)</td></tr></table></div>
-<h3>설명용 모형 · 예시값</h3><ul><li>9-1~9-5의 3D 가상 주자 그림과 동작(물리 엔진 없이 학습 정도에 맞춰 그린 해설용 인형)</li><li>학습 걸음 수 3,000만, 학습 정도별 속도·버틴 시간(이 페이지가 정한 예시값. 점수는 그 값을 Humanoid 보상식에 넣어 계산)</li><li>9-3 학습 과정 영상(이 페이지의 그림 엔진으로 만든 26초 해설 영상)</li><li>9-4 보상 설계 네 가지의 동작·거리·힘 사용량(예시값)</li><li>9-5 가상 주자의 90/70 규칙과 일반화 표의 물류 로봇·휴머노이드·언어 모델 칸(일반적인 예시)</li></ul>
+<h3>출처</h3><div class="tw"><table class="tb"><tr><th>내용</th><th>출처</th></tr><tr><td>9-4 실제 결과(30,274걸음 · 516판, 점수 113 → 360, 버틴 걸음 72, 평균 속도 0.54 · 0.38 · 0.21 m/s)</td><td>연구실 서버(CPU 2개)에서 train_humanoid.py · record_checkpoints.py · plot_dashboard.py를 실제로 실행한 기록 (code/ch9_humanoid/sample_run/)</td></tr><tr><td>상태 348개, 행동 17개(−0.4~0.4), 보상 5.0 + 1.25×속도 − 0.1×Σ힘², 몸통 높이 1.0~2.0m 밖이면 종료, 최대 1,000걸음</td><td>Gymnasium 문서 「Humanoid」 (v5 기본 설정)</td></tr><tr><td>소스코드 네 개와 설치 목록</td><td>이 장이 만든 실습 코드 (code/ch9_humanoid/), Gymnasium 1.x · Stable-Baselines3 2.x로 짧은 시험 실행 확인</td></tr><tr><td>9-3 콘솔 값(ep_len_mean 26.4, ep_rew_mean 139, fps 68)</td><td>연구실 서버(CPU 2개)에서 train_humanoid.py 짧은 시험을 실제로 돌린 기록</td></tr><tr><td>"해 보고, 점수를 보고, 고친다", 보상 해킹</td><td>안상선, 「플로우 차트의 rule base에서 일하는 AI까지」 2편 6장 「강화학습이 꿰는 실」</td></tr><tr><td>보상 +1.5/−2.0/−5.0, Sim-to-Real</td><td>이 시리즈 6장·7장 (원자료: Langcon 2026 발표 자료)</td></tr></table></div>
+<h3>설명용 모형 · 예시값</h3><ul><li>9-1의 예상 화면 네 장과 9-4의 예상 학습 과정 영상(연구실이 그린 그림, 실제 학습 결과 아님)</li><li>9-5 보상 설계별 "예상되는 동작"과 대결 판정(보상식 구조에서 짐작한 예상)</li><li>9-5 일반화 표의 물류 로봇·휴머노이드·언어 모델 칸(일반적인 예시)</li></ul>
 <p>페이지의 숫자는 발표 자료의 표·그림에서 옮긴 값입니다. "설명용"이라고 표시한 숫자와 그림만 이 페이지가 만든 예시입니다.</p>
 <p>글 · 안상선 (<a href="https://www.ahnboat.xyz">www.ahnboat.xyz</a>) · (주)M-Robo 대표<br>원자료: 안상선, 「불완전한 명령 보완을 위한 강화학습 모델링 적용 방안」, Langcon 2026 발표 자료 (2026-02-28판, 93쪽)<br>
 캐릭터 이름·설정·그림의 저작권은 안상선에게 있습니다.</p></div></footer>
@@ -484,224 +777,11 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
 </script>
 <script>
 (function(){'use strict';
-var GL={"임계값": ["임계값 (threshold)", "이 숫자를 넘으면 \"실행\", 못 넘으면 \"되묻기\"로 가르는 기준선이에요. 이 프로젝트의 텍스트 쪽 기준은 0.40입니다."], "임베딩": ["임베딩 (embedding)", "문장을 수백 개의 숫자 줄로 바꾼 것. 뜻이 비슷한 문장은 숫자 줄도 비슷해져서 서로 가까이 놓입니다."], "코사인 유사도": ["코사인 유사도", "두 숫자 줄(화살표)이 같은 방향을 가리키는 정도. 1에 가까울수록 뜻이 비슷합니다."], "로지스틱 회귀": ["로지스틱 회귀", "점수를 0~1 사이 확률로 바꿔 \"맞다/아니다\"를 고르는 가장 기본적인 분류 방법입니다."], "균형 정확도": ["균형 정확도", "정답 명령을 맞힌 비율과 함정 명령을 막은 비율을 따로 구해 평균 낸 점수. 한쪽 데이터가 많아도 속지 않습니다."], "배신도": ["배신도", "발표 자료가 만든 지표. 단순 정확도에서 균형 정확도를 뺀 값으로, 클수록 성적표가 실력을 부풀리고 있다는 뜻입니다."], "혼동행렬": ["혼동행렬 (confusion matrix)", "실제 정답과 모델의 답을 2×2 칸에 세어 넣은 표. 어디서 헷갈렸는지 한눈에 보입니다."], "스펙트로그램": ["스펙트로그램", "소리를 시간(가로)과 높낮이(세로)로 펼쳐 밝기로 칠한 그림. 소리를 \"보는\" 방법입니다."], "사후확률": ["사후확률", "관찰을 본 뒤에 다시 계산한 확률. \"가\"라는 글자를 보았을 때 그것이 \"앞으로 가\"였을 확률 같은 것입니다."], "베이지안": ["베이지안 추론", "처음 믿음(사전확률)에 새 관찰을 곱해 믿음을 고쳐 나가는 확률 계산법입니다."], "강화학습": ["강화학습 (reinforcement learning)", "해 보고, 점수(보상)를 받고, 점수가 커지는 쪽으로 행동을 고쳐 가는 학습 방식입니다."], "보상": ["보상 (reward)", "행동 하나에 매기는 점수. 잘하면 더하고, 사고를 내면 크게 뺍니다."], "정책": ["정책 (policy)", "\"이런 상황이면 이렇게 한다\"는 행동 규칙 묶음. 강화학습이 결국 찾으려는 것입니다."], "OCR": ["OCR (광학 문자 인식)", "사진 속 글자를 읽어 문자 데이터로 바꾸는 기술. 이 프로젝트는 구글 클라우드 비전 OCR을 썼습니다."], "SBERT": ["SBERT (Sentence-BERT)", "문장 하나를 통째로 임베딩으로 바꿔 주는 언어 모델. 이 프로젝트는 다국어판(MiniLM)을 썼습니다."], "CNN": ["CNN (합성곱 신경망)", "작은 돋보기 창을 그림 위로 밀며 선·곡선 같은 무늬를 찾아내는 신경망입니다."], "혼합 학습": ["혼합 학습", "깨끗한 그림 70%와 오염된 그림 30%를 섞어 가르치는 방법. 실전의 흐린 화면에 미리 적응시킵니다."], "데이터 증강": ["데이터 증강", "있는 데이터를 살짝 바꾸거나 생성 AI로 비슷한 예를 더 만들어 학습 재료를 늘리는 일입니다."], "퓨샷": ["퓨샷 (few-shot)", "생성 AI에게 예시 몇 개를 먼저 보여 주고 \"이런 식으로 더 만들어 줘\"라고 시키는 방법입니다."], "라벨": ["라벨", "데이터마다 붙인 정답 표시. 이 프로젝트는 정답(실행)을 0, 오답(함정)을 1로 붙였습니다."], "시뮬레이터": ["시뮬레이터", "실제 로봇 대신 화면 속 가상 도로에서 판단을 시험하는 프로그램. 부서질 걱정 없이 무한히 해 볼 수 있습니다."], "라운드": ["라운드 (epoch)", "준비한 데이터를 처음부터 끝까지 한 번 다 써서 시험하는 한 바퀴입니다."], "과적합": ["과적합", "연습 문제만 달달 외워서 새 문제에서는 틀리는 상태입니다."], "SNR": ["SNR (신호 대 잡음비)", "목소리(신호)가 잡음보다 몇 배 큰지 dB로 나타낸 값. 작을수록 시끄럽습니다."]};var QZ={"q91": [{"q": "가상 주자(Humanoid 설정)의 \"행동\"은 무엇인가?", "o": ["상태 숫자 348개", "관절 17곳에 주는 힘", "한 걸음 보상"], "a": 1, "why": "행동은 매 순간 관절 17곳에 줄 힘입니다. 348개는 로봇이 읽는 상태 숫자입니다."}, {"q": "속도 3 m/s, 힘²의 합 1.2일 때 한 걸음 보상은?", "o": ["3.75점", "8.63점", "5.00점"], "a": 1, "why": "5.0 + 1.25×3 − 0.1×1.2 = 8.63점입니다."}], "q92": [{"q": "한 판 점수가 학습 중간에 크게 뛰는 주된 까닭은?", "o": ["속도가 갑자기 두 배가 돼서", "버틴 걸음 수와 걸음당 보상이 함께 늘어서", "보상식이 바뀌어서"], "a": 1, "why": "한 판 점수는 버틴 걸음 × 걸음당 보상이라, 넘어지지 않는 법을 배우면 크게 뜁니다."}, {"q": "점수 곡선의 점이 가끔 뚝 떨어지는 것은?", "o": ["학습 실패의 증거", "새 동작을 시험하다 넘어진 판(탐험)", "화면 오류"], "a": 1, "why": "탐험 중 넘어진 판입니다. 이 시행착오가 더 나은 동작을 찾게 합니다."}], "q93": [{"q": "영상에서 주자가 한 판 1,000걸음을 끝까지 버티기 시작하는 단계는?", "o": ["450만 걸음", "2,250만 걸음", "60만 걸음"], "a": 1, "why": "2,250만 걸음(학습 75%)부터 버틴 걸음이 1,000에 닿습니다."}, {"q": "수만 번 넘어지는 학습을 시뮬레이터에서 하는 이유는?", "o": ["실물 로봇이 망가지고 시간이 들어서", "시뮬레이터가 더 정확해서", "보상이 필요 없어서"], "a": 0, "why": "시행착오 비용 때문에 가상에서 배우고 실물로 옮깁니다(7장 Sim-to-Real)."}], "q94": [{"q": "보상에 \"속도\"만 넣으면 주자는?", "o": ["가장 멀리 달린다", "몸을 던져 금방 넘어진다", "가만히 서 있는다"], "a": 1, "why": "넘어져도 감점이 없어 순간 속도를 내는 \"다이빙\"을 배웁니다."}, {"q": "9-4의 교훈과 같은 겸손한 로봇의 설계는?", "o": ["착각에 −5.0으로 가장 큰 벌점", "사전 6,087개", "그림 64×128"], "a": 0, "why": "가장 비싼 실수에 가장 큰 벌점을 매겨야 그 실수를 피하는 법을 배웁니다."}], "q95": [{"q": "확신 60%일 때 \"겸손한 주자\"의 행동은?", "o": ["달린다", "보폭을 줄인다", "멈춰서 다시 살핀다"], "a": 2, "why": "70% 미만은 재확인 구간입니다. Pi Car X의 되묻기와 같은 자리입니다."}, {"q": "일반화할 때 그대로 옮겨 가지 않는 것은?", "o": ["상태·행동·보상·정책의 틀", "가상과 실물의 차이(바닥 마찰 등)", "가장 비싼 실수에 큰 벌점"], "a": 1, "why": "가상과 실물의 차이는 일마다 새로 확인해야 합니다."}]};
-/* 연구실 3D 시험 주자 — 강화학습 학습 과정을 보여 주는 해설용 재현 (물리 시뮬레이션이 아님) */
-(function(){
-var TOTAL=30000000;
-var FONT='"IBM Plex Sans KR","Noto Sans CJK KR",sans-serif';
-function clamp(v,a,b){return v<a?a:(v>b?b:v)}
-function lerp(a,b,t){return a+(b-a)*t}
-function sstep(a,b,x){var t=clamp((x-a)/(b-a),0,1);return t*t*(3-2*t)}
-function hash(n){var x=Math.sin(n*127.1+311.7)*43758.5453;return x-Math.floor(x)}
-function noise(t,k){return Math.sin(t*1.7+k*3.1)*0.5+Math.sin(t*3.9+k*1.3)*0.3+Math.sin(t*7.3+k*5.7)*0.2}
-
-/* 학습 진행 s(0~1) → 걸음 수, 점수(한 판 보상 합), 속도 — 모두 설명용 예시값 */
-function steps(s){return Math.round(s*TOTAL/80)*80}
-/* 한 판 점수 = 버틴 걸음 수 × (5.0 + 1.25 × 속도 − 0.1 × 힘²의 합) — Gymnasium Humanoid 보상식 모양, 값은 예시 */
-function alive(s){return Math.min(1000,Math.max(1,Math.round(gaitFor(s).fallAt/0.015)))}
-function stepReward(s){var g=gaitFor(s);return 5+1.25*g.v-0.1*(0.8+1.5*g.flail)}
-function score(s){return Math.round(alive(s)*stepReward(s))}
-function scoreNoisy(s,k){var v=score(s);var dip=(hash(Math.floor(s*400)+k)<0.12)?0.55:1;return Math.round(v*dip+(hash(s*977+k)-0.5)*v*0.08)}
-
-/* 보상 설계별 행동 스타일 */
-var STYLES={
-  learn:null,
-  dive:{name:'속도만',v:3.2,amp:.5,knee:.6,arm:.4,lean:.75,flail:.15,fallAt:1.5,fallDir:1,out:.1},
-  stand:{name:'서 있기만',v:0,amp:0,knee:.15,arm:.05,lean:0,flail:.06,fallAt:999,fallDir:0,out:.25},
-  flail:{name:'속도+서 있기',v:4.6,amp:.62,knee:1.25,arm:1.25,lean:.25,flail:.35,fallAt:999,fallDir:0,out:.6},
-  smooth:{name:'속도+서 있기+에너지',v:7.0,amp:.78,knee:1.55,arm:.75,lean:.2,flail:.02,fallAt:999,fallDir:0,out:.08}
-};
-
-/* 학습 진행에 따른 동작 값 */
-function gaitFor(s){
-  return {v:0.15+6.85*Math.pow(s,1.35),amp:.12+.66*sstep(.08,.9,s),knee:.35+1.2*sstep(.1,.95,s),arm:.25+.5*sstep(.2,.9,s),
-          lean:.05+.15*sstep(.3,1,s),flail:.9*(1-sstep(.02,.75,s))+.02,out:.9*(1-sstep(.15,.7,s))+.08,
-          cad:1.0+1.8*sstep(0,1,s),fallAt:s<.06?0.25:0.6+40*Math.pow(s,2.4),fallDir:hash(Math.floor(s*50))<.5?1:-1};
-}
-
-/* 한 판(에피소드) 진행: t초 시점의 자세 */
-function pose(s,t,opt){
-  opt=opt||{};var st=opt.style&&STYLES[opt.style]?STYLES[opt.style]:null;
-  var g=gaitFor(s);if(st){g=Object.assign({},g,st);g.cad=st.v>0?(1.2+st.v*0.22):1;if(opt.style==='stand')g.cad=0.8}
-  if(opt.speedMul!=null){g.v*=opt.speedMul;g.amp*=lerp(.45,1,opt.speedMul);g.cad=lerp(1.0,g.cad,opt.speedMul)}
-  /* 넘어지면 에피소드가 끝나고 다시 시작 */
-  var fallDur=.7,lie=.6,epLen=g.fallAt+fallDur+lie;var ep=0,tt=t;
-  if(g.fallAt<900){ep=Math.floor(t/epLen);tt=t-ep*epLen}
-  var fallK=g.fallAt<900?sstep(g.fallAt,g.fallAt+fallDur,tt):0;
-  var down=s<.06&&!st;/* 아주 처음: 바닥에서 버둥거림 */
-  var phi=tt*g.cad*Math.PI*2;var k=ep*7+1;
-  var x=g.v*Math.min(tt,g.fallAt)+(fallK>0?g.v*0.35*fallK:0);
-  var fl=g.flail;
-  function nz(i){return fl*noise(tt*(2+i*.13),k+i)}
-  var J={};
-  var hipW=.11,shW=.19;
-  var lean=g.lean+nz(1)*.25;
-  /* 다리 */
-  var feetY=[];var legs=[];
-  [0,1].forEach(function(side){
-    var off=side?Math.PI:0;var z=side?-hipW:hipW;
-    var ha=g.amp*Math.sin(phi+off)+nz(2+side)*.6;
-    var kf=clamp(.15+g.knee*(.5-.5*Math.cos(phi+off-1.2))+nz(4+side)*.4,0,2.2);
-    var a2=ha-kf;
-    var kx=.45*Math.sin(ha),ky=-.45*Math.cos(ha);
-    var fx=kx+.45*Math.sin(a2),fy=ky-.45*Math.cos(a2);
-    legs.push({z:z,kx:kx,ky:ky,fx:fx,fy:fy});feetY.push(fy);
-  });
-  var flight=st?(opt.style==='smooth'?.06:0):.07*sstep(.75,1,s);
-  var py=-Math.min(feetY[0],feetY[1])+flight*Math.max(0,Math.sin(phi*2))+(Math.abs(nz(9))*.02);
-  /* 몸통 */
-  var ct=Math.cos(lean),sn=Math.sin(lean);
-  function up(len){return [sn*len,ct*len]}
-  var pel=[0,py,0];
-  var c=up(.48),ne=up(.6),hd=up(.74);
-  J.pelvis=pel;J.chest=[c[0],py+c[1],0];J.neck=[ne[0],py+ne[1],0];J.head=[hd[0],py+hd[1],0];
-  legs.forEach(function(L,i){var n=i?'R':'L';J['hip'+n]=[0,py,L.z];J['knee'+n]=[L.kx,py+L.ky,L.z*1.05];J['foot'+n]=[L.fx,py+L.fy,L.z*1.1];J['toe'+n]=[L.fx+.12,py+L.fy+.02,L.z*1.1]});
-  /* 팔 */
-  [0,1].forEach(function(side){var n=side?'R':'L';var off=side?0:Math.PI;var z=side?-shW:shW;
-    var sa=g.arm*Math.sin(phi+off)+nz(10+side)*1.2;var ab=g.out+Math.abs(nz(12+side))*.6;var el=.5+.9*(g.arm>.6?1:.4)+nz(14+side)*.6;
-    var sh=[J.chest[0]-.02,J.chest[1]+.02,z];
-    var ex=.3*Math.sin(sa+lean),ey=-.3*Math.cos(sa+lean)*Math.cos(ab),ez=.3*Math.sin(ab)*(side?-1:1);
-    var e=[sh[0]+ex,sh[1]+ey,sh[2]+ez];var a2=sa+el+lean;
-    var h=[e[0]+.27*Math.sin(a2),e[1]-.27*Math.cos(a2)*Math.cos(ab*.6),e[2]+.27*Math.sin(ab*.6)*(side?-1:1)];
-    J['sh'+n]=sh;J['el'+n]=e;J['hand'+n]=h});
-  /* 넘어짐: 발 근처를 축으로 옆/앞으로 쓰러짐 */
-  var rotZ=0,rotX=0;
-  if(down){rotZ=-1.45;}
-  else if(fallK>0){if(g.fallDir===1||opt.style==='dive')rotZ=-1.45*fallK;else rotX=1.4*fallK*(g.fallDir||1)}
-  if(rotZ||rotX){var cz=Math.cos(rotZ),sz=Math.sin(rotZ),cx=Math.cos(rotX),sx=Math.sin(rotX);
-    for(var key in J){var p=J[key];var X=p[0],Y=p[1],Z=p[2];
-      var X1=X*cz-Y*sz,Y1=X*sz+Y*cz;var Y2=Y1*cx-Z*sx,Z2=Y1*sx+Z*cx;J[key]=[X1,Math.max(.06,Y2+(down?.12:0)),Z2]}}
-  if(down){for(var kk in J){J[kk][0]+=nz(20)*.05;J[kk][1]+=Math.abs(nz(21+kk.length))*.12*(kk.indexOf('hand')>=0||kk.indexOf('foot')>=0?1:.2)}}
-  for(var q in J){J[q][0]+=x}
-  return {J:J,x:x,speed:(fallK>0||down)?0:g.v,fallen:fallK>.5||down,episode:ep,epT:tt,epLen:g.fallAt<900?epLen:0};
-}
-
-var BONES=[['pelvis','chest',.11],['chest','neck',.07],['hipL','kneeL',.075],['kneeL','footL',.06],['footL','toeL',.04],['hipR','kneeR',.075],['kneeR','footR',.06],['footR','toeR',.04],
-  ['shL','elL',.055],['elL','handL',.045],['shR','elR',.055],['elR','handR',.045],['shL','shR',.06],['hipL','hipR',.07]];
-
-/* 그리기 */
-function render(cv,o){
-  var c=cv.getContext('2d');var W=o.W||cv.width,H=o.H||cv.height;
-  var P=o.pose;var J=P.J;var yaw=o.yaw!=null?o.yaw:.6,pitch=o.pitch!=null?o.pitch:.38,dist=o.dist||4.6;
-  var cx=P.x+.1,cy=.7,cz=0;
-  var cyaw=Math.cos(yaw),syaw=Math.sin(yaw),cp=Math.cos(pitch),sp=Math.sin(pitch);
-  var f=Math.min(W*1.05,H*1.15);
-  function cam(p){var dx=p[0]-cx,dy=p[1]-cy,dz=p[2]-cz;var x1=dx*cyaw-dz*syaw,z1=dx*syaw+dz*cyaw;return [x1,dy*cp+z1*sp,dist-dy*sp+z1*cp]}
-  function scr(q){return [W/2+q[0]*f/q[2],H*.46-q[1]*f/q[2],q[2]]}
-  function proj(p){return scr(cam(p))}
-  function line3(a,b){var A=cam(a),B=cam(b),n=.25;if(A[2]<n&&B[2]<n)return;
-    if(A[2]<n||B[2]<n){var t=(n-A[2])/(B[2]-A[2]);var M=[A[0]+(B[0]-A[0])*t,A[1]+(B[1]-A[1])*t,n];if(A[2]<n)A=M;else B=M}
-    var P1=scr(A),P2=scr(B);c.beginPath();c.moveTo(P1[0],P1[1]);c.lineTo(P2[0],P2[1]);c.stroke()}
-  /* 배경 */
-  var gr=c.createLinearGradient(0,0,0,H);gr.addColorStop(0,o.dark?'#21466d':'#eef4fb');gr.addColorStop(1,o.dark?'#173556':'#d3e1f1');c.fillStyle=gr;c.fillRect(0,0,W,H);
-  /* 바닥 격자 */
-  c.lineWidth=1;var gx0=Math.floor(P.x)-12,gx1=gx0+28;
-  for(var gx=gx0;gx<=gx1;gx++){c.strokeStyle=gx%5===0?'rgba(30,85,200,.30)':'rgba(30,85,200,.13)';line3([gx,0,-10],[gx,0,10])}
-  for(var gz=-10;gz<=10;gz++){c.strokeStyle='rgba(30,85,200,.12)';line3([gx0,0,gz],[gx1,0,gz])}
-  /* 출발선 */
-  if(o.startLine!==false){c.strokeStyle='#c9302c';c.lineWidth=2.5;line3([0,0,-1.5],[0,0,1.5])}
-  /* 그림자 */
-  var sh=proj([J.pelvis[0],0,J.pelvis[2]]);var shr=proj([J.pelvis[0]+.35,0,J.pelvis[2]]);var rx=Math.abs(shr[0]-sh[0])+6;
-  c.fillStyle='rgba(20,40,70,.18)';c.beginPath();c.ellipse(sh[0],sh[1],rx,rx*.28,0,0,7);c.fill();
-  /* 뼈대 (먼 것부터) */
-  var segs=BONES.map(function(b){var A=proj(J[b[0]]),B=proj(J[b[1]]);return {A:A,B:B,r:b[2],d:(A[2]+B[2])/2,side:b[0].slice(-1)}});
-  var hp=proj(J.head);segs.push({head:true,A:hp,d:hp[2]});
-  segs.sort(function(a,b){return b.d-a.d});
-  segs.forEach(function(s){
-    if(s.head){var r=.12*f/s.A[2];c.fillStyle=o.dark?'#eef3fa':'#ffffff';c.strokeStyle='#5b6874';c.lineWidth=1.6;c.beginPath();c.arc(s.A[0],s.A[1],r,0,7);c.fill();c.stroke();
-      c.fillStyle=o.accent||'#1e55c8';c.beginPath();c.arc(s.A[0]+r*.35,s.A[1]-r*.1,r*.18,0,7);c.fill();return}
-    var w=2*s.r*f/s.d;c.lineCap='round';
-    c.strokeStyle='#5b6874';c.lineWidth=w+3;c.beginPath();c.moveTo(s.A[0],s.A[1]);c.lineTo(s.B[0],s.B[1]);c.stroke();
-    var dark=s.side==='R';c.strokeStyle=dark?(o.dark?'#c8d6e6':'#dfe7f1'):(o.dark?'#f4f8fc':'#ffffff');c.lineWidth=w;c.beginPath();c.moveTo(s.A[0],s.A[1]);c.lineTo(s.B[0],s.B[1]);c.stroke();
-  });
-  /* 관절 점 */
-  ['kneeL','kneeR','elL','elR','hipL','hipR','shL','shR'].forEach(function(k){var p=proj(J[k]);c.fillStyle=o.accent||'#1e55c8';c.beginPath();c.arc(p[0],p[1],Math.max(2,.03*f/p[2]),0,7);c.fill()});
-  if(o.labels){c.font='600 12px '+FONT;c.fillStyle='#16212b';c.textAlign='left';
-    [['head','머리 높이'],['kneeL','관절 각도'],['handL','팔 힘'],['footR','발 닿음']].forEach(function(l){var p=proj(J[l[0]]);c.fillStyle='rgba(255,255,255,.85)';var tw=c.measureText(l[1]).width;c.fillRect(p[0]+8,p[1]-14,tw+8,18);c.fillStyle='#16212b';c.fillText(l[1],p[0]+12,p[1])})}
-  return proj;
-}
-
-/* 영상용 화면 정보(HUD) */
-function hud(cv,o){
-  var c=cv.getContext('2d');var W=o.W||cv.width,H=o.H||cv.height;var s=o.s;var sc=o.scale||1;
-  c.save();c.font=(13*sc)+'px '+FONT;
-  var x0=18*sc,y0=H-128*sc;c.fillStyle='rgba(255,255,255,.82)';c.strokeStyle='rgba(30,85,200,.35)';c.lineWidth=1;
-  c.beginPath();c.roundRect?c.roundRect(x0,y0,300*sc,110*sc,10*sc):c.rect(x0,y0,300*sc,110*sc);c.fill();c.stroke();
-  c.fillStyle='#5b6874';c.textAlign='left';
-  c.fillText('학습 걸음 수',x0+14*sc,y0+26*sc);c.fillText('한 판 점수',x0+14*sc,y0+50*sc);c.fillText('달리는 속도',x0+14*sc,y0+74*sc);
-  c.fillStyle='#16212b';c.font='700 '+(15*sc)+'px '+FONT;c.textAlign='right';
-  c.fillText(steps(s).toLocaleString('en-US'),x0+170*sc,y0+26*sc);c.fillText(o.score.toLocaleString('en-US'),x0+170*sc,y0+50*sc);c.fillText(o.speed.toFixed(1)+' m/s',x0+170*sc,y0+74*sc);
-  /* 진행 막대 */
-  c.fillStyle='#d5dbe2';c.fillRect(x0+14*sc,y0+88*sc,272*sc,6*sc);c.fillStyle='#1e55c8';c.fillRect(x0+14*sc,y0+88*sc,272*sc*s,6*sc);
-  /* 미니 학습 곡선 */
-  var gx=x0+184*sc,gy=y0+12*sc,gw=104*sc,gh=64*sc;c.strokeStyle='#d5dbe2';c.strokeRect(gx,gy,gw,gh);
-  c.strokeStyle='#13733a';c.lineWidth=2*sc;c.beginPath();for(var i=0;i<=60;i++){var u=i/60*s;var v=score(u)/score(1);var px=gx+gw*i/60*s,py=gy+gh-gh*clamp(v,0,1);i?c.lineTo(px,py):c.moveTo(px,py)}c.stroke();
-  c.font=(10*sc)+'px '+FONT;c.fillStyle='#5b6874';c.textAlign='left';c.fillText('점수 곡선',gx+4*sc,gy+gh-4*sc);
-  if(o.caption){c.font='700 '+(22*sc)+'px '+FONT;c.textAlign='center';var tw=c.measureText(o.caption).width;c.fillStyle='rgba(255,255,255,.88)';c.fillRect(W/2-tw/2-16*sc,18*sc,tw+32*sc,40*sc);c.fillStyle='#16212b';c.fillText(o.caption,W/2,46*sc)}
-  if(o.sub){c.font=(14*sc)+'px '+FONT;c.textAlign='center';var sw=c.measureText(o.sub).width;c.fillStyle='rgba(255,255,255,.88)';c.fillRect(W/2-sw/2-10*sc,64*sc,sw+20*sc,24*sc);c.fillStyle='#16212b';c.fillText(o.sub,W/2,81*sc)}
-  if(o.mark){c.font=(11*sc)+'px '+FONT;c.textAlign='right';c.fillStyle='rgba(22,33,43,.6)';c.fillText(o.mark,W-14*sc,H-12*sc)}
-  c.restore();
-}
-
-window.RUNNER={alive:alive,stepReward:stepReward,pose:pose,render:render,hud:hud,steps:steps,score:score,scoreNoisy:scoreNoisy,gaitFor:gaitFor,STYLES:STYLES,TOTAL:TOTAL};
-})();
+var GL={"임계값": ["임계값 (threshold)", "이 숫자를 넘으면 \"실행\", 못 넘으면 \"되묻기\"로 가르는 기준선이에요. 이 프로젝트의 텍스트 쪽 기준은 0.40입니다."], "임베딩": ["임베딩 (embedding)", "문장을 수백 개의 숫자 줄로 바꾼 것. 뜻이 비슷한 문장은 숫자 줄도 비슷해져서 서로 가까이 놓입니다."], "코사인 유사도": ["코사인 유사도", "두 숫자 줄(화살표)이 같은 방향을 가리키는 정도. 1에 가까울수록 뜻이 비슷합니다."], "로지스틱 회귀": ["로지스틱 회귀", "점수를 0~1 사이 확률로 바꿔 \"맞다/아니다\"를 고르는 가장 기본적인 분류 방법입니다."], "균형 정확도": ["균형 정확도", "정답 명령을 맞힌 비율과 함정 명령을 막은 비율을 따로 구해 평균 낸 점수. 한쪽 데이터가 많아도 속지 않습니다."], "배신도": ["배신도", "발표 자료가 만든 지표. 단순 정확도에서 균형 정확도를 뺀 값으로, 클수록 성적표가 실력을 부풀리고 있다는 뜻입니다."], "혼동행렬": ["혼동행렬 (confusion matrix)", "실제 정답과 모델의 답을 2×2 칸에 세어 넣은 표. 어디서 헷갈렸는지 한눈에 보입니다."], "스펙트로그램": ["스펙트로그램", "소리를 시간(가로)과 높낮이(세로)로 펼쳐 밝기로 칠한 그림. 소리를 \"보는\" 방법입니다."], "사후확률": ["사후확률", "관찰을 본 뒤에 다시 계산한 확률. \"가\"라는 글자를 보았을 때 그것이 \"앞으로 가\"였을 확률 같은 것입니다."], "베이지안": ["베이지안 추론", "처음 믿음(사전확률)에 새 관찰을 곱해 믿음을 고쳐 나가는 확률 계산법입니다."], "강화학습": ["강화학습 (reinforcement learning)", "해 보고, 점수(보상)를 받고, 점수가 커지는 쪽으로 행동을 고쳐 가는 학습 방식입니다."], "보상": ["보상 (reward)", "행동 하나에 매기는 점수. 잘하면 더하고, 사고를 내면 크게 뺍니다."], "정책": ["정책 (policy)", "\"이런 상황이면 이렇게 한다\"는 행동 규칙 묶음. 강화학습이 결국 찾으려는 것입니다."], "OCR": ["OCR (광학 문자 인식)", "사진 속 글자를 읽어 문자 데이터로 바꾸는 기술. 이 프로젝트는 구글 클라우드 비전 OCR을 썼습니다."], "SBERT": ["SBERT (Sentence-BERT)", "문장 하나를 통째로 임베딩으로 바꿔 주는 언어 모델. 이 프로젝트는 다국어판(MiniLM)을 썼습니다."], "CNN": ["CNN (합성곱 신경망)", "작은 돋보기 창을 그림 위로 밀며 선·곡선 같은 무늬를 찾아내는 신경망입니다."], "혼합 학습": ["혼합 학습", "깨끗한 그림 70%와 오염된 그림 30%를 섞어 가르치는 방법. 실전의 흐린 화면에 미리 적응시킵니다."], "데이터 증강": ["데이터 증강", "있는 데이터를 살짝 바꾸거나 생성 AI로 비슷한 예를 더 만들어 학습 재료를 늘리는 일입니다."], "퓨샷": ["퓨샷 (few-shot)", "생성 AI에게 예시 몇 개를 먼저 보여 주고 \"이런 식으로 더 만들어 줘\"라고 시키는 방법입니다."], "라벨": ["라벨", "데이터마다 붙인 정답 표시. 이 프로젝트는 정답(실행)을 0, 오답(함정)을 1로 붙였습니다."], "시뮬레이터": ["시뮬레이터", "실제 로봇 대신 화면 속 가상 도로에서 판단을 시험하는 프로그램. 부서질 걱정 없이 무한히 해 볼 수 있습니다."], "라운드": ["라운드 (epoch)", "준비한 데이터를 처음부터 끝까지 한 번 다 써서 시험하는 한 바퀴입니다."], "과적합": ["과적합", "연습 문제만 달달 외워서 새 문제에서는 틀리는 상태입니다."], "SNR": ["SNR (신호 대 잡음비)", "목소리(신호)가 잡음보다 몇 배 큰지 dB로 나타낸 값. 작을수록 시끄럽습니다."]};var QZ={"q91": [{"q": "가상 주자(Humanoid-v5)의 \"행동\"은 무엇인가?", "o": ["상태 숫자 348개", "관절 17곳에 주는 힘", "한 걸음 보상"], "a": 1, "why": "행동은 매 순간 관절 17곳에 줄 힘입니다. 348개는 로봇이 읽는 상태 숫자입니다."}, {"q": "속도 3 m/s, 힘²의 합 1.2일 때 한 걸음 보상은?", "o": ["3.75점", "8.63점", "5.00점"], "a": 1, "why": "5.0 + 1.25×3 − 0.1×1.2 = 8.63점입니다."}], "q92": [{"q": "설치 확인에서 (348,) (17,)이 나오면?", "o": ["설치 실패", "상태 348개 · 행동 17개로 정상", "GPU가 없다는 뜻"], "a": 1, "why": "9-1 표의 상태·행동 크기와 같으면 정상입니다."}, {"q": "화면 없는 서버에서 그림이 안 그려질 때 먼저 할 일은?", "o": ["MUJOCO_GL=egl 설정", "파이썬 삭제", "보상 바꾸기"], "a": 0, "why": "화면 없이 그림을 그리도록 MUJOCO_GL을 egl(또는 osmesa)로 설정합니다."}], "q93": [{"q": "콘솔의 ep_len_mean이 1,000에 가까워진다는 것은?", "o": ["한 판을 넘어지지 않고 끝까지 버틴다", "학습이 끝났다", "속도가 1,000이다"], "a": 0, "why": "ep_len_mean은 최근 판들의 평균 버틴 걸음이고, 한 판은 최대 1,000걸음입니다."}, {"q": "체크포인트를 저장하는 까닭은?", "o": ["단계별 학습 과정 영상을 만들기 위해", "학습을 빠르게 하려고", "보상을 바꾸려고"], "a": 0, "why": "중간 두뇌를 저장해 두어야 \"버둥거림 → 달리기\"를 나중에 영상으로 볼 수 있습니다."}], "q94": [{"q": "학습 대시보드(dashboard.png)를 그리는 데 쓰는 파일은?", "o": ["monitor.csv", "requirements.txt", "final.zip만"], "a": 0, "why": "monitor.csv에 한 판마다 점수·걸음 수·시간이 기록됩니다."}, {"q": "이 장의 학습 과정 영상에 대한 바른 설명은?", "o": ["실제 학습을 녹화한 영상", "연구실이 그린 예상 화면", "발표 자료의 영상"], "a": 1, "why": "이 장의 영상은 예상 화면이며, 실제 영상은 record_checkpoints.py로 직접 만듭니다."}], "q95": [{"q": "--variant speed_only로 학습할 때 예상되는 동작은?", "o": ["가장 멀리 달린다", "몸을 던져 금방 넘어질 수 있다", "가만히 서 있는다"], "a": 1, "why": "넘어져도 손해가 없어 순간 속도를 내는 동작이 나올 수 있습니다."}, {"q": "9-5의 교훈과 같은 겸손한 로봇의 설계는?", "o": ["착각에 −5.0으로 가장 큰 벌점", "사전 6,087개", "그림 64×128"], "a": 0, "why": "가장 비싼 실수에 가장 큰 벌점을 매겨야 그 실수를 피하는 법을 배웁니다."}]};
 
 Gloss(GL);Quiz(QZ);
-var R3=window.RUNNER;
-/* 9-1 몸 돌려 보기 */
-(function(){var cv=$('#cv91'),yaw=35,s=.6,t=0;
-function draw(){var f=fit(cv,320);var P=R3.pose(s,t);R3.render(cv,{pose:P,W:f.W,H:f.H,yaw:yaw*Math.PI/180,dist:3.6,labels:true,startLine:false});}
-function kp(){var g=R3.gaitFor(s);$('#v91').textContent=yaw+'°';$('#v91s').textContent=Math.round(s*100)+'%';
- $('#k91').innerHTML='<div class="kpi m"><b>348개</b><span>상태 숫자</span></div><div class="kpi i"><b>17개</b><span>행동 (관절 힘)</span></div><div class="kpi a"><b>'+R3.stepReward(s).toFixed(2)+'점</b><span>한 걸음 보상 (예시)</span></div><div class="kpi g"><b>'+R3.alive(s).toLocaleString()+'걸음</b><span>넘어지기 전까지</span></div>'}
-$('#r91').addEventListener('input',function(e){yaw=+e.target.value;kp();draw()});$('#r91s').addEventListener('input',function(e){s=+e.target.value/100;kp();draw()});
-Loop.add(cv,function(dt){if(!REDUCED)t+=dt;draw()});kp();})();
-
-/* 9-2 대시보드 */
-(function(){var cv=$('#cv92'),cc=$('#cv92c'),s=.15,t=0,auto=false;
-var hist=[];for(var i=0;i<=200;i++){var u=i/200;hist.push([u,R3.scoreNoisy(u,3)])}
-function chart(){var f=fit(cc,210),c=f.c,W=f.W,H=f.H;c.clearRect(0,0,W,H);var x0=56,y0=14,w=W-76,h=H-50,mx=R3.score(1)*1.1;
- c.strokeStyle='#d5dbe2';c.fillStyle='#5b6874';c.font='11px IBM Plex Sans KR, sans-serif';c.textAlign='right';
- for(var v=0;v<=15000;v+=5000){var y=y0+h-h*v/mx;c.beginPath();c.moveTo(x0,y);c.lineTo(x0+w,y);c.stroke();c.fillText(v.toLocaleString(),x0-6,y+4)}
- c.textAlign='center';[[0,'0'],[10,'1,000만'],[20,'2,000만'],[30,'3,000만']].forEach(function(m){c.fillText(m[1],x0+w*m[0]/30,y0+h+16)});c.fillText('학습 걸음 수',x0+w/2,y0+h+32);
- c.fillStyle='rgba(19,115,58,.35)';hist.forEach(function(p){if(p[0]>s)return;c.beginPath();c.arc(x0+w*p[0],y0+h-h*Math.max(0,p[1])/mx,2,0,7);c.fill()});
- c.strokeStyle='#13733a';c.lineWidth=2.5;c.beginPath();for(var i=0;i<=100;i++){var u=i/100*s;var px=x0+w*u,py=y0+h-h*R3.score(u)/mx;i?c.lineTo(px,py):c.moveTo(px,py)}c.stroke();
- c.strokeStyle='#1e55c8';c.setLineDash([5,4]);c.lineWidth=1.5;c.beginPath();for(var j=0;j<=100;j++){var u2=j/100*s;var px2=x0+w*u2,py2=y0+h-h*(R3.alive(u2)/1000)*mx*0.9/mx;j?c.lineTo(px2,py2):c.moveTo(px2,py2)}c.stroke();c.setLineDash([]);
- c.textAlign='left';c.fillStyle='#13733a';c.fillText('한 판 점수',x0+6,y0+12);c.fillStyle='#1e55c8';c.fillText('버틴 걸음 (1,000 = 위쪽 90%)',x0+80,y0+12);
- var cx=x0+w*s;c.strokeStyle='#a35c00';c.lineWidth=1;c.beginPath();c.moveTo(cx,y0);c.lineTo(cx,y0+h);c.stroke()}
-function draw(){var f=fit(cv,340);var P=R3.pose(s,t);R3.render(cv,{pose:P,W:f.W,H:f.H,dist:3.9});R3.hud(cv,{s:s,score:R3.score(s),speed:P.speed,W:f.W,H:f.H,scale:Math.max(.62,Math.min(1,f.W/760))})}
-function upd(){$('#v92').textContent=Math.round(s*100)+'%';var g=R3.gaitFor(s),al=R3.alive(s);
- $('#k92').innerHTML='<div class="kpi i"><b>'+R3.steps(s).toLocaleString()+'</b><span>학습 걸음 수</span></div><div class="kpi g"><b>'+R3.score(s).toLocaleString()+'</b><span>한 판 점수</span></div><div class="kpi m"><b>'+al.toLocaleString()+' / 1,000</b><span>버틴 걸음</span></div><div class="kpi a"><b>'+g.v.toFixed(1)+' m/s</b><span>달리는 속도</span></div>';
- var st=s<.06?'바닥에서 버둥거립니다. 어떤 힘이 몸을 일으키는지 아직 모릅니다.':(s<.25?'일어서지만 금방 넘어집니다. "서 있으면 +5점"을 막 알아챈 단계입니다.':(s<.45?'팔을 벌려 균형을 잡으며 걷습니다. 버틴 걸음이 빠르게 늘어납니다.':(s<.7?'다리를 번갈아 내딛으며 달리기 시작합니다. 점수가 가장 가파르게 오르는 구간입니다.':(s<.9?'한 판 1,000걸음을 끝까지 버팁니다. 이제부터는 속도만 오릅니다.':'팔과 다리가 맞물린 효율적인 달리기입니다. 곡선 끝이 눕습니다.'))));
- $('#i92').innerHTML='<p class="'+(s<.45?'a':'g')+'">'+st+'</p>';chart();draw()}
-$('#r92').addEventListener('input',function(e){s=+e.target.value/100;auto=false;$('#b92').textContent='자동으로 학습시키기';upd()});
-$('#b92').addEventListener('click',function(){auto=!auto;if(auto&&s>=1)s=0;this.textContent=auto?'멈추기':'자동으로 학습시키기'});
-$('#b92r').addEventListener('click',function(){s=0;auto=false;$('#b92').textContent='자동으로 학습시키기';$('#r92').value=0;upd()});
-var acc=0;Loop.add(cv,function(dt){if(!REDUCED)t+=dt;if(auto){s=Math.min(1,s+dt/22);$('#r92').value=Math.round(s*100);acc+=dt;if(acc>.2){acc=0;upd()}if(s>=1){auto=false;$('#b92').textContent='자동으로 학습시키기';upd()}}draw();if(dt===0)chart()});upd();})();
-
-/* 9-4 보상 설계 */
-var ST94={dive:{dist:4.8,alive:100,energy:2.1,name:'A 속도만',msg:'몸을 앞으로 던져 1.5초 만에 넘어집니다. 넘어져도 감점이 없으니 "다이빙"이 가장 쉬운 점수였습니다.',c:'r'},
- stand:{dist:0,alive:1000,energy:.3,name:'B 서 있기만',msg:'한 발도 내딛지 않습니다. 1,000걸음을 다 버텨 5,000점을 받지만, 앞으로는 0m입니다.',c:'a'},
- flail:{dist:69,alive:1000,energy:6.2,name:'C 속도 + 서 있기',msg:'달리기는 하지만 팔을 마구 휘두릅니다. 힘을 아낄 이유가 보상에 없었습니다.',c:'a'},
- smooth:{dist:105,alive:1000,energy:1.4,name:'D 셋 다',msg:'오래 버티고, 빠르고, 힘을 아낍니다. Humanoid 기본 보상식이 이 모양입니다.',c:'g'}};
-(function(){var cv=$('#cv94'),st='smooth',t=0;
-function draw(){var f=fit(cv,300);var P=R3.pose(1,t,{style:st});R3.render(cv,{pose:P,W:f.W,H:f.H,dist:3.8})}
-function upd(){var d=ST94[st];$$('#p94 .bt[data-st]').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-st')===st?'true':'false')});
- $('#k94').innerHTML='<div class="kpi '+d.c+'"><b>'+d.dist+' m</b><span>한 판 동안 간 거리</span></div><div class="kpi m"><b>'+d.alive.toLocaleString()+'걸음</b><span>버틴 걸음</span></div><div class="kpi a"><b>'+d.energy.toFixed(1)+'</b><span>걸음당 힘²의 합</span></div><div class="kpi i"><b>'+d.name+'</b><span>보상 설계</span></div>';
- $('#i94').innerHTML='<p class="'+d.c+'">'+d.msg+'</p>';t=0;draw()}
-$$('#p94 .bt[data-st]').forEach(function(b){b.addEventListener('click',function(){st=b.getAttribute('data-st');upd()})});
-Loop.add(cv,function(dt){if(!REDUCED)t+=dt;draw()});upd();})();
-Duel({el:'#d94',scale:110,fmt:function(v){return v+' m'},run:function(){return {fly:ST94.smooth.dist,robo:ST94.dive.dist}},
- verdict:{fly:'<p><b>초파리 승리.</b> D는 1,000걸음을 끝까지 버티며 105m, A는 1.5초 만에 몸을 던지고 넘어져 4.8m입니다. 보상에 "넘어지면 손해"가 없으면 다이빙을 배웁니다.</p>',robo:'<p>주판봇 승리.</p>'}});
-
-/* 9-5 겸손한 주자 */
-(function(){var cv=$('#cv95'),conf=95,t=0;
-function mode(){return conf>=90?0:(conf>=70?1:2)}
-function draw(){var f=fit(cv,280);var m=mode();var P=m===2?R3.pose(1,t,{style:'stand'}):R3.pose(1,t,{speedMul:m===0?1:.35});R3.render(cv,{pose:P,W:f.W,H:f.H,dist:3.8,startLine:false,accent:m===0?'#13733a':(m===1?'#a35c00':'#c9302c')})}
-function upd(){$('#v95').textContent=conf+'%';var m=mode();var names=['달린다 (실행)','보폭을 줄여 걷는다 (저속)','멈춰서 바닥을 다시 살핀다 (재확인)'];var cls=['g','a','r'];
- $('#k95').innerHTML='<div class="kpi '+cls[m]+'"><b>'+names[m].split(' (')[0]+'</b><span>행동</span></div><div class="kpi i"><b>'+[7.0,2.5,0][m].toFixed(1)+' m/s</b><span>속도</span></div><div class="kpi m"><b>'+['90% 이상','70~90%','70% 미만'][m]+'</b><span>확신 구간 (4-3 규칙)</span></div><div class="kpi a"><b>'+['되묻지 않음','조심','"다시 확인"'][m]+'</b><span>Pi Car X라면</span></div>';
- $('#i95').innerHTML='<p class="'+cls[m]+'">확신 '+conf+'%: '+names[m]+'. '+(m===2?'Pi Car X가 "다시 말씀해 주세요"라고 하던 자리입니다.':(m===1?'4-3의 저속 모드와 같습니다.':'확신이 충분하니 학습한 대로 달립니다.'))+'</p>'}
-$('#r95').addEventListener('input',function(e){conf=+e.target.value;upd()});
-Loop.add(cv,function(dt){if(!REDUCED)t+=dt;draw()});upd();})();
+Duel({el:'#d95',scale:1,fmt:function(v){return v?'예상 승':'예상 패'},run:function(){return {fly:1,robo:0}},
+ verdict:{fly:'<p><b>초파리 승리 (예상).</b> 기본 보상은 넘어지면 남은 걸음의 점수를 모두 잃게 만들어, 먼저 버티는 법을 배우게 합니다. 속도만 주면 넘어져도 손해가 없어 몸을 던지는 동작이 나올 수 있습니다. 실제 거리는 9-5의 명령으로 직접 확인하세요.</p>',robo:'<p>주판봇 승리.</p>'}});
 
 Cast.fill();
 /* 받은 표지가 있으면 보이고, 없으면 대체 표지 */

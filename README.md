@@ -25,20 +25,20 @@
 | 6 보상으로 겸손을 가르치다 | `ch6_rl.html` | 강화학습은 무엇이 다른가(머신러닝·신경망 도감과 비교) · 강화학습 기본(달리는 로봇) · 보상표 두 벌 · 천하제일 지능대회 · 임계값 3D 지도 · 역발상 검증 |
 | 7 가상에서 실물로 | `ch7_sim2real.html` | 네 등급 · PyGame 시뮬레이터 · Pi Car X Sim-to-Real · 데이터 흐름 |
 | 8 맺음 · 부록 | `ch8_appendix.html` | 쓰임새와 8주 로드맵 · 부록 코드 네 개 · 기술 스택과 재현성 |
-| 9 3D 가상 주자로 넓혀 보기 | `ch9_general.html` | 가상 몸과 점수표 · 학습 대시보드 · 학습 과정 영상 · 보상 설계와 보상 해킹 · 일반화 지도 |
+| 9 직접 해 보기 · 3D 가상 주자 | `ch9_general.html` | 실습 가이드: 무엇을 학습시키나 · 준비 · 학습 · 영상과 대시보드 · 보상 바꿔 보기 (소스코드 `code/ch9_humanoid/`, 그림·영상은 예상 화면) |
 
 ## 폴더
 
 ```
 index.html, ch1~ch8 *.html   해설 페이지 (외부 라이브러리 없음, 글꼴만 외부)
 assets/                      데이터 예시 그림·음성, 음성 변환기 화면
-media/                       시뮬레이터 영상 2편 (화면 일부만 잘라 냄), 3D 가상 주자 학습 영상(직접 그린 해설 영상) + 포스터
+media/                       시뮬레이터 영상 2편 (화면 일부만 잘라 냄), 9장 예상 화면 그림·영상(연구실이 그린 그림), 실습 짧은 실행 결과 + 포스터
 img/                         표지 그림 자리 (cover_00~09.webp를 넣으면 대체 표지 대신 보임)
 kg/{페이지}/                 지식 색인 원본 kg.json · refs.json · meta.json · check_report.md
 docs/                        표지 지시문(Genspark용) · 이미지 명세서
 cover_manifest.json          표지·온톨로지 현황 (ahnboat_lab_cover_status가 매일 수집)
 KG_new_ids.json              시리즈 등록부에 더할 새 개념 ID
-code/                        실제 구현 코드 정리본 (노트북 6개, .py 2개, requirements.txt, data/ CSV 5개)
+code/                        실제 구현 코드 정리본 (노트북 6개, .py 2개, requirements.txt, data/ CSV 5개), ch9_humanoid/ 9장 실습 코드 4개
 ```
 
 > **code/ 알림** 원본 노트북에 있던 Google API 키는 정리본에서 모두 지웠습니다. 실행하려면 자기 키를 환경 변수 `GOOGLE_API_KEY`로 넣으세요.

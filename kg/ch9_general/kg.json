@@ -20,7 +20,7 @@
     "ai"
    ],
    "definition": {
-    "ko": "가상 몸과 점수표"
+    "ko": "무엇을 학습시키나"
    }
   },
   {
@@ -41,7 +41,7 @@
     "ai"
    ],
    "definition": {
-    "ko": "가상 몸과 점수표"
+    "ko": "무엇을 학습시키나"
    }
   },
   {
@@ -62,15 +62,15 @@
     "ai"
    ],
    "definition": {
-    "ko": "가상 몸과 점수표"
+    "ko": "무엇을 학습시키나"
    }
   },
   {
-   "id": "lab:concept/learning-curve",
-   "type": "Concept",
+   "id": "lab:concept/hands-on-setup",
+   "type": "Method",
    "label": {
-    "ko": "학습 곡선",
-    "en": "Learning curve"
+    "ko": "실습 환경",
+    "en": "Hands-on setup"
    },
    "page": "ch9_general",
    "anchor": "#s2",
@@ -83,28 +83,7 @@
     "ai"
    ],
    "definition": {
-    "ko": "학습 대시보드"
-   }
-  },
-  {
-   "id": "lab:concept/exploration-exploitation",
-   "type": "Concept",
-   "label": {
-    "ko": "탐험과 활용",
-    "en": "Exploration and exploitation"
-   },
-   "page": "ch9_general",
-   "anchor": "#s2",
-   "level": 2,
-   "status": "known",
-   "confidence": "high",
-   "coverage": "explained",
-   "match": [],
-   "domain": [
-    "ai"
-   ],
-   "definition": {
-    "ko": "학습 대시보드"
+    "ko": "준비하기"
    }
   },
   {
@@ -125,7 +104,49 @@
     "ai"
    ],
    "definition": {
-    "ko": "학습 과정 영상"
+    "ko": "학습시키기"
+   }
+  },
+  {
+   "id": "lab:concept/learning-curve",
+   "type": "Concept",
+   "label": {
+    "ko": "학습 곡선",
+    "en": "Learning curve"
+   },
+   "page": "ch9_general",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "학습시키기"
+   }
+  },
+  {
+   "id": "lab:concept/exploration-exploitation",
+   "type": "Concept",
+   "label": {
+    "ko": "탐험과 활용",
+    "en": "Exploration and exploitation"
+   },
+   "page": "ch9_general",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "영상과 대시보드"
    }
   },
   {
@@ -136,7 +157,7 @@
     "en": "Reward design"
    },
    "page": "ch9_general",
-   "anchor": "#s4",
+   "anchor": "#s5",
    "level": 2,
    "status": "known",
    "confidence": "high",
@@ -146,7 +167,7 @@
     "ai"
    ],
    "definition": {
-    "ko": "보상 설계와 보상 해킹"
+    "ko": "보상 바꿔 보기와 일반화"
    }
   },
   {
@@ -157,7 +178,7 @@
     "en": "Reward hacking"
    },
    "page": "ch9_general",
-   "anchor": "#s4",
+   "anchor": "#s5",
    "level": 2,
    "status": "known",
    "confidence": "high",
@@ -167,7 +188,7 @@
     "ai"
    ],
    "definition": {
-    "ko": "보상 설계와 보상 해킹"
+    "ko": "보상 바꿔 보기와 일반화"
    }
   },
   {
@@ -188,122 +209,8 @@
     "ai"
    ],
    "definition": {
-    "ko": "일반화 지도"
+    "ko": "보상 바꿔 보기와 일반화"
    }
-  },
-  {
-   "id": "lab:concept/sim-to-real",
-   "type": "Method",
-   "label": {
-    "ko": "Sim-to-Real",
-    "en": "Sim-to-real transfer"
-   },
-   "page": "ch9_general",
-   "anchor": "#s5",
-   "level": 2,
-   "status": "known",
-   "confidence": "high",
-   "coverage": "explained",
-   "match": [],
-   "domain": [
-    "ai"
-   ],
-   "definition": {
-    "ko": "일반화 지도"
-   }
-  },
-  {
-   "id": "lab:concept/confidence-band-policy",
-   "type": "Method",
-   "label": {
-    "ko": "신뢰도 구간 정책",
-    "en": "Confidence-band action policy"
-   },
-   "page": "ch9_general",
-   "anchor": "#s5",
-   "level": 2,
-   "status": "known",
-   "confidence": "high",
-   "coverage": "explained",
-   "match": [],
-   "domain": [
-    "ai"
-   ],
-   "definition": {
-    "ko": "일반화 지도"
-   }
-  },
-  {
-   "id": "lab:sim/ch9_general-p91",
-   "type": "Simulation",
-   "label": {
-    "ko": "실험 · 가상 주자의 몸 돌려 보기 해설용 재현 · 물리 시뮬레이션 아님",
-    "en": "Interactive panel p91"
-   },
-   "page": "ch9_general",
-   "anchor": "#p91",
-   "level": 2,
-   "status": "known",
-   "confidence": "high",
-   "coverage": "explained",
-   "match": [],
-   "domain": [
-    "ai"
-   ]
-  },
-  {
-   "id": "lab:sim/ch9_general-p92",
-   "type": "Simulation",
-   "label": {
-    "ko": "대시보드 · 3,000만 걸음의 학습 과정 해설용 재현 · 점수는 보상식으로 계산한 예시값",
-    "en": "Interactive panel p92"
-   },
-   "page": "ch9_general",
-   "anchor": "#p92",
-   "level": 2,
-   "status": "known",
-   "confidence": "high",
-   "coverage": "explained",
-   "match": [],
-   "domain": [
-    "ai"
-   ]
-  },
-  {
-   "id": "lab:sim/ch9_general-p94",
-   "type": "Simulation",
-   "label": {
-    "ko": "실험 · 보상을 바꾸면 몸이 바뀐다 해설용 재현 · 결과 수치는 예시",
-    "en": "Interactive panel p94"
-   },
-   "page": "ch9_general",
-   "anchor": "#p94",
-   "level": 2,
-   "status": "known",
-   "confidence": "high",
-   "coverage": "explained",
-   "match": [],
-   "domain": [
-    "ai"
-   ]
-  },
-  {
-   "id": "lab:sim/ch9_general-p95",
-   "type": "Simulation",
-   "label": {
-    "ko": "실험 · 달리는 주자에게 \"겸손\"을 붙이면 해설용 재현 · 90/70 규칙은 4-3에서 가져옴",
-    "en": "Interactive panel p95"
-   },
-   "page": "ch9_general",
-   "anchor": "#p95",
-   "level": 2,
-   "status": "known",
-   "confidence": "high",
-   "coverage": "explained",
-   "match": [],
-   "domain": [
-    "ai"
-   ]
   },
   {
    "id": "lab:quiz/ch9_general-q91",
@@ -441,11 +348,11 @@
    "id": "lab:question/reward-gap",
    "type": "Question",
    "label": {
-    "ko": "보상에 적지 않은 것(넘어짐, 힘 낭비)을 주자는 피하지 않는다 — 실물 로봇에서도 같을까?",
-    "en": "Does what the reward omits stay unlearned on real robots too?"
+    "ko": "보상에 적지 않은 것(넘어짐, 힘 낭비)을 주자는 피하지 않을까? — --variant로 직접 확인",
+    "en": "Does the runner ignore what the reward omits? Check with --variant"
    },
    "page": "ch9_general",
-   "anchor": "#s4",
+   "anchor": "#s5",
    "level": 2,
    "status": "known",
    "confidence": "high",
@@ -493,20 +400,6 @@
    "confidence": "high"
   },
   {
-   "s": "lab:concept/exploration-exploitation",
-   "p": "lab:broader",
-   "o": "lab:area/rl",
-   "anchor": "#s2",
-   "confidence": "high"
-  },
-  {
-   "s": "lab:concept/exploration-exploitation",
-   "p": "lab:partOf",
-   "o": "lab:concept/learning-curve",
-   "anchor": "#s2",
-   "confidence": "high"
-  },
-  {
    "s": "lab:concept/trial-and-error-learning",
    "p": "lab:broader",
    "o": "lab:area/rl",
@@ -514,24 +407,38 @@
    "confidence": "high"
   },
   {
+   "s": "lab:concept/learning-curve",
+   "p": "lab:partOf",
+   "o": "lab:concept/trial-and-error-learning",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/exploration-exploitation",
+   "p": "lab:broader",
+   "o": "lab:area/rl",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/exploration-exploitation",
+   "p": "lab:partOf",
+   "o": "lab:concept/learning-curve",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
    "s": "lab:concept/reward-design",
    "p": "lab:broader",
    "o": "lab:topic/reward",
-   "anchor": "#s4",
+   "anchor": "#s5",
    "confidence": "high"
   },
   {
    "s": "lab:concept/reward-hacking",
    "p": "lab:broader",
    "o": "lab:topic/reward",
-   "anchor": "#s4",
-   "confidence": "high"
-  },
-  {
-   "s": "lab:concept/reward-hacking",
-   "p": "lab:partOf",
-   "o": "lab:concept/reward-design",
-   "anchor": "#s4",
+   "anchor": "#s5",
    "confidence": "high"
   },
   {
@@ -542,35 +449,28 @@
    "confidence": "high"
   },
   {
-   "s": "lab:concept/sim-to-real",
-   "p": "lab:broader",
-   "o": "lab:topic/transfer-learning",
+   "s": "lab:concept/reward-hacking",
+   "p": "lab:partOf",
+   "o": "lab:concept/reward-design",
    "anchor": "#s5",
    "confidence": "high"
   },
   {
-   "s": "lab:concept/sim-to-real",
+   "s": "lab:concept/rl-generalization",
    "p": "lab:partOf",
-   "o": "lab:concept/rl-generalization",
-   "anchor": "#s5",
-   "confidence": "high"
-  },
-  {
-   "s": "lab:concept/confidence-band-policy",
-   "p": "lab:partOf",
-   "o": "lab:concept/rl-generalization",
+   "o": "lab:concept/reward-design",
    "anchor": "#s5",
    "confidence": "high"
   },
   {
    "s": "lab:concept/state-action-reward",
    "p": "lab:prerequisiteOf",
-   "o": "lab:concept/learning-curve",
+   "o": "lab:concept/hands-on-setup",
    "anchor": "#s2",
    "confidence": "high"
   },
   {
-   "s": "lab:concept/learning-curve",
+   "s": "lab:concept/hands-on-setup",
    "p": "lab:prerequisiteOf",
    "o": "lab:concept/trial-and-error-learning",
    "anchor": "#s3",
@@ -579,43 +479,15 @@
   {
    "s": "lab:concept/trial-and-error-learning",
    "p": "lab:prerequisiteOf",
-   "o": "lab:concept/reward-design",
+   "o": "lab:concept/learning-curve",
    "anchor": "#s4",
    "confidence": "high"
   },
   {
-   "s": "lab:concept/reward-design",
-   "p": "lab:prerequisiteOf",
-   "o": "lab:concept/rl-generalization",
-   "anchor": "#s5",
-   "confidence": "high"
-  },
-  {
-   "s": "lab:concept/state-action-reward",
-   "p": "lab:demonstratedBy",
-   "o": "lab:sim/ch9_general-p91",
-   "anchor": "#p91",
-   "confidence": "high"
-  },
-  {
    "s": "lab:concept/learning-curve",
-   "p": "lab:demonstratedBy",
-   "o": "lab:sim/ch9_general-p92",
-   "anchor": "#p92",
-   "confidence": "high"
-  },
-  {
-   "s": "lab:concept/reward-design",
-   "p": "lab:demonstratedBy",
-   "o": "lab:sim/ch9_general-p94",
-   "anchor": "#p94",
-   "confidence": "high"
-  },
-  {
-   "s": "lab:concept/rl-generalization",
-   "p": "lab:demonstratedBy",
-   "o": "lab:sim/ch9_general-p95",
-   "anchor": "#p95",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/reward-design",
+   "anchor": "#s5",
    "confidence": "high"
   },
   {
@@ -628,7 +500,7 @@
   {
    "s": "lab:quiz/ch9_general-q92",
    "p": "lab:assesses",
-   "o": "lab:concept/learning-curve",
+   "o": "lab:concept/hands-on-setup",
    "anchor": "#s2",
    "confidence": "high"
   },
@@ -642,14 +514,14 @@
   {
    "s": "lab:quiz/ch9_general-q94",
    "p": "lab:assesses",
-   "o": "lab:concept/reward-design",
+   "o": "lab:concept/learning-curve",
    "anchor": "#s4",
    "confidence": "high"
   },
   {
    "s": "lab:quiz/ch9_general-q95",
    "p": "lab:assesses",
-   "o": "lab:concept/rl-generalization",
+   "o": "lab:concept/reward-design",
    "anchor": "#s5",
    "confidence": "high"
   },
@@ -671,7 +543,7 @@
    "s": "lab:concept/reward-hacking",
    "p": "lab:raises",
    "o": "lab:question/reward-gap",
-   "anchor": "#s4",
+   "anchor": "#s5",
    "confidence": "high"
   }
  ]
