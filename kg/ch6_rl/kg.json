@@ -87,6 +87,27 @@
    }
   },
   {
+   "id": "lab:concept/rule-relocation",
+   "type": "Concept",
+   "label": {
+    "ko": "규칙의 이사",
+    "en": "Rules relocate: decide → score → gatekeep"
+   },
+   "page": "ch6_rl",
+   "anchor": "#s0",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "강화학습은 무엇이 다른가 — 두 도감과 비교"
+   }
+  },
+  {
    "id": "lab:concept/reinforcement-learning",
    "type": "Method",
    "label": {
@@ -844,6 +865,13 @@
   },
   {
    "s": "lab:concept/deep-reinforcement-learning",
+   "p": "lab:partOf",
+   "o": "lab:concept/learning-paradigms",
+   "anchor": "#s0",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/rule-relocation",
    "p": "lab:partOf",
    "o": "lab:concept/learning-paradigms",
    "anchor": "#s0",
