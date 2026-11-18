@@ -1,0 +1,678 @@
+{
+ "version": "1.0",
+ "page": "ch9_general",
+ "nodes": [
+  {
+   "id": "lab:concept/state-action-reward",
+   "type": "Concept",
+   "label": {
+    "ko": "상태·행동·보상",
+    "en": "State, action, reward"
+   },
+   "page": "ch9_general",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "가상 몸과 점수표"
+   }
+  },
+  {
+   "id": "lab:concept/virtual-humanoid-runner",
+   "type": "Concept",
+   "label": {
+    "ko": "가상 주자",
+    "en": "Virtual humanoid runner"
+   },
+   "page": "ch9_general",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "가상 몸과 점수표"
+   }
+  },
+  {
+   "id": "lab:concept/policy",
+   "type": "Concept",
+   "label": {
+    "ko": "정책",
+    "en": "Policy"
+   },
+   "page": "ch9_general",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "가상 몸과 점수표"
+   }
+  },
+  {
+   "id": "lab:concept/learning-curve",
+   "type": "Concept",
+   "label": {
+    "ko": "학습 곡선",
+    "en": "Learning curve"
+   },
+   "page": "ch9_general",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "학습 대시보드"
+   }
+  },
+  {
+   "id": "lab:concept/exploration-exploitation",
+   "type": "Concept",
+   "label": {
+    "ko": "탐험과 활용",
+    "en": "Exploration and exploitation"
+   },
+   "page": "ch9_general",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "학습 대시보드"
+   }
+  },
+  {
+   "id": "lab:concept/trial-and-error-learning",
+   "type": "Concept",
+   "label": {
+    "ko": "시행착오 학습",
+    "en": "Trial-and-error learning"
+   },
+   "page": "ch9_general",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "학습 과정 영상"
+   }
+  },
+  {
+   "id": "lab:concept/reward-design",
+   "type": "Method",
+   "label": {
+    "ko": "보상 설계",
+    "en": "Reward design"
+   },
+   "page": "ch9_general",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "보상 설계와 보상 해킹"
+   }
+  },
+  {
+   "id": "lab:concept/reward-hacking",
+   "type": "Limitation",
+   "label": {
+    "ko": "보상 해킹",
+    "en": "Reward hacking"
+   },
+   "page": "ch9_general",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "보상 설계와 보상 해킹"
+   }
+  },
+  {
+   "id": "lab:concept/rl-generalization",
+   "type": "Concept",
+   "label": {
+    "ko": "강화학습 일반화",
+    "en": "Generalizing reinforcement learning"
+   },
+   "page": "ch9_general",
+   "anchor": "#s5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "일반화 지도"
+   }
+  },
+  {
+   "id": "lab:concept/sim-to-real",
+   "type": "Method",
+   "label": {
+    "ko": "Sim-to-Real",
+    "en": "Sim-to-real transfer"
+   },
+   "page": "ch9_general",
+   "anchor": "#s5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "일반화 지도"
+   }
+  },
+  {
+   "id": "lab:concept/confidence-band-policy",
+   "type": "Method",
+   "label": {
+    "ko": "신뢰도 구간 정책",
+    "en": "Confidence-band action policy"
+   },
+   "page": "ch9_general",
+   "anchor": "#s5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "definition": {
+    "ko": "일반화 지도"
+   }
+  },
+  {
+   "id": "lab:sim/ch9_general-p91",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · 가상 주자의 몸 돌려 보기 해설용 재현 · 물리 시뮬레이션 아님",
+    "en": "Interactive panel p91"
+   },
+   "page": "ch9_general",
+   "anchor": "#p91",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch9_general-p92",
+   "type": "Simulation",
+   "label": {
+    "ko": "대시보드 · 3,000만 걸음의 학습 과정 해설용 재현 · 점수는 보상식으로 계산한 예시값",
+    "en": "Interactive panel p92"
+   },
+   "page": "ch9_general",
+   "anchor": "#p92",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch9_general-p94",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · 보상을 바꾸면 몸이 바뀐다 해설용 재현 · 결과 수치는 예시",
+    "en": "Interactive panel p94"
+   },
+   "page": "ch9_general",
+   "anchor": "#p94",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:sim/ch9_general-p95",
+   "type": "Simulation",
+   "label": {
+    "ko": "실험 · 달리는 주자에게 \"겸손\"을 붙이면 해설용 재현 · 90/70 규칙은 4-3에서 가져옴",
+    "en": "Interactive panel p95"
+   },
+   "page": "ch9_general",
+   "anchor": "#p95",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch9_general-q91",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 9-1",
+    "en": "Check quiz q91"
+   },
+   "page": "ch9_general",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch9_general-q92",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 9-2",
+    "en": "Check quiz q92"
+   },
+   "page": "ch9_general",
+   "anchor": "#s2",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch9_general-q93",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 9-3",
+    "en": "Check quiz q93"
+   },
+   "page": "ch9_general",
+   "anchor": "#s3",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch9_general-q94",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 9-4",
+    "en": "Check quiz q94"
+   },
+   "page": "ch9_general",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:quiz/ch9_general-q95",
+   "type": "QuizItem",
+   "label": {
+    "ko": "확인 퀴즈 9-5",
+    "en": "Check quiz q95"
+   },
+   "page": "ch9_general",
+   "anchor": "#s5",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:work/ahn2026langcon",
+   "type": "Work",
+   "label": {
+    "ko": "안상선 (2026) Langcon 2026 발표",
+    "en": "Ahn (2026) Langcon 2026 talk"
+   },
+   "page": "ch9_general",
+   "anchor": "#export",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  },
+  {
+   "id": "lab:claim/humanoid-spec",
+   "type": "Claim",
+   "label": {
+    "ko": "Gymnasium Humanoid(v5)는 상태 348개, 행동 17개, 보상 5.0 + 1.25×속도 − 0.1×Σ힘²을 쓴다",
+    "en": "Gymnasium Humanoid v5: 348 obs, 17 actions, reward 5.0 + 1.25v - 0.1 sum(a^2)"
+   },
+   "page": "ch9_general",
+   "anchor": "#s1",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "explained",
+   "match": [],
+   "domain": [
+    "ai"
+   ],
+   "source": [
+    {
+     "ref": "ahn2026langcon",
+     "loc": ""
+    }
+   ]
+  },
+  {
+   "id": "lab:question/reward-gap",
+   "type": "Question",
+   "label": {
+    "ko": "보상에 적지 않은 것(넘어짐, 힘 낭비)을 주자는 피하지 않는다 — 실물 로봇에서도 같을까?",
+    "en": "Does what the reward omits stay unlearned on real robots too?"
+   },
+   "page": "ch9_general",
+   "anchor": "#s4",
+   "level": 2,
+   "status": "known",
+   "confidence": "high",
+   "coverage": "mentioned",
+   "match": [],
+   "domain": [
+    "ai"
+   ]
+  }
+ ],
+ "edges": [
+  {
+   "s": "lab:concept/state-action-reward",
+   "p": "lab:broader",
+   "o": "lab:area/rl",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/virtual-humanoid-runner",
+   "p": "lab:broader",
+   "o": "lab:area/rl",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/policy",
+   "p": "lab:broader",
+   "o": "lab:area/rl",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/virtual-humanoid-runner",
+   "p": "lab:partOf",
+   "o": "lab:concept/state-action-reward",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/policy",
+   "p": "lab:partOf",
+   "o": "lab:concept/state-action-reward",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/exploration-exploitation",
+   "p": "lab:broader",
+   "o": "lab:area/rl",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/exploration-exploitation",
+   "p": "lab:partOf",
+   "o": "lab:concept/learning-curve",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/trial-and-error-learning",
+   "p": "lab:broader",
+   "o": "lab:area/rl",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/reward-design",
+   "p": "lab:broader",
+   "o": "lab:topic/reward",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/reward-hacking",
+   "p": "lab:broader",
+   "o": "lab:topic/reward",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/reward-hacking",
+   "p": "lab:partOf",
+   "o": "lab:concept/reward-design",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/rl-generalization",
+   "p": "lab:broader",
+   "o": "lab:area/rl",
+   "anchor": "#s5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sim-to-real",
+   "p": "lab:broader",
+   "o": "lab:topic/transfer-learning",
+   "anchor": "#s5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/sim-to-real",
+   "p": "lab:partOf",
+   "o": "lab:concept/rl-generalization",
+   "anchor": "#s5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/confidence-band-policy",
+   "p": "lab:partOf",
+   "o": "lab:concept/rl-generalization",
+   "anchor": "#s5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/state-action-reward",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/learning-curve",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/learning-curve",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/trial-and-error-learning",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/trial-and-error-learning",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/reward-design",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/reward-design",
+   "p": "lab:prerequisiteOf",
+   "o": "lab:concept/rl-generalization",
+   "anchor": "#s5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/state-action-reward",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch9_general-p91",
+   "anchor": "#p91",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/learning-curve",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch9_general-p92",
+   "anchor": "#p92",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/reward-design",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch9_general-p94",
+   "anchor": "#p94",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/rl-generalization",
+   "p": "lab:demonstratedBy",
+   "o": "lab:sim/ch9_general-p95",
+   "anchor": "#p95",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch9_general-q91",
+   "p": "lab:assesses",
+   "o": "lab:concept/state-action-reward",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch9_general-q92",
+   "p": "lab:assesses",
+   "o": "lab:concept/learning-curve",
+   "anchor": "#s2",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch9_general-q93",
+   "p": "lab:assesses",
+   "o": "lab:concept/trial-and-error-learning",
+   "anchor": "#s3",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch9_general-q94",
+   "p": "lab:assesses",
+   "o": "lab:concept/reward-design",
+   "anchor": "#s4",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:quiz/ch9_general-q95",
+   "p": "lab:assesses",
+   "o": "lab:concept/rl-generalization",
+   "anchor": "#s5",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/humanoid-spec",
+   "p": "lab:supports",
+   "o": "lab:concept/state-action-reward",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:claim/humanoid-spec",
+   "p": "lab:assertedIn",
+   "o": "lab:work/ahn2026langcon",
+   "anchor": "#s1",
+   "confidence": "high"
+  },
+  {
+   "s": "lab:concept/reward-hacking",
+   "p": "lab:raises",
+   "o": "lab:question/reward-gap",
+   "anchor": "#s4",
+   "confidence": "high"
+  }
+ ]
+}

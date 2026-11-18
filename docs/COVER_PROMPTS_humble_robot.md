@@ -3,7 +3,7 @@
 | 공통 | 내용 |
 |---|---|
 | 판 | L (16:9, 가로 1920 이상) → 빌드 1600×900 WebP |
-| 저장 이름 | `img/cover_00.webp` ~ `img/cover_08.webp` (페이지가 이 이름을 자동으로 찾아 대체 표지 대신 보여 줌) |
+| 저장 이름 | `img/cover_00.webp` ~ `img/cover_09.webp` (페이지가 이 이름을 자동으로 찾아 대체 표지 대신 보여 줌) |
 | 참고 이미지 | 네 캐릭터 기본 그림 4장 (GitHub `adminmrobo/fruitfly-lab-expressions`) |
 | 금지 | 글자·숫자·물음표·로고, 하얀 둥근 로봇(Money-Robo), 실존 제품 모양 그대로의 로봇 자동차 |
 | 미공개 X1~X3 · 인턴 | 표지에는 넣지 않음 (본문에서만 등장) |
@@ -332,6 +332,42 @@ All four characters together:
   boxy beige retro CRT-monitor robot, dark green screen face with mint pixel eyes and mouth, short antenna topped with a red-brown abacus bead, gray segmented arms, two small tank treads, holding a wooden abacus, on the right facing left, gently patting the small robot car.
 Visual metaphor of the topic: the eight-block wall timeline and four rolled scrolls.
 Composition: keep every face and hand inside the central safe area (12% margin left and right, 10% top, 18% bottom); keep the bottom-left corner plain, bright and simple; the light falls on the four scrolls and the small robot car.
+Mood: curious, friendly rivalry, the moment before the result. Daytime lab: big windows, natural light, white walls, lavender, mint and pink props.
+No text, no letters, no numbers, no question marks, no logos, no weapons, no cigarettes, no alcohol, no blood, no real brands or real products.```
+
+**고칠 때 (같은 대화에서):** `Same four characters, same art style and composition. Change only: {고칠 점}. Still no text.`
+
+---
+
+## cover_09 · 9장 · 3D 가상 주자로 넓혀 보기
+
+| 항목 | 내용 |
+|---|---|
+| 키 · 판 | cover_09 · L (16:9) |
+| 장소 | 연구실 안의 밝은 실내 트랙과 큰 모니터 |
+| 주제 은유 | 격자 바닥 위를 달리는 흰 관절 인형(마네킹) 주자, 그 뒤로 넘어진 채 겹쳐 보이는 반투명 잔상 셋(학습 초반), 숫자 없는 오르는 곡선이 그려진 큰 모니터 |
+| 네 캐릭터 포즈 | 박사 at the back center, holding a stopwatch up / 조수 next to the monitor, pointing at the rising curve / 초파리 on the left facing right, crouching to look at the fallen ghost images with a magnifier / 주판봇 on the right facing left, cheering the runner with the abacus raised |
+| 대체 글 (alt) | 넘어지던 흔적을 뒤로하고 격자 트랙을 달리는 흰 관절 인형 주자와 그것을 지켜보는 네 캐릭터 |
+
+**Genspark에 붙여 넣기 ↓**
+```
+웹페이지 맨 위에 거는 표지 그림 1장을 만들어 줘.
+- 비율 16:9, 가로 1920px 이상
+- 첨부한 참고 이미지의 네 캐릭터(박사, 조수, 초파리 연구원, 주판봇)를 같은 그림체·같은 외형으로, 넷 모두 등장
+- 그림 안에 글자·숫자·물음표·로고를 넣지 말 것
+- 얼굴과 손은 가장자리에서 떨어진 가운데 영역에, 왼쪽 아래 구석은 밝고 단순하게
+아래 영어 프롬프트를 그대로 써 줘.
+
+Website top cover illustration, wide 16:9.
+Match the art style, proportions and colors of the attached reference images exactly (if there are no reference images: 16-bit RPG style pixel art, bold dark outline, 2-3 tone shading, small highlights).
+Scene: a bright indoor test track with a light blue grid floor inside the lab; a plain white jointed mannequin runner (simple capsule limbs, round head, no face details) running mid-stride; behind it three faint translucent ghost images of the same mannequin fallen and stumbling; a large monitor on the wall showing a smooth rising curve with no numbers.
+All four characters together:
+  chibi scientist, thin teal rectangular glasses, spiky black hair with one white streak, small ponytail at the back, white lab coat over black vest and tie, at the back center, holding a stopwatch up;
+  girl researcher, long pink hair with two round buns and a navy streak, blue eyes, white lab coat over lavender hoodie, jeans, next to the monitor, pointing at the rising curve;
+  anthropomorphic fruit fly researcher, black body, big red compound eyes, blue helmet with a gold stripe and pink and blue cables, white lab coat over a black vest, black gloves, transparent wings, on the left facing right, crouching to look at the fallen ghost images with a magnifier;
+  boxy beige retro CRT-monitor robot, dark green screen face with mint pixel eyes and mouth, short antenna topped with a red-brown abacus bead, gray segmented arms, two small tank treads, holding a wooden abacus, on the right facing left, cheering the runner with the abacus raised.
+Visual metaphor of the topic: learning by falling — the fallen ghosts behind, the running mannequin ahead.
+Composition: keep every face and hand inside the central safe area (12% margin left and right, 10% top, 18% bottom); keep the bottom-left corner plain, bright and simple; the light falls on the running mannequin.
 Mood: curious, friendly rivalry, the moment before the result. Daytime lab: big windows, natural light, white walls, lavender, mint and pink props.
 No text, no letters, no numbers, no question marks, no logos, no weapons, no cigarettes, no alcohol, no blood, no real brands or real products.```
 

@@ -1,629 +1,720 @@
 {
  "registry": "KG_00_registry 0.2",
- "added": "2026-11-18",
+ "added": "2026-11-19",
  "entries": [
   {
    "id": "lab:concept/blind-execution",
    "label_ko": "맹목적 실행",
    "label_en": "Blind execution",
    "type": "Limitation",
-   "first_page": "humble_robot_lab/ch1_why.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch1_why.html"
   },
   {
    "id": "lab:concept/perception-uncertainty",
    "label_ko": "인식의 불확실성",
    "label_en": "Perception uncertainty",
    "type": "Limitation",
-   "first_page": "humble_robot_lab/ch1_why.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch1_why.html"
   },
   {
    "id": "lab:concept/no-reconfirmation",
    "label_ko": "재확인의 부재",
    "label_en": "Absence of re-confirmation",
    "type": "Limitation",
-   "first_page": "humble_robot_lab/ch1_why.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch1_why.html"
   },
   {
    "id": "lab:concept/intelligent-input-handling",
    "label_ko": "지능적 입력 처리",
    "label_en": "Intelligent input handling",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch1_why.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch1_why.html"
   },
   {
    "id": "lab:concept/overcoming-physical-limits",
    "label_ko": "물리적 제약 극복",
    "label_en": "Overcoming physical limits",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch1_why.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch1_why.html"
   },
   {
    "id": "lab:concept/safety-first-strategy",
    "label_ko": "안전 우선 전략",
    "label_en": "Safety-first strategy",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch1_why.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch1_why.html"
   },
   {
    "id": "lab:concept/pi-car-x",
    "label_ko": "Pi Car X",
    "label_en": "Pi Car X robot",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch1_why.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch1_why.html"
   },
   {
    "id": "lab:concept/ocr",
    "label_ko": "OCR",
    "label_en": "Optical character recognition",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch1_why.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch1_why.html"
   },
   {
    "id": "lab:concept/sbert",
    "label_ko": "SBERT",
    "label_en": "Sentence-BERT",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch1_why.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch1_why.html"
   },
   {
    "id": "lab:concept/bayesian-network",
    "label_ko": "베이지안 네트워크",
    "label_en": "Bayesian network",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch1_why.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch1_why.html"
   },
   {
    "id": "lab:concept/input-analysis-action-pipeline",
    "label_ko": "입력·분석·실행 파이프라인",
    "label_en": "Input-analysis-action pipeline",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch1_why.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch1_why.html"
   },
   {
    "id": "lab:concept/re-questioning",
    "label_ko": "재질문",
    "label_en": "Re-questioning",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch1_why.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch1_why.html"
   },
   {
    "id": "lab:work/ahn2026langcon",
    "label_ko": "안상선 (2026) Langcon 2026 발표",
    "label_en": "Ahn (2026) Langcon 2026 talk",
    "type": "Work",
-   "first_page": "humble_robot_lab/ch1_why.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch1_why.html"
   },
   {
    "id": "lab:concept/binary-label",
    "label_ko": "라벨 0·1",
    "label_en": "Binary label 0/1",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch2_text.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch2_text.html"
   },
   {
    "id": "lab:concept/synonym-typo-data",
    "label_ko": "유의어·오타 데이터",
    "label_en": "Synonym and typo data",
    "type": "Dataset",
-   "first_page": "humble_robot_lab/ch2_text.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch2_text.html"
   },
   {
    "id": "lab:concept/confusable-data",
    "label_ko": "혼동(함정) 데이터",
    "label_en": "Confusable (trap) data",
    "type": "Dataset",
-   "first_page": "humble_robot_lab/ch2_text.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch2_text.html"
   },
   {
    "id": "lab:concept/human-in-the-loop-relabeling",
    "label_ko": "Human-in-the-loop 라벨 교정",
    "label_en": "Human-in-the-loop relabeling",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch2_text.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch2_text.html"
   },
   {
    "id": "lab:concept/few-shot-data-generation",
    "label_ko": "퓨샷 데이터 생성",
    "label_en": "Few-shot data generation",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch2_text.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch2_text.html"
   },
   {
    "id": "lab:concept/cosine-similarity",
    "label_ko": "코사인 유사도",
    "label_en": "Cosine similarity",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch2_text.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch2_text.html"
   },
   {
    "id": "lab:concept/threshold-040",
    "label_ko": "임계값 0.40",
    "label_en": "Decision threshold 0.40",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch2_text.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch2_text.html"
   },
   {
    "id": "lab:concept/full-dictionary",
    "label_ko": "단어 사전",
    "label_en": "Full dictionary lookup",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch2_text.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch2_text.html"
   },
   {
    "id": "lab:concept/logistic-regression",
    "label_ko": "로지스틱 회귀",
    "label_en": "Logistic regression",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch2_text.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch2_text.html"
   },
   {
    "id": "lab:concept/hybrid-decision",
    "label_ko": "하이브리드 판정",
    "label_en": "Hybrid dictionary + AI decision",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch2_text.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch2_text.html"
   },
   {
    "id": "lab:concept/imbalanced-data",
    "label_ko": "불균형 데이터",
    "label_en": "Imbalanced data",
    "type": "Limitation",
-   "first_page": "humble_robot_lab/ch2_text.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch2_text.html"
   },
   {
    "id": "lab:concept/balanced-accuracy",
    "label_ko": "균형 정확도",
    "label_en": "Balanced accuracy",
    "type": "Metric",
-   "first_page": "humble_robot_lab/ch2_text.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch2_text.html"
   },
   {
    "id": "lab:concept/betrayal-gap",
    "label_ko": "배신도",
    "label_en": "Betrayal gap (accuracy minus balanced accuracy)",
    "type": "Metric",
-   "first_page": "humble_robot_lab/ch2_text.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch2_text.html"
   },
   {
    "id": "lab:concept/text-to-image",
    "label_ko": "텍스트 이미지화",
    "label_en": "Text-to-image rendering",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch3_image.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch3_image.html"
   },
   {
    "id": "lab:concept/pixel-normalization",
    "label_ko": "픽셀 정규화",
    "label_en": "Pixel normalization",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch3_image.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch3_image.html"
   },
   {
    "id": "lab:concept/font-augmentation",
    "label_ko": "폰트 데이터 증강",
    "label_en": "Font data augmentation",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch3_image.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch3_image.html"
   },
   {
    "id": "lab:concept/font-diversity",
    "label_ko": "글꼴 다양성",
    "label_en": "Font diversity",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch3_image.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch3_image.html"
   },
   {
    "id": "lab:concept/mlp",
    "label_ko": "MLP",
    "label_en": "Multi-layer perceptron",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch3_image.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch3_image.html"
   },
   {
    "id": "lab:concept/test-coverage",
    "label_ko": "시험 범위",
    "label_en": "Test coverage",
    "type": "Limitation",
-   "first_page": "humble_robot_lab/ch3_image.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch3_image.html"
   },
   {
    "id": "lab:concept/sensor-contamination-simulation",
    "label_ko": "센서 오염 시뮬레이션",
    "label_en": "Sensor contamination simulation",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch4_camera.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch4_camera.html"
   },
   {
    "id": "lab:concept/contamination-level",
    "label_ko": "오염 레벨",
    "label_en": "Contamination level",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch4_camera.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch4_camera.html"
   },
   {
    "id": "lab:concept/mixed-training",
    "label_ko": "혼합 학습",
    "label_en": "Mixed clean/spoiled training",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch4_camera.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch4_camera.html"
   },
   {
    "id": "lab:concept/cnn-skeleton-features",
    "label_ko": "CNN 골격 특징",
    "label_en": "CNN skeleton features",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch4_camera.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch4_camera.html"
   },
   {
    "id": "lab:concept/expected-field-accuracy",
    "label_ko": "예상 실전 정확도",
    "label_en": "Expected field accuracy",
    "type": "Metric",
-   "first_page": "humble_robot_lab/ch4_camera.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch4_camera.html"
   },
   {
    "id": "lab:concept/bayesian-inference",
    "label_ko": "베이지안 추론",
    "label_en": "Bayesian inference",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch4_camera.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch4_camera.html"
   },
   {
    "id": "lab:concept/posterior-probability",
    "label_ko": "사후확률",
    "label_en": "Posterior probability",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch4_camera.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch4_camera.html"
   },
   {
    "id": "lab:concept/confidence-band-policy",
    "label_ko": "신뢰도 구간 정책",
    "label_en": "Confidence-band action policy",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch4_camera.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch4_camera.html"
   },
   {
    "id": "lab:concept/active-sensing",
    "label_ko": "Active Sensing",
    "label_en": "Active sensing",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch4_camera.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch4_camera.html"
   },
   {
    "id": "lab:concept/waveform",
    "label_ko": "파형",
    "label_en": "Waveform",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch5_voice.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch5_voice.html"
   },
   {
    "id": "lab:concept/spectrogram",
    "label_ko": "스펙트로그램",
    "label_en": "Spectrogram",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch5_voice.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch5_voice.html"
   },
   {
    "id": "lab:concept/mel-spectrogram",
    "label_ko": "멜 스펙트로그램",
    "label_en": "Mel spectrogram",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch5_voice.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch5_voice.html"
   },
   {
    "id": "lab:concept/speech-augmentation",
    "label_ko": "음성 증강",
    "label_en": "Speech augmentation",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch5_voice.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch5_voice.html"
   },
   {
    "id": "lab:concept/snr",
    "label_ko": "SNR",
    "label_en": "Signal-to-noise ratio",
    "type": "Metric",
-   "first_page": "humble_robot_lab/ch5_voice.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch5_voice.html"
   },
   {
    "id": "lab:concept/real-voice-conversion",
    "label_ko": "실제 음성 변환",
    "label_en": "Real voice conversion",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch5_voice.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch5_voice.html"
   },
   {
    "id": "lab:concept/confusion-matrix",
    "label_ko": "혼동행렬",
    "label_en": "Confusion matrix",
    "type": "Metric",
-   "first_page": "humble_robot_lab/ch5_voice.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch5_voice.html"
   },
   {
    "id": "lab:concept/speech-classification",
    "label_ko": "음성 분류",
    "label_en": "Speech command classification",
    "type": "Task",
-   "first_page": "humble_robot_lab/ch5_voice.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch5_voice.html"
   },
   {
    "id": "lab:concept/multimodal-fusion",
    "label_ko": "멀티 모달 융합",
    "label_en": "Multimodal fusion",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch5_voice.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch5_voice.html"
   },
   {
    "id": "lab:concept/speech-rl-planned",
    "label_ko": "음성 강화학습(예정)",
    "label_en": "Speech RL (planned)",
    "type": "Question",
-   "first_page": "humble_robot_lab/ch5_voice.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch5_voice.html"
   },
   {
    "id": "lab:concept/reinforcement-learning",
    "label_ko": "강화학습",
    "label_en": "Reinforcement learning",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch6_rl.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch6_rl.html"
   },
   {
    "id": "lab:concept/reward",
    "label_ko": "보상",
    "label_en": "Reward",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch6_rl.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch6_rl.html"
   },
   {
    "id": "lab:concept/policy",
    "label_ko": "정책",
    "label_en": "Policy",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch6_rl.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch6_rl.html"
   },
   {
    "id": "lab:concept/discounted-return",
    "label_ko": "할인된 보상 합",
    "label_en": "Discounted return",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch6_rl.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch6_rl.html"
   },
   {
    "id": "lab:concept/concept-reward-table",
    "label_ko": "개념 보상표",
    "label_en": "Concept reward table (+50/-100/-5)",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch6_rl.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch6_rl.html"
   },
   {
    "id": "lab:concept/strict-trainer-reward",
    "label_ko": "엄격한 훈련관 보상식",
    "label_en": "Strict-trainer reward (+1.5/-2.0/-5.0)",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch6_rl.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch6_rl.html"
   },
   {
    "id": "lab:concept/average-reward-model-selection",
    "label_ko": "평균 보상 모델 선발",
    "label_en": "Average-reward model selection",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch6_rl.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch6_rl.html"
   },
   {
    "id": "lab:concept/intent-confusion-rate",
    "label_ko": "착각률",
    "label_en": "Intent confusion rate",
    "type": "Metric",
-   "first_page": "humble_robot_lab/ch6_rl.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch6_rl.html"
   },
   {
    "id": "lab:concept/xgboost",
    "label_ko": "XGBoost",
    "label_en": "XGBoost",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch6_rl.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch6_rl.html"
   },
   {
    "id": "lab:concept/threshold-optimization",
    "label_ko": "임계값 최적화",
    "label_en": "Threshold optimization",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch6_rl.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch6_rl.html"
   },
   {
    "id": "lab:concept/unstable-model-detection",
    "label_ko": "불안정 지능 감지",
    "label_en": "Unstable model detection",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch6_rl.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch6_rl.html"
   },
   {
    "id": "lab:concept/label-flip-test",
    "label_ko": "라벨 반전 시험",
    "label_en": "Label-flip test",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch6_rl.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch6_rl.html"
   },
   {
    "id": "lab:concept/multi-label",
    "label_ko": "다중 라벨",
    "label_en": "Multi-label / soft target",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch6_rl.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch6_rl.html"
   },
   {
    "id": "lab:concept/intent-hierarchy",
    "label_ko": "의도 기반 계층 구조",
    "label_en": "Intent-based label hierarchy",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch6_rl.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch6_rl.html"
   },
   {
    "id": "lab:concept/four-intelligence-grades",
    "label_ko": "지능 4대 등급",
    "label_en": "Four intelligence grades",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch7_sim2real.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch7_sim2real.html"
   },
   {
    "id": "lab:concept/confidence-personas",
    "label_ko": "신뢰도 인격화",
    "label_en": "Confidence personas",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch7_sim2real.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch7_sim2real.html"
   },
   {
    "id": "lab:concept/pygame-simulator",
    "label_ko": "PyGame 시뮬레이터",
    "label_en": "PyGame simulator",
    "type": "Simulation",
-   "first_page": "humble_robot_lab/ch7_sim2real.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch7_sim2real.html"
   },
   {
    "id": "lab:concept/decision-dashboard",
    "label_ko": "판단 근거 대시보드",
    "label_en": "Decision-basis dashboard",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch7_sim2real.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch7_sim2real.html"
   },
   {
    "id": "lab:concept/sim-to-real",
    "label_ko": "Sim-to-Real",
    "label_en": "Sim-to-real transfer",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch7_sim2real.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch7_sim2real.html"
   },
   {
    "id": "lab:concept/digital-twin",
    "label_ko": "디지털 트윈",
    "label_en": "Digital twin",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch7_sim2real.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch7_sim2real.html"
   },
   {
    "id": "lab:concept/feedback-loop",
    "label_ko": "피드백 루프",
    "label_en": "Feedback loop",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch7_sim2real.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch7_sim2real.html"
   },
   {
    "id": "lab:concept/three-layer-architecture",
    "label_ko": "3계층 구조",
    "label_en": "Three-layer architecture",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch7_sim2real.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch7_sim2real.html"
   },
   {
    "id": "lab:concept/integrity-pipeline",
    "label_ko": "무결성 검증 파이프라인",
    "label_en": "Data integrity pipeline",
    "type": "Method",
-   "first_page": "humble_robot_lab/ch7_sim2real.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch7_sim2real.html"
   },
   {
    "id": "lab:concept/inclusive-language-support",
    "label_ko": "언어 약자 포용",
    "label_en": "Inclusive support for language-vulnerable users",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch8_appendix.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch8_appendix.html"
   },
   {
    "id": "lab:concept/industrial-safety",
    "label_ko": "산업 현장 안전",
    "label_en": "Industrial site safety",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch8_appendix.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch8_appendix.html"
   },
   {
    "id": "lab:concept/development-roadmap",
    "label_ko": "개발 로드맵",
    "label_en": "Development roadmap",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch8_appendix.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch8_appendix.html"
   },
   {
    "id": "lab:concept/code-text-hybrid",
    "label_ko": "하이브리드 엔진 코드",
    "label_en": "text_hybrid_engine.py",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch8_appendix.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch8_appendix.html"
   },
   {
    "id": "lab:concept/code-vision-spoil",
    "label_ko": "오염 합성 코드",
    "label_en": "vision_spoil_engine.py",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch8_appendix.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch8_appendix.html"
   },
   {
    "id": "lab:concept/code-audio-waveform",
    "label_ko": "파형 변환 코드",
    "label_en": "audio_waveform_processor.py",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch8_appendix.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch8_appendix.html"
   },
   {
    "id": "lab:concept/code-simulation-rl",
    "label_ko": "시뮬레이션 보상 코드",
    "label_en": "simulation_rl.py",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch8_appendix.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch8_appendix.html"
   },
   {
    "id": "lab:concept/tensorflow-keras",
    "label_ko": "TensorFlow/Keras",
    "label_en": "TensorFlow / Keras",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch8_appendix.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch8_appendix.html"
   },
   {
    "id": "lab:concept/pygame",
    "label_ko": "PyGame",
    "label_en": "PyGame",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch8_appendix.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch8_appendix.html"
   },
   {
    "id": "lab:concept/google-cloud-vision",
    "label_ko": "Google Cloud Vision",
    "label_en": "Google Cloud Vision API",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch8_appendix.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch8_appendix.html"
   },
   {
    "id": "lab:concept/reproducibility-notice",
    "label_ko": "재현성 고지",
    "label_en": "Reproducibility notice",
    "type": "Concept",
-   "first_page": "humble_robot_lab/ch8_appendix.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/ch8_appendix.html"
   },
   {
    "id": "lab:concept/humble-robot",
    "label_ko": "겸손한 로봇",
    "label_en": "Humble robot",
    "type": "Concept",
-   "first_page": "humble_robot_lab/index.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/index.html"
   },
   {
    "id": "lab:concept/incomplete-command",
    "label_ko": "불완전한 명령",
    "label_en": "Incomplete command",
    "type": "Concept",
-   "first_page": "humble_robot_lab/index.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/index.html"
   },
   {
    "id": "lab:concept/multimodal",
    "label_ko": "멀티 모달",
    "label_en": "Multimodal",
    "type": "Concept",
-   "first_page": "humble_robot_lab/index.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/index.html"
   },
   {
    "id": "lab:concept/rl-reward",
    "label_ko": "강화학습 보상",
    "label_en": "RL reward",
    "type": "Concept",
-   "first_page": "humble_robot_lab/index.html"
+   "first_page": "Reinforcement-Learning-lab_project_01/index.html"
+  },
+  {
+   "id": "lab:concept/rule-relocation",
+   "label_ko": "규칙의 이사",
+   "label_en": "Rules relocate: decide → score → gatekeep",
+   "type": "Concept",
+   "first_page": "Reinforcement-Learning-lab_project_01/ch6_rl.html"
+  },
+  {
+   "id": "lab:concept/state-action-reward",
+   "label_ko": "상태·행동·보상",
+   "label_en": "State, action, reward",
+   "type": "Concept",
+   "first_page": "Reinforcement-Learning-lab_project_01/ch9_general.html"
+  },
+  {
+   "id": "lab:concept/virtual-humanoid-runner",
+   "label_ko": "가상 주자",
+   "label_en": "Virtual humanoid runner",
+   "type": "Concept",
+   "first_page": "Reinforcement-Learning-lab_project_01/ch9_general.html"
+  },
+  {
+   "id": "lab:concept/learning-curve",
+   "label_ko": "학습 곡선",
+   "label_en": "Learning curve",
+   "type": "Concept",
+   "first_page": "Reinforcement-Learning-lab_project_01/ch9_general.html"
+  },
+  {
+   "id": "lab:concept/exploration-exploitation",
+   "label_ko": "탐험과 활용",
+   "label_en": "Exploration and exploitation",
+   "type": "Concept",
+   "first_page": "Reinforcement-Learning-lab_project_01/ch9_general.html"
+  },
+  {
+   "id": "lab:concept/trial-and-error-learning",
+   "label_ko": "시행착오 학습",
+   "label_en": "Trial-and-error learning",
+   "type": "Concept",
+   "first_page": "Reinforcement-Learning-lab_project_01/ch9_general.html"
+  },
+  {
+   "id": "lab:concept/reward-design",
+   "label_ko": "보상 설계",
+   "label_en": "Reward design",
+   "type": "Method",
+   "first_page": "Reinforcement-Learning-lab_project_01/ch9_general.html"
+  },
+  {
+   "id": "lab:concept/reward-hacking",
+   "label_ko": "보상 해킹",
+   "label_en": "Reward hacking",
+   "type": "Limitation",
+   "first_page": "Reinforcement-Learning-lab_project_01/ch9_general.html"
+  },
+  {
+   "id": "lab:concept/rl-generalization",
+   "label_ko": "강화학습 일반화",
+   "label_en": "Generalizing reinforcement learning",
+   "type": "Concept",
+   "first_page": "Reinforcement-Learning-lab_project_01/ch9_general.html"
+  },
+  {
+   "id": "lab:concept/learning-paradigms",
+   "label_ko": "학습 방식 세 갈래",
+   "label_en": "Three learning paradigms",
+   "type": "Concept",
+   "first_page": "Reinforcement-Learning-lab_project_01/ch6_rl.html"
+  },
+  {
+   "id": "lab:concept/supervised-learning",
+   "label_ko": "지도학습",
+   "label_en": "Supervised learning",
+   "type": "Method",
+   "first_page": "Reinforcement-Learning-lab_project_01/ch6_rl.html"
+  },
+  {
+   "id": "lab:concept/unsupervised-learning",
+   "label_ko": "비지도학습",
+   "label_en": "Unsupervised learning",
+   "type": "Method",
+   "first_page": "Reinforcement-Learning-lab_project_01/ch6_rl.html"
+  },
+  {
+   "id": "lab:concept/deep-reinforcement-learning",
+   "label_ko": "심층 강화학습",
+   "label_en": "Deep reinforcement learning",
+   "type": "Method",
+   "first_page": "Reinforcement-Learning-lab_project_01/ch6_rl.html"
   }
  ]
 }

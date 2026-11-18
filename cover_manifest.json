@@ -1,8 +1,8 @@
 {
- "series_ko": "AI 감각·생성 · 듣고·보고·되묻기",
- "title_ko": "겸손한 로봇 연구실 · 잘 못 알아들으면 되묻는 로봇",
- "site_title": "잘 못 알아들으면 되묻는 로봇 — 겸손한 로봇 연구실 (목차)",
- "site_url": "https://adminmrobo.github.io/Reinforcement-Learning-lab/",
+ "series_ko": "논문 해설 · 학술대회 발표",
+ "title_ko": "잘 못들었습니다... 불완전한 텍스트 명령을 극복하는 로봇의 강화학습 및 베이지안 추론 (겸손한 로봇 연구실)",
+ "site_title": "잘 못들었습니다... 불완전한 텍스트 명령을 극복하는 로봇의 강화학습 및 베이지안 추론 — 겸손한 로봇 연구실 (목차)",
+ "site_url": "https://adminmrobo.github.io/Reinforcement-Learning-lab_project_01/",
  "ontology": {
   "pages": [
    {
@@ -47,6 +47,11 @@
    },
    {
     "path": "ch8_appendix.html",
+    "kg": true,
+    "export": true
+   },
+   {
+    "path": "ch9_general.html",
     "kg": true,
     "export": true
    }
@@ -443,7 +448,46 @@
    "prompt_en": "see docs/IMG_humble_robot.md section 3 (optional)",
    "source_of": null,
    "status": "ok"
+  },
+  {
+   "id": "cover_09",
+   "role": "cover",
+   "path": "img/cover_09.webp",
+   "size": [
+    1600,
+    900
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": "see docs/COVER_PROMPTS_humble_robot.md#cover_09",
+   "source_of": null,
+   "status": "redraw",
+   "alt_ko": "넘어지던 흔적을 뒤로하고 격자 트랙을 달리는 흰 관절 인형 주자와 그것을 지켜보는 네 캐릭터"
+  },
+  {
+   "id": "thumb_09",
+   "role": "thumb",
+   "path": "img/thumb_09.webp",
+   "size": [
+    600,
+    400
+   ],
+   "characters": [
+    "doc",
+    "asst",
+    "fly",
+    "jupanbot"
+   ],
+   "robot": "jupanbot-v2",
+   "prompt_en": null,
+   "source_of": "cover_09",
+   "status": "redraw"
   }
  ],
- "updated": "2026-11-18"
+ "updated": "2026-11-19"
 }

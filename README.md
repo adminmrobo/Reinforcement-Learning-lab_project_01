@@ -1,9 +1,12 @@
-# 잘 못 알아들으면 되묻는 로봇 — 겸손한 로봇 연구실
+# 잘 못들었습니다... 불완전한 텍스트 명령을 극복하는 로봇의 강화학습 및 베이지안 추론
 
-불완전한 명령(오타 · 흐린 글자 · 웅얼거림)을 받은 로봇이 억지로 움직이지 않고, 확신이 낮으면 되묻도록 만든 프로젝트를 비전공 독자용 인터랙티브 해설 8장(중챕터 31개)으로 풀었습니다. 박사 · 조수 하루 · 초파리 연구원 · 주판봇이 진행하고, 인턴 시아 · 모아와 미공개 식구 X1~X3이 함께 나옵니다.
+> 겸손한 로봇 연구실 · [Langcon 2026 — From Text to Action](https://songys.github.io/2026Langcon/) 발표 해설 (2026-02-28 오후 세션 3, [발표 일정](https://songys.github.io/2026Langcon/schedule.html))
 
-- 사이트: https://adminmrobo.github.io/Reinforcement-Learning-lab/
-- 분류: www.ahnboat.xyz 카탈로그 › **AI 감각·생성** › **듣고·보고·되묻기** › 겸손한 로봇 연구실
+불완전한 명령(오타 · 흐린 글자 · 웅얼거림)을 받은 로봇이 억지로 움직이지 않고, 확신이 낮으면 되묻도록 만든 프로젝트를 비전공 독자용 인터랙티브 해설 9장(중챕터 36개)으로 풀었습니다. 박사 · 조수 하루 · 초파리 연구원 · 주판봇이 진행하고, 인턴 시아 · 모아와 미공개 식구 X1~X3이 함께 나옵니다.
+
+- 사이트: https://adminmrobo.github.io/Reinforcement-Learning-lab_project_01/
+- 분류: www.ahnboat.xyz 카탈로그 › **Articles & Presentations** › **학술대회 발표** › AI·로봇
+- 저장소: https://github.com/adminmrobo/Reinforcement-Learning-lab_project_01
 - 함께 보기: [머신러닝 모델 도감](https://adminmrobo.github.io/machine_learning_model_atlas/) · [신경망 구조 도감](https://adminmrobo.github.io/neural_network_atlas/0_neural_network_essence.html) (6-0에서 강화학습과 비교)
 - 원자료: 안상선, 「불완전한 명령 보완을 위한 강화학습 모델링 적용 방안」, Langcon 2026 발표 자료 (2026-02-28판)
 
@@ -22,14 +25,15 @@
 | 6 보상으로 겸손을 가르치다 | `ch6_rl.html` | 강화학습은 무엇이 다른가(머신러닝·신경망 도감과 비교) · 강화학습 기본(달리는 로봇) · 보상표 두 벌 · 천하제일 지능대회 · 임계값 3D 지도 · 역발상 검증 |
 | 7 가상에서 실물로 | `ch7_sim2real.html` | 네 등급 · PyGame 시뮬레이터 · Pi Car X Sim-to-Real · 데이터 흐름 |
 | 8 맺음 · 부록 | `ch8_appendix.html` | 쓰임새와 8주 로드맵 · 부록 코드 네 개 · 기술 스택과 재현성 |
+| 9 3D 가상 주자로 넓혀 보기 | `ch9_general.html` | 가상 몸과 점수표 · 학습 대시보드 · 학습 과정 영상 · 보상 설계와 보상 해킹 · 일반화 지도 |
 
 ## 폴더
 
 ```
 index.html, ch1~ch8 *.html   해설 페이지 (외부 라이브러리 없음, 글꼴만 외부)
 assets/                      데이터 예시 그림·음성, 음성 변환기 화면
-media/                       시뮬레이터 영상 2편 (화면 일부만 잘라 냄) + 포스터
-img/                         표지 그림 자리 (cover_00~08.webp를 넣으면 대체 표지 대신 보임)
+media/                       시뮬레이터 영상 2편 (화면 일부만 잘라 냄), 3D 가상 주자 학습 영상(직접 그린 해설 영상) + 포스터
+img/                         표지 그림 자리 (cover_00~09.webp를 넣으면 대체 표지 대신 보임)
 kg/{페이지}/                 지식 색인 원본 kg.json · refs.json · meta.json · check_report.md
 docs/                        표지 지시문(Genspark용) · 이미지 명세서
 cover_manifest.json          표지·온톨로지 현황 (ahnboat_lab_cover_status가 매일 수집)
