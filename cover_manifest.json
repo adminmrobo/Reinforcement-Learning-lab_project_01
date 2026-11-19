@@ -100,7 +100,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": "see docs/COVER_PROMPTS_humble_robot.md#cover_00",
    "source_of": null,
-   "status": "redraw",
+   "status": "ok",
    "alt_ko": "네 캐릭터가 장난감 도로 앞에 멈춰 선 작은 로봇 자동차와 그 위의 빈 말풍선을 바라보는 낮의 연구실"
   },
   {
@@ -120,7 +120,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": null,
    "source_of": "cover_00",
-   "status": "redraw"
+   "status": "ok"
   },
   {
    "id": "cover_01",
@@ -139,7 +139,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": "see docs/COVER_PROMPTS_humble_robot.md#cover_01",
    "source_of": null,
-   "status": "redraw",
+   "status": "ok",
    "alt_ko": "두 갈래 장난감 도로에서 한 차는 벽으로 돌진하고 다른 차는 멈춰 되묻는 장면"
   },
   {
@@ -159,7 +159,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": null,
    "source_of": "cover_01",
-   "status": "redraw"
+   "status": "ok"
   },
   {
    "id": "cover_02",
@@ -178,7 +178,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": "see docs/COVER_PROMPTS_humble_robot.md#cover_02",
    "source_of": null,
-   "status": "redraw",
+   "status": "ok",
    "alt_ko": "글자 없는 쪽지 카드를 초록·빨간 바구니로 나누는 네 캐릭터와 사전·돋보기"
   },
   {
@@ -198,7 +198,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": null,
    "source_of": "cover_02",
-   "status": "redraw"
+   "status": "ok"
   },
   {
    "id": "cover_03",
@@ -217,7 +217,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": "see docs/COVER_PROMPTS_humble_robot.md#cover_03",
    "source_of": null,
-   "status": "redraw",
+   "status": "ok",
    "alt_ko": "서로 다른 획의 검은 타일 벽과 그중 하나를 픽셀 격자로 확대한 돋보기"
   },
   {
@@ -237,7 +237,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": null,
    "source_of": "cover_03",
-   "status": "redraw"
+   "status": "ok"
   },
   {
    "id": "cover_04",
@@ -256,7 +256,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": "see docs/COVER_PROMPTS_humble_robot.md#cover_04",
    "source_of": null,
-   "status": "redraw",
+   "status": "ok",
    "alt_ko": "김 서린 카메라 렌즈와 세 구간 계기판 앞의 네 캐릭터"
   },
   {
@@ -276,7 +276,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": null,
    "source_of": "cover_04",
-   "status": "redraw"
+   "status": "ok"
   },
   {
    "id": "cover_05",
@@ -295,7 +295,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": "see docs/COVER_PROMPTS_humble_robot.md#cover_05",
    "source_of": null,
-   "status": "redraw",
+   "status": "ok",
    "alt_ko": "마이크에서 나온 소리 물결이 화면의 빛나는 줄무늬 그림으로 바뀌는 녹음 코너"
   },
   {
@@ -315,7 +315,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": null,
    "source_of": "cover_05",
-   "status": "redraw"
+   "status": "ok"
   },
   {
    "id": "cover_06",
@@ -334,7 +334,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": "see docs/COVER_PROMPTS_humble_robot.md#cover_06",
    "source_of": null,
-   "status": "redraw",
+   "status": "ok",
    "alt_ko": "넘어진 흔적을 뒤로하고 달리는 작은 시험용 로봇과 색 막대 점수판이 있는 훈련장"
   },
   {
@@ -354,7 +354,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": null,
    "source_of": "cover_06",
-   "status": "redraw"
+   "status": "ok"
   },
   {
    "id": "cover_07",
@@ -373,7 +373,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": "see docs/COVER_PROMPTS_humble_robot.md#cover_07",
    "source_of": null,
-   "status": "redraw",
+   "status": "ok",
    "alt_ko": "모니터 속 가상 자동차와 탁자 위 실물 자동차가 빛줄기로 이어진 디지털 트윈 장면"
   },
   {
@@ -393,7 +393,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": null,
    "source_of": "cover_07",
-   "status": "redraw"
+   "status": "ok"
   },
   {
    "id": "cover_08",
@@ -412,7 +412,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": "see docs/COVER_PROMPTS_humble_robot.md#cover_08",
    "source_of": null,
-   "status": "redraw",
+   "status": "ok",
    "alt_ko": "여덟 칸 일정표와 부록 두루마리 네 개를 정리하는 마지막 장면"
   },
   {
@@ -432,7 +432,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": null,
    "source_of": "cover_08",
-   "status": "redraw"
+   "status": "ok"
   },
   {
    "id": "sc_06_runner",
@@ -466,7 +466,7 @@
    "robot": "jupanbot-v2",
    "prompt_en": "see docs/COVER_PROMPTS_humble_robot.md#cover_09",
    "source_of": null,
-   "status": "redraw",
+   "status": "ok",
    "alt_ko": "넘어지던 흔적을 뒤로하고 격자 트랙을 달리는 흰 관절 인형 주자와 그것을 지켜보는 네 캐릭터"
   },
   {
@@ -486,7 +486,117 @@
    "robot": "jupanbot-v2",
    "prompt_en": null,
    "source_of": "cover_09",
-   "status": "redraw"
+   "status": "ok"
+  },
+  {
+   "id": "og_00",
+   "role": "og",
+   "path": "img/og_00.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "source_of": "cover_00",
+   "status": "ok"
+  },
+  {
+   "id": "og_01",
+   "role": "og",
+   "path": "img/og_01.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "source_of": "cover_01",
+   "status": "ok"
+  },
+  {
+   "id": "og_02",
+   "role": "og",
+   "path": "img/og_02.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "source_of": "cover_02",
+   "status": "ok"
+  },
+  {
+   "id": "og_03",
+   "role": "og",
+   "path": "img/og_03.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "source_of": "cover_03",
+   "status": "ok"
+  },
+  {
+   "id": "og_04",
+   "role": "og",
+   "path": "img/og_04.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "source_of": "cover_04",
+   "status": "ok"
+  },
+  {
+   "id": "og_05",
+   "role": "og",
+   "path": "img/og_05.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "source_of": "cover_05",
+   "status": "ok"
+  },
+  {
+   "id": "og_06",
+   "role": "og",
+   "path": "img/og_06.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "source_of": "cover_06",
+   "status": "ok"
+  },
+  {
+   "id": "og_07",
+   "role": "og",
+   "path": "img/og_07.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "source_of": "cover_07",
+   "status": "ok"
+  },
+  {
+   "id": "og_08",
+   "role": "og",
+   "path": "img/og_08.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "source_of": "cover_08",
+   "status": "ok"
+  },
+  {
+   "id": "og_09",
+   "role": "og",
+   "path": "img/og_09.webp",
+   "size": [
+    1200,
+    630
+   ],
+   "source_of": "cover_09",
+   "status": "ok"
   }
  ],
  "updated": "2026-11-19"
